@@ -17,11 +17,11 @@
                 </div>
                 <ul class="links">
                     <li><img src="../image/home_3_line.png" alt><a
-                        href="/Loja Virtual/indexLoja.html">Início</a></li>
-                    <li>
+                            href="/indexLoja.html">Início</a></li>
+                   <!-- <li>
                         <img src="../image/produtos.png" alt /><a
                             href="../Pages/produtos.html">Produtos</a>
-                    </li>
+                    </li>-->
                     <li>
                         <img src="../image/Categoria.png" alt /><select
                             id="cat">
@@ -55,7 +55,7 @@
             <div class="menu_dropdown">
                 <ul class="links">
                     <li>
-                        <a href="/Loja Virtual/indexLoja.html">Início</a>
+                        <a href="/indexLoja.html">Início</a>
                     </li>
                     <li>
                         <a href="../Pages/produtos.html">Produtos</a>
@@ -84,12 +84,27 @@
                 </ul>
             </div>
         </header>
+        <div id="navega">
+            <span class="filho2">
+                adicionandos <img src="../image/Carrinho.png" alt="">
+                <span id="nitem"></span>
+            </span>
 
+            <span class="resultado">
+                Nº de Itens:
+                <span id="itens"></span>
+            </span>
+
+            <span class="filho1">
+                <input type="search" name="pesquisa" id="pesquisa">
+                <button type="submit">Procurar</button>
+            </span>
+        </div>
         <section id="produtos">
             <div class="container">
                 <h2>Produtos</h2>
                 <div class="produtos-lista">
-                    
+
                     <div class="produto">
                         <img src="../image/produtos/alicate.jpg"
                             alt="Produto 1">
@@ -97,7 +112,8 @@
                         <p class="descricao">Descrição do Produto 1. Produto de
                             alta qualidade e muito útil.</p>
                         <p class="preco">AKZ 00.000,00</p>
-                        <button class="adicionar" id="btn_add">Adicionar ao Carrinho</button>
+                        <button class="adicionar" id="btn_add">Adicionar ao
+                            Carrinho</button>
                     </div>
 
                     <div class="produto">
@@ -107,9 +123,10 @@
                         <p class="descricao">Descrição do Produto 2. Ideal para
                             quem busca durabilidade e estilo.</p>
                         <p class="preco">AKZ 00.000,00</p>
-                        <button class="adicionar" id="btn_add1">Adicionar ao Carrinho</button>
+                        <button class="adicionar" id="btn_add">Adicionar ao
+                            Carrinho</button>
                     </div>
-                    
+
                     <div class="produto">
                         <img src="../image/produtos/camera.jpg"
                             alt="Produto 3">
@@ -117,7 +134,8 @@
                         <p class="descricao">Descrição do Produto 3. Conforto e
                             performance em um único produto.</p>
                         <p class="preco">AKZ 00.000,00</p>
-                        <button class="adicionar" id="btn_add">Adicionar ao Carrinho</button>
+                        <button class="adicionar" id="btn_add">Adicionar ao
+                            Carrinho</button>
                     </div>
 
                     <div class="produto">
@@ -127,9 +145,10 @@
                         <p class="descricao">Descrição do Produto 1. Produto de
                             alta qualidade e muito útil.</p>
                         <p class="preco">AKZ 00.000,00</p>
-                        <button class="adicionar" id="btn_add">Adicionar ao Carrinho</button>
+                        <button class="adicionar" id="btn_add">Adicionar ao
+                            Carrinho</button>
                     </div>
-                   
+
                     <div class="produto">
                         <img src="../image/produtos/hdhost.webp"
                             alt="Produto 2">
@@ -137,7 +156,8 @@
                         <p class="descricao">Descrição do Produto 2. Ideal para
                             quem busca durabilidade e estilo.</p>
                         <p class="preco">AKZ 00.000,00</p>
-                        <button class="adicionar" id="btn_add">Adicionar ao Carrinho</button>
+                        <button class="adicionar" id="btn_add">Adicionar ao
+                            Carrinho</button>
                     </div>
 
                     <div class="produto">
@@ -147,31 +167,62 @@
                         <p class="descricao">Descrição do Produto 3. Conforto e
                             performance em um único produto.</p>
                         <p class="preco">AKZ 00.000,00</p>
-                        <button class="adicionar" id="btn_add">Adicionar ao Carrinho</button>
+                        <button class="adicionar" id="btn_add">Adicionar ao
+                            Carrinho</button>
                     </div>
                     <div class="produto">
-                        <img src="../image/produtos/iphone.png" alt="">
+                        <img src="../image/produtos/iphone.png" alt>
                         <h3>Smartphone</h3>
                         <p>Descrição do Produto 1. Conforto e
                             performance em um único produto.</p>
-                            <p class="preco">AKZ 00.000,00</p>
-                            <button class="adicionar" id="btn_add">Adicionar ao Carrinho</button>
+                        <p class="preco">AKZ 00.000,00</p>
+                        <button class="adicionar" id="btn_add">Adicionar ao
+                            Carrinho</button>
                     </div>
                     <div class="produto">
-                        <img src="../image/produtos/pc.jpg" alt="">
+                        <img src="../image/produtos/pc.jpg" alt>
                         <h3>Host</h3>
                         <p>Descrição do Produto 2. Conforto e
                             performance em um único produto.</p>
-                            <p class="preco">AKZ 000.00,00</p>
-                            <button class="adicionar" id="btn_add">Adicionar ao Carrinho</button>
+                        <p class="preco">AKZ 000.00,00</p>
+                        <button class="adicionar" id="btn_add">Adicionar ao
+                            Carrinho</button>
                     </div>
                     <div class="produto">
-                        <img src="../image/produtos/pcportatil.jpg" alt="">
+                        <img src="../image/produtos/pcportatil.jpg" alt>
                         <h3>Computador</h3>
                         <p>Descrição do Produto 3. Conforto e
                             performance em um único produto.</p>
-                            <p class="preco">AKZ 00.000,00</p>
-                            <button class="adicionar" id="btn_add">Adicionar ao Carrinho</button>
+                        <p class="preco">AKZ 00.000,00</p>
+                        <button class="adicionar" id="btn_add">Adicionar ao
+                            Carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="../image/produtos/pcportatil.jpg" alt>
+                        <h3>Computador</h3>
+                        <p>Descrição do Produto 3. Conforto e
+                            performance em um único produto.</p>
+                        <p class="preco">AKZ 00.000,00</p>
+                        <button class="adicionar" id="btn_add">Adicionar ao
+                            Carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="../image/produtos/pcportatil.jpg" alt>
+                        <h3>Computador</h3>
+                        <p>Descrição do Produto 3. Conforto e
+                            performance em um único produto.</p>
+                        <p class="preco">AKZ 00.000,00</p>
+                        <button class="adicionar" id="btn_add">Adicionar ao
+                            Carrinho</button>
+                    </div>
+                    <div class="produto">
+                        <img src="../image/produtos/pcportatil.jpg" alt>
+                        <h3>Computador</h3>
+                        <p>Descrição do Produto 3. Conforto e
+                            performance em um único produto.</p>
+                        <p class="preco">AKZ 00.000,00</p>
+                        <button class="adicionar" id="btn_add">Adicionar ao
+                            Carrinho</button>
                     </div>
                 </div>
             </div>
@@ -187,10 +238,14 @@
                     <p>Estudantes e Técnicos de TI.
                         <span>Transformando ideias em código</span> </p>
                     <div id="footer_social_media">
-                        <a href="#" id="insta"><img src="../image/insta_icon2.png" alt=""></a>
-                        <a href="#" id="facebook"> <img src="../image/facebook_icon2.png" alt=""></a>
-                        <a href="#" id="whats"><img src="../image/whatsapp_icon2.png" alt=""></a>
-                        <a href="#" id="github"><img src="../image/github_icon2.png" alt=""></a>
+                        <a href="#" id="insta"><img
+                                src="../image/insta_icon2.png" alt></a>
+                        <a href="#" id="facebook"> <img
+                                src="../image/facebook_icon2.png" alt></a>
+                        <a href="#" id="whats"><img
+                                src="../image/whatsapp_icon2.png" alt></a>
+                        <a href="#" id="github"><img
+                                src="../image/github_icon2.png" alt></a>
                     </div>
                 </div>
                 <ul class="footer_list">
@@ -227,7 +282,7 @@
                     <div id="input_group">
                         <input type="email" id="email">
                         <button>
-                            <img src="../image/email_icon.png" alt="">
+                            <img src="../image/email_icon.png" alt>
                         </button>
                     </div>
                 </div>

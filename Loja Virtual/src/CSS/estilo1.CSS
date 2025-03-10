@@ -1,8 +1,12 @@
 /* Resetando alguns estilos padrões */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "IBM Plex Serif", serif;
 }
 
 :root {
@@ -14,6 +18,11 @@
     --cor6: #012340;
     --cor7: #8A9BA6;
     --cor8: #536473;
+
+    --color-neutro-0: #0E0C0C;
+    --color-neutro-10: #171717;
+    --color-neutro-20: #A8A29E;
+    --color-neutro-30: #F5F5F5;
 }
 
 /* Estilos gerais */
@@ -22,6 +31,101 @@ body {
     background-color: #f4f4f4;
     color: #333;
 }
+
+
+
+#navega{
+    width: 100%;
+    height: 40px;
+    background-color: var(--cor5);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.resultado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    height: 70%;
+}
+
+.resultado span{
+    background-color: var(--color-neutro-30);
+    width: 40px;
+    height: 100%;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    text-align: center;
+    color: rgba(128, 128, 128, 0.692);
+    font-size: 1rem;
+}
+
+.filho1{
+    display: flex;
+    height: 70%;
+}
+
+.filho1 input{
+    border: none;
+    outline: none;
+    background-color: #c2ccd4;
+    padding: .5rem;
+    border-radius: 7px 0 0 7px;
+
+    transition: background-color .3s ease-in-out;
+}
+
+.filho1 input:focus-within{
+    background-color: var(--color-neutro-30);
+}
+
+.filho1 button{
+    color: var(--cor6);
+    font-size: .9rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 0px 7px 7px 0px;
+    padding: 3px;    
+
+    transition: background-color .3s ease-in-out;
+    transition: scale .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.filho1 button:hover{
+    opacity: .7;
+}
+.filho1 button:active{
+    scale: .9;
+}
+
+.filho2{
+    color: var(--cor6);
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 5px;
+    padding: .5rem;
+}
+
+.filho2 #nitem{
+    position: absolute;
+    min-width: 2rem;
+    top: -2px;
+    right: -10px;
+    color: var(--color-neutro-30);
+    background-color: #8FFF0D;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.253);
+}
+
+
 
 /* Seção Home */
 #home {
