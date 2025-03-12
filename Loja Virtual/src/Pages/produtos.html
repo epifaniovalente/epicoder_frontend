@@ -5,8 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Produtos - Loja Virtual</title>
-        <link rel="stylesheet" href="../CSS/estilo1.CSS">
         <link rel="stylesheet" href="../CSS/estilo0.css">
+        <link rel="stylesheet" href="../CSS/estilo1.CSS">
+        <link rel="stylesheet" href="../CSS/mideas.css">
     </head>
     <body>
         <header>
@@ -55,7 +56,7 @@
             <div class="menu_dropdown">
                 <ul class="links">
                     <li>
-                        <a href="/indexLoja.html">Início</a>
+                        <a href="/Loja Virtual/indexLoja.html">Início</a>
                     </li>
                     <li>
                         <a href="../Pages/produtos.html">Produtos</a>
@@ -96,7 +97,7 @@
             </span>
 
             <span class="filho1">
-                <input type="search" name="pesquisa" id="pesquisa">
+                <input type="text" placeholder="Pesquisar produtos..." id="pesquisa">
                 <button type="submit">Procurar</button>
             </span>
         </div>
@@ -112,7 +113,7 @@
                         <p class="descricao">Descrição do Produto 1. Produto de
                             alta qualidade e muito útil.</p>
                         <p class="preco">AKZ 00.000,00</p>
-                        <button class="adicionar" id="btn_add">Adicionar ao
+                        <button class="adicionar" id="btn_add" onclick="notificar()">Adicionar ao
                             Carrinho</button>
                     </div>
 
@@ -123,7 +124,7 @@
                         <p class="descricao">Descrição do Produto 2. Ideal para
                             quem busca durabilidade e estilo.</p>
                         <p class="preco">AKZ 00.000,00</p>
-                        <button class="adicionar" id="btn_add">Adicionar ao
+                        <button class="adicionar" id="btn_add2" onclick="notificar()">Adicionar ao
                             Carrinho</button>
                     </div>
 
@@ -134,7 +135,7 @@
                         <p class="descricao">Descrição do Produto 3. Conforto e
                             performance em um único produto.</p>
                         <p class="preco">AKZ 00.000,00</p>
-                        <button class="adicionar" id="btn_add">Adicionar ao
+                        <button class="adicionar" id="btn_add3" onclick="notificar()">Adicionar ao
                             Carrinho</button>
                     </div>
 
@@ -145,7 +146,7 @@
                         <p class="descricao">Descrição do Produto 1. Produto de
                             alta qualidade e muito útil.</p>
                         <p class="preco">AKZ 00.000,00</p>
-                        <button class="adicionar" id="btn_add">Adicionar ao
+                        <button class="adicionar" id="btn_add4" onclick="notificar()">Adicionar ao
                             Carrinho</button>
                     </div>
 
@@ -156,7 +157,7 @@
                         <p class="descricao">Descrição do Produto 2. Ideal para
                             quem busca durabilidade e estilo.</p>
                         <p class="preco">AKZ 00.000,00</p>
-                        <button class="adicionar" id="btn_add">Adicionar ao
+                        <button class="adicionar" id="btn_add5" onclick="notificar()">Adicionar ao
                             Carrinho</button>
                     </div>
 
@@ -167,7 +168,7 @@
                         <p class="descricao">Descrição do Produto 3. Conforto e
                             performance em um único produto.</p>
                         <p class="preco">AKZ 00.000,00</p>
-                        <button class="adicionar" id="btn_add">Adicionar ao
+                        <button class="adicionar" id="btn_add6" onclick="notificar()">Adicionar ao
                             Carrinho</button>
                     </div>
                     <div class="produto">
@@ -176,7 +177,7 @@
                         <p>Descrição do Produto 1. Conforto e
                             performance em um único produto.</p>
                         <p class="preco">AKZ 00.000,00</p>
-                        <button class="adicionar" id="btn_add">Adicionar ao
+                        <button class="adicionar" id="btn_add7" onclick="notificar()">Adicionar ao
                             Carrinho</button>
                     </div>
                     <div class="produto">
@@ -185,7 +186,7 @@
                         <p>Descrição do Produto 2. Conforto e
                             performance em um único produto.</p>
                         <p class="preco">AKZ 000.00,00</p>
-                        <button class="adicionar" id="btn_add">Adicionar ao
+                        <button class="adicionar" id="btn_add8" onclick="notificar()">Adicionar ao
                             Carrinho</button>
                     </div>
                     <div class="produto">
@@ -194,7 +195,7 @@
                         <p>Descrição do Produto 3. Conforto e
                             performance em um único produto.</p>
                         <p class="preco">AKZ 00.000,00</p>
-                        <button class="adicionar" id="btn_add">Adicionar ao
+                        <button class="adicionar" id="btn_add9" onclick="notificar()">Adicionar ao
                             Carrinho</button>
                     </div>
                     <div class="produto">
@@ -203,7 +204,7 @@
                         <p>Descrição do Produto 3. Conforto e
                             performance em um único produto.</p>
                         <p class="preco">AKZ 00.000,00</p>
-                        <button class="adicionar" id="btn_add">Adicionar ao
+                        <button class="adicionar" id="btn_add10" onclick="notificar()">Adicionar ao
                             Carrinho</button>
                     </div>
                     <div class="produto">
@@ -212,7 +213,7 @@
                         <p>Descrição do Produto 3. Conforto e
                             performance em um único produto.</p>
                         <p class="preco">AKZ 00.000,00</p>
-                        <button class="adicionar" id="btn_add">Adicionar ao
+                        <button class="adicionar" id="btn_add11" onclick="notificar()">Adicionar ao
                             Carrinho</button>
                     </div>
                     <div class="produto">
@@ -221,7 +222,7 @@
                         <p>Descrição do Produto 3. Conforto e
                             performance em um único produto.</p>
                         <p class="preco">AKZ 00.000,00</p>
-                        <button class="adicionar" id="btn_add">Adicionar ao
+                        <button class="adicionar" id="btn_add12" onclick="notificar()">Adicionar ao
                             Carrinho</button>
                     </div>
                 </div>

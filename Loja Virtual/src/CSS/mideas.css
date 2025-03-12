@@ -1,0 +1,73 @@
+/* APLICANDO RESPONSIVIDADE*/
+
+@media screen and (max-width: 1189px) {
+
+    #nav_links .links,
+    #nav_links #contact {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .menu_dropdown {
+        display: block;
+    }
+
+    #navega .filho2 .resultado{
+        display: block;
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+    #nav_links .links,
+    #nav_links #contact {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .menu_dropdown {
+        left: 2rem;
+        width: unset;
+    }
+    #navega .filho2 {
+        display: none;
+    }
+
+    #navega .resultado{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 690px) {
+    #home {
+        flex-wrap: wrap;
+    }
+
+    #navega .filho2{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    #footer_content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    #footer_content {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 2rem 3rem;
+    }
+}

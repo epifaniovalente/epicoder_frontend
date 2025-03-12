@@ -30,7 +30,7 @@ body {
     background-color: var(--cor4);
     background-color: #fff;
     background-image: url('../image/produtos/backboss2.jpg');
-    background-position: center center;
+    background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -241,9 +241,15 @@ section#home {
     flex-shrink: 1;
     flex-basis: 500px;
     background-color: var(--color-neutro-30);
+    border: none;
+    outline: none;
     padding: 1.5rem;
     border-radius: 1rem;
-    /*gap: 1rem;*/
+    border: 2px groove var(--cor3);
+    border-style: groove;
+    /*gap: 1rem;
+    opacity: .8;
+    backdrop-filter: blur(20px);*/
 }
 
 .container-content h1 {
@@ -315,72 +321,6 @@ input[type=email]::placeholder {
 .container-content p {
     color: var(--cor6);
 }
-
-
-/* APLICANDO RESPONSIVIDADE*/
-
-@media screen and (max-width: 1189px) {
-
-    #nav_links .links,
-    #nav_links #contact {
-        display: none;
-    }
-
-    .menu {
-        display: block;
-    }
-
-    .menu_dropdown {
-        display: block;
-    }
-
-    #navega .filho2 .resultado{
-        display: block;
-    }
-
-}
-
-
-@media screen and (max-width: 600px) {
-
-    #nav_links .links,
-    #nav_links #contact {
-        display: none;
-    }
-
-    .menu {
-        display: block;
-    }
-
-    .menu_dropdown {
-        left: 2rem;
-        width: unset;
-    }
-    #navega .filho2 {
-        display: none;
-    }
-
-    #navega .resultado{
-        display: none;
-    }
-
-}
-
-@media screen and (max-width: 690px) {
-    #home {
-        flex-wrap: wrap;
-    }
-
-    #navega .filho2{
-        display: none;
-    }
-
-}
-
-
-
-
-
 
 
 /* FOOTER */
@@ -524,18 +464,4 @@ footer {
     font-size: .9rem;
     padding: 1.2rem;
     font-weight: 100;
-}
-
-@media screen and (max-width: 768px) {
-    #footer_content {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-    }
-}
-
-@media screen and (max-width: 426px) {
-    #footer_content {
-        grid-template-columns: repeat(1, 1fr);
-        padding: 2rem 3rem;
-    }
 }
