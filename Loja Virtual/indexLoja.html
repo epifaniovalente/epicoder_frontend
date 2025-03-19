@@ -9,21 +9,21 @@
         <link rel="stylesheet" href="src/CSS/mideas.css">
     </head>
     <body>
-        <header>
+        <!--<header>
             <nav id="nav_links">
                 <div id="logo">
                     <img src="src/image/code_line.png" alt />
                     <a href="indexLoja.html">EpiCoder</a>
                 </div>
                 <ul class="links">
-                    <!--<li><img src="src/image/home_3_line.png" alt><a
-                            href="index.html">Início</a></li>-->
+                    <li><img src="src/image/home_3_line.png" alt><a
+                            href="index.html">Início</a></li>
                     <li>
                         <img src="src/image/produtos.png" alt /><a
                             href="src/Pages/produtos.html">Produtos</a>
                     </li>
 
-                    <!--<li>
+                    <li>
                         <img src="src/image/Categoria.png" alt /><select
                             id="cat">
                             <option selected>Categorias</option>
@@ -32,7 +32,7 @@
                             <option><a href>Educação</a></option>
                             <option><a href>Entretenimento</a></option>
                         </select>
-                    </li>-->
+                    </li>
                     <li><img src alt /><a href="#">Sobre</a></li>
                     <li>
                         <img src="src/image/Carrinho.png" alt /><a
@@ -84,34 +84,41 @@
                     </li>
                 </ul>
             </div>
-        </header>
+        </header> -->
         <main>
-
-            <section id="home">
-                <div class="container-content">
-                    <h1>Bem-vindo à nossa loja virtual!</h1>
-                    <div id="enviar">
-                        <input
-                            type="email"
-                            id="email"
-                            placeholder="muhongo@exemplo.com.ao"
-                            required />
-                        <input type="button" value="Entrar" />
-                    </div>
-                    <p>
-                        Encontre os melhores produtos para o seu dia a dia.
-                        Clique acima para
-                        ver os nossos produtos!
-                    </p>
-                </div>
-                <div id="box">
-                    <img src="src/image/produtos/Memory.png" alt>
-                    <p>AKZ 9.450,990</p>
-                </div>
+            <section>
+                <!--
+                    imagem Add a partir das CSS
+                -->
             </section>
+            <form action method="post">
+                <h2>Faça seu login</h2>
+                <div class="box dados email">
+                    <input type="email" id="email" placeholder="seu e-mail ex.:muhongo@gmail.com" required autocomplete="off">
+                </div>
+                <div class="box dados senha">
+                    <input type="password" id="senha" placeholder="seu senha" required>
+                </div>
+                <div class="box dados2">
+                    <span>
+                        <input type="checkbox" name="lembrar" id="lembrar">
+                        <label for="lembrar">Lembrar-me</label>    
+                    </span>
+                    <span>
+                    <a href="#">esqueci-me</a>
+                    </span>
+                </div>
+                <div class="box btns">
+                    <button type="submit">Entrar</button>
+                    <p>Não tem uma conta?</p>
+                    <button type="submit">Criar uma conta</button>
+                </div>
+            </form>
+
         </main>
 
         <footer>
+            <!--
             <div id="footer_content">
                 <div id="footer_contacts">
                     <div id="logo">
@@ -170,6 +177,7 @@
                     </div>
                 </div>
             </div>
+            -->
             <div id="footer_copyright">
                 &#169 2025 todos os direitos resrvados | EpiCoder.
             </div>

@@ -27,12 +27,7 @@
 
 body {
     height: 100vh;
-    background-color: var(--cor4);
     background-color: #fff;
-    background-image: url('../image/produtos/backboss2.jpg');
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 li {
@@ -53,7 +48,7 @@ header {
     background-color: var(--cor6);
 }
 
-header #sms{
+header #sms {
     display: none;
     position: fixed;
     left: 2rem;
@@ -141,11 +136,11 @@ select {
 }
 
 @keyframes pulse {
-    0%{
+    0% {
         box-shadow: 0 0 0 0 #8FFF0D;
     }
 
-    100%{
+    100% {
         box-shadow: 0 0 0 10px;
     }
 }
@@ -222,16 +217,158 @@ select {
     cursor: pointer;
 }
 
-section#home {
-    height: calc(100vh - 60px);
-    display: flex;
+/* Pagina Inicial*/
 
+main {
+    width: 100%;
+    height: 100%;
+}
+
+main section {
+    float: left;
+    height: 100%;
+    width: 60%;
+    background-image: url('../image/produtos/backboss.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main form {
+    float: right;
+    height: 100%;
+    width: 40%;
+
+    display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    /*gap: 2rem;*/
+
+    padding: 0 4rem;
+    background-color: var(--color-neutro-30);
+    background-color: var(--cor6);
+}
+
+form h2 {
+    color: var(--cor5);
     text-align: center;
-    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 1.2rem;
+}
+
+form .box.dados.email {
+    margin-bottom: 1.2rem;
+}
+
+form .box {
+    width: 100%;
+}
+
+form .box.dados {
+    height: 2.5rem;
+
+}
+
+.box #email,
+#senha {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border-radius: 1.5rem;
+    border: 2px solid var(--cor1);
+    padding: 1rem 1.3rem;
+    font-size: 12pt;
+    font-weight: 400;
+    letter-spacing: 2px;
+
+    transition: all .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.box #email:hover{
+    box-shadow: 2px 8px 10px rgba(0, 0, 0, 0.20);
+}
+
+.box #senha:hover{
+    box-shadow: 2px 8px 10px rgba(0, 0, 0, 0.20);
+}
+
+form .box.dados.senha{
+    margin-bottom: .3rem;
+}
+
+form .box.dados2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.box.dados2 span{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.box.dados2 span label{
+    color: var(--cor5);
+    font-size: 10pt;
+    cursor: pointer;
+}
+
+.box.dados2 span a{
+    color: var(--color-neutro-20);
+    font-size: 10pt;
+
+    transition: color .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.box.dados2 span a:hover{
+    color: var(--color-neutro-30);
+    text-decoration: underline;
+}
+
+form .box.btns{
+    margin: 1.5rem 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     gap: 1rem;
 }
+
+.box.btns button{
+    width: 100%;
+    padding: .3rem 0;
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 1.5rem;
+    color: var(--color-neutro-30);
+    background-color: var(--cor1);
+
+
+    transition: scale .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.box.btns button:hover{
+    scale: 1.05;
+    opacity: 0.9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.20);
+}
+
+.box.btns button:active{
+    scale: 1;
+}
+
+.box.btns p{
+    color: var(--color-neutro-20);
+}
+
+
 
 .container-content {
     display: flex;
@@ -258,10 +395,6 @@ section#home {
     border-bottom: 2px solid var(--cor6);
 }
 
-#box{
-    display: none;
-}
-
 .container-content #enviar {
     background-color: var(--cor5);
     height: 50px;
@@ -274,48 +407,6 @@ section#home {
     border-radius: 20px;
     padding: .5rem;
     margin: 1.5rem 0rem 0rem;
-}
-
-#enviar input {
-    border: none;
-    outline: none;
-    height: 100%;
-    border-radius: 30px;
-    padding: .5rem .8rem;
-    color: var(--cor6);
-    font-weight: 500;
-}
-
-#enviar input[type=email] {
-    width: 100%;
-    font-size: 12px;
-}
-
-input[type=email]::placeholder {
-    color: var(--cor1);
-    font-size: 1rem;
-}
-
-#enviar input[type=button] {
-    color: #fff;
-    font-size: .8rem;
-    font-weight: bold;
-    cursor: pointer;
-    border: 1px solid;
-    text-align: center;
-    background-color: var(--cor6);
-    transition: background-color .3s ease-in-out;
-    transition: scale .3s ease;
-}
-
-#enviar input[type=button]:hover {
-    background-color: #719ED9;
-    color: var(--cor6);
-}
-
-#enviar input[type=button]:active {
-    scale: .95;
-    background-color: var(--cor5);
 }
 
 .container-content p {
@@ -378,12 +469,12 @@ footer {
     scale: 1.2;
 }
 
-#insta img{
+#insta img {
     /*background: linear-gradient(#7f37c9, #ff2992, #ff9807);*/
     width: 100%;
 }
 
-#facebook img{
+#facebook img {
     /*background: #4267b3;*/
     width: 100%;
 }
@@ -393,7 +484,7 @@ footer {
     width: 100%;
 }
 
-#github img{
+#github img {
     width: 100%;
 }
 
@@ -449,7 +540,8 @@ footer {
 
     transition: all .4s;
 }
-#input_group button img{
+
+#input_group button img {
     width: 100%;
 }
 
