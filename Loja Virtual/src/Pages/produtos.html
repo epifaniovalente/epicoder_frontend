@@ -4,7 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Produtos - Loja Virtual</title>
+        <title>ByteShop - Produtos</title>
+        <link rel="shortcut icon" href="../image/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="../CSS/estilo0.css">
         <link rel="stylesheet" href="../CSS/estilo1.CSS">
         <link rel="stylesheet" href="../CSS/mideas.css">
@@ -12,14 +13,14 @@
     <body>
         <header>
             <nav id="nav_links">
-                <div id="logo">
-                    <img src="../image/code_line.png" alt />
-                    <a href="/Loja Virtual/indexLoja.html">EpiCoder</a>
-                </div>
+                <a href="inicio.html" id="logo">
+                    <img src="../image/ByteShop2-pq.jpg" />
+                <!--<a href="/Loja Virtual/indexLoja.html">EpiCoder</a>-->
+                </a>
                 <ul class="links">
                     <li><img src="../image/home_3_line.png" alt><a
-                            href="/indexLoja.html">Início</a></li>
-                   <!-- <li>
+                            href="inicio.html">Início</a></li>
+                    <!-- <li>
                         <img src="../image/produtos.png" alt /><a
                             href="../Pages/produtos.html">Produtos</a>
                     </li>-->
@@ -33,7 +34,6 @@
                             <option><a href>Entretenimento</a></option>
                         </select>
                     </li>
-                    <li><img src alt /><a href="#">Sobre</a></li>
                     <li>
                         <img src="../image/Carrinho.png" alt /><a
                             href="#">Carrinho</a>
@@ -42,6 +42,7 @@
                         <img src="../image/card_pay.png" alt /><a
                             href="#">Minha Conta</a>
                     </li>
+                    <li><img src alt /><a href="#">Sobre</a></li>
                 </ul>
                 <a href="#" id="contact"><img src="../image/phone_add.png"
                         alt /><span>Contacto</span></a>
@@ -56,7 +57,7 @@
             <div class="menu_dropdown">
                 <ul class="links">
                     <li>
-                        <a href="/Loja Virtual/indexLoja.html">Início</a>
+                        <a href="inicio.html">Início</a>
                     </li>
                     <li>
                         <a href="../Pages/produtos.html">Produtos</a>
@@ -87,7 +88,7 @@
         </header>
         <div id="navega">
             <span class="filho2">
-                adicionandos <img src="../image/Carrinho.png" alt="">
+                adicionandos <img src="../image/Carrinho.png" alt>
                 <span id="nitem"></span>
             </span>
 
@@ -97,13 +98,18 @@
             </span>
 
             <span class="filho1">
-                <input type="text" placeholder="Pesquisar produtos..." id="pesquisa">
-                <button type="submit">Procurar</button>
+                <input type="text" placeholder="Pesquisar produtos..."
+                    id="pesquisa">
+                <button type="button"><img src="../image/procurar.png" alt=""></button>
             </span>
         </div>
         <section id="produtos">
             <div class="container">
                 <h2>Produtos</h2>
+                <p class="descricao">Na ByteShop, você encontra uma seleção completa de produtos tecnológicos para todas as necessidades. Contamos com componentes de alto desempenho, como processadores, placas-mãe, memórias RAM e SSDs, além de periféricos essenciais, como teclados, mouses e monitores de alta resolução.
+                     <br>
+                     Para quem busca mobilidade e potência, temos notebooks e desktops de última geração. E para os gamers e profissionais de design, oferecemos placas de vídeo avançadas e acessórios que garantem máxima performance. Tudo isso com a qualidade e segurança que você merece!
+                </p>
                 <div class="produtos-lista">
 
                     <div class="produto">
@@ -113,7 +119,8 @@
                         <p class="descricao">Descrição do Produto 1. Produto de
                             alta qualidade e muito útil.</p>
                         <p class="preco">AKZ 00.000,00</p>
-                        <button class="adicionar" id="btn_add" onclick="notificar()">Adicionar ao
+                        <button class="adicionar" id="btn_add"
+                            onclick="notificar()">Adicionar ao
                             Carrinho</button>
                     </div>
 
@@ -124,7 +131,8 @@
                         <p class="descricao">Descrição do Produto 2. Ideal para
                             quem busca durabilidade e estilo.</p>
                         <p class="preco">AKZ 00.000,00</p>
-                        <button class="adicionar" id="btn_add2" onclick="notificar()">Adicionar ao
+                        <button class="adicionar" id="btn_add2"
+                            onclick="notificar()">Adicionar ao
                             Carrinho</button>
                     </div>
 
@@ -135,7 +143,8 @@
                         <p class="descricao">Descrição do Produto 3. Conforto e
                             performance em um único produto.</p>
                         <p class="preco">AKZ 00.000,00</p>
-                        <button class="adicionar" id="btn_add3" onclick="notificar()">Adicionar ao
+                        <button class="adicionar" id="btn_add3"
+                            onclick="notificar()">Adicionar ao
                             Carrinho</button>
                     </div>
 
@@ -146,7 +155,8 @@
                         <p class="descricao">Descrição do Produto 1. Produto de
                             alta qualidade e muito útil.</p>
                         <p class="preco">AKZ 00.000,00</p>
-                        <button class="adicionar" id="btn_add4" onclick="notificar()">Adicionar ao
+                        <button class="adicionar" id="btn_add4"
+                            onclick="notificar()">Adicionar ao
                             Carrinho</button>
                     </div>
 
@@ -157,7 +167,8 @@
                         <p class="descricao">Descrição do Produto 2. Ideal para
                             quem busca durabilidade e estilo.</p>
                         <p class="preco">AKZ 00.000,00</p>
-                        <button class="adicionar" id="btn_add5" onclick="notificar()">Adicionar ao
+                        <button class="adicionar" id="btn_add5"
+                            onclick="notificar()">Adicionar ao
                             Carrinho</button>
                     </div>
 
@@ -168,7 +179,8 @@
                         <p class="descricao">Descrição do Produto 3. Conforto e
                             performance em um único produto.</p>
                         <p class="preco">AKZ 00.000,00</p>
-                        <button class="adicionar" id="btn_add6" onclick="notificar()">Adicionar ao
+                        <button class="adicionar" id="btn_add6"
+                            onclick="notificar()">Adicionar ao
                             Carrinho</button>
                     </div>
                     <div class="produto">
@@ -177,7 +189,8 @@
                         <p>Descrição do Produto 1. Conforto e
                             performance em um único produto.</p>
                         <p class="preco">AKZ 00.000,00</p>
-                        <button class="adicionar" id="btn_add7" onclick="notificar()">Adicionar ao
+                        <button class="adicionar" id="btn_add7"
+                            onclick="notificar()">Adicionar ao
                             Carrinho</button>
                     </div>
                     <div class="produto">
@@ -186,7 +199,8 @@
                         <p>Descrição do Produto 2. Conforto e
                             performance em um único produto.</p>
                         <p class="preco">AKZ 000.00,00</p>
-                        <button class="adicionar" id="btn_add8" onclick="notificar()">Adicionar ao
+                        <button class="adicionar" id="btn_add8"
+                            onclick="notificar()">Adicionar ao
                             Carrinho</button>
                     </div>
                     <div class="produto">
@@ -195,7 +209,8 @@
                         <p>Descrição do Produto 3. Conforto e
                             performance em um único produto.</p>
                         <p class="preco">AKZ 00.000,00</p>
-                        <button class="adicionar" id="btn_add9" onclick="notificar()">Adicionar ao
+                        <button class="adicionar" id="btn_add9"
+                            onclick="notificar()">Adicionar ao
                             Carrinho</button>
                     </div>
                     <div class="produto">
@@ -204,7 +219,8 @@
                         <p>Descrição do Produto 3. Conforto e
                             performance em um único produto.</p>
                         <p class="preco">AKZ 00.000,00</p>
-                        <button class="adicionar" id="btn_add10" onclick="notificar()">Adicionar ao
+                        <button class="adicionar" id="btn_add10"
+                            onclick="notificar()">Adicionar ao
                             Carrinho</button>
                     </div>
                     <div class="produto">
@@ -213,7 +229,8 @@
                         <p>Descrição do Produto 3. Conforto e
                             performance em um único produto.</p>
                         <p class="preco">AKZ 00.000,00</p>
-                        <button class="adicionar" id="btn_add11" onclick="notificar()">Adicionar ao
+                        <button class="adicionar" id="btn_add11"
+                            onclick="notificar()">Adicionar ao
                             Carrinho</button>
                     </div>
                     <div class="produto">
@@ -222,7 +239,8 @@
                         <p>Descrição do Produto 3. Conforto e
                             performance em um único produto.</p>
                         <p class="preco">AKZ 00.000,00</p>
-                        <button class="adicionar" id="btn_add12" onclick="notificar()">Adicionar ao
+                        <button class="adicionar" id="btn_add12"
+                            onclick="notificar()">Adicionar ao
                             Carrinho</button>
                     </div>
                 </div>
@@ -232,10 +250,10 @@
         <footer>
             <div id="footer_content">
                 <div id="footer_contacts">
-                    <div id="logo">
-                        <img src="../image/code_line.png" alt />
-                        <a href="index.html">EpiCoder</a>
-                    </div>
+                    <a href="inicio.html" id="logo">
+                        <img src="../image/ByteShop2-pq.jpg" />
+                    <!--<a href="/Loja Virtual/indexLoja.html">EpiCoder</a>-->
+                    </a>
                     <p>Estudantes e Técnicos de TI.
                         <span>Transformando ideias em código</span> </p>
                     <div id="footer_social_media">

@@ -4,7 +4,8 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>Loja Virtual</title>
+        <title>ByteShop - Login</title>
+        <link rel="shortcut icon" href="src/image/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="src/CSS/estilo0.css" />
         <link rel="stylesheet" href="src/CSS/mideas.css">
     </head>
@@ -91,27 +92,40 @@
                     imagem Add a partir das CSS
                 -->
             </section>
-            <form action method="post">
-                <h2>Faça seu login</h2>
+            <form action method="post" id="login">
+                <picture>
+                    <img src="src/image/ByteShop2-pq.jpg" alt>
+                </picture>
+                <h2>ByteShop</h2>
+                <p id="slogan">Sua loja de informática confiável! Aqui você
+                    encontra tecnologia de ponta com qualidade e segurança.</p>
+
                 <div class="box dados email">
-                    <input type="email" id="email" placeholder="seu e-mail ex.:muhongo@gmail.com" required autocomplete="off">
+                    <input type="email" id="email"
+                        placeholder="seu e-mail ex.:muhongo@gmail.com" required
+                        autocomplete="off">
                 </div>
                 <div class="box dados senha">
-                    <input type="password" id="senha" placeholder="seu senha" required>
+                    <input type="password" id="senha" placeholder="seu senha"
+                        required>
                 </div>
                 <div class="box dados2">
                     <span>
                         <input type="checkbox" name="lembrar" id="lembrar">
-                        <label for="lembrar">Lembrar-me</label>    
+                        <label for="lembrar">Lembrar-me</label>
                     </span>
                     <span>
-                    <a href="#">esqueci-me</a>
+                        <a href="#">esqueci-me</a>
                     </span>
                 </div>
                 <div class="box btns">
-                    <button type="submit">Entrar</button>
+                    <a href="src/Pages/produtos.html">
+                        <button type="submit">Entrar</button>
+                    </a>
                     <p>Não tem uma conta?</p>
-                    <button type="submit">Criar uma conta</button>
+                    <a href="src/Pages/conta.html">
+                        <button type="button">Criar uma conta</button>
+                    </a>
                 </div>
             </form>
 

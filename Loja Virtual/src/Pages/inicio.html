@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ByteShop - Inicio</title>
+        <link rel="shortcut icon" href="../image/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="../CSS/estilo0.css">
+        <link rel="stylesheet" href="../CSS/estilo1.css">
+        <link rel="stylesheet" href="../CSS/mideas.css">
+        <style>
+        :root {
+            --cor1: #1F54BF;
+            --cor2: #020F59;
+            --cor3: #021373;
+            --cor4: #719ED9;
+            --cor5: #D0DCF2;
+            --cor6: #012340;
+            --cor7: #8A9BA6;
+            --cor8: #536473;
+        }
+
+        body {
+            background-color: var(--cor5);
+            color: var(--cor8);
+            /*margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;*/
+            height: 100vh;
+        }
+
+        main.container {
+            width: 100%;
+            height: calc(100% - 250px);
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        strong{
+            color: var(--cor3);
+        }
+        #byteshop{
+            font-size: 1.8em;
+            text-align: right;
+            padding-right: 1rem 5rem;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: var(--cor2);
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: var(--cor6);
+        }
+
+        #footer_content{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 2rem;
+            padding: 1rem 3.5rem;
+        }
+
+        #footer_content #logo{
+            width: 190px;
+            height: 100px;
+        }
+
+        #footer_content p{
+            color: var(--cor7);
+        }
+    </style>
+    </head>
+    <body>
+
+        <header>
+            <nav id="nav_links">
+                <a href="inicio.html" id="logo">
+                    <img src="../image/ByteShop2-pq.jpg" alt />
+                    <!--<a href="/Loja Virtual/indexLoja.html">EpiCoder</a>-->
+                </a>
+                <ul class="links">
+                    <!--<li><img src="../image/home_3_line.png" alt><a
+                        href="/indexLoja.html">Início</a></li>
+                 -->
+                    <li>
+                        <img src="../image/produtos.png" alt /><a
+                            href="../Pages/produtos.html">Produtos</a>
+                    </li>
+                    <!--
+                <li>
+                    <img src="../image/Categoria.png" alt /><select
+                        id="cat">
+                        <option selected>Categorias</option>
+                        <option><a href>Tecnologia</a></option>
+                        <option><a href>Saúde</a></option>
+                        <option><a href>Educação</a></option>
+                        <option><a href>Entretenimento</a></option>
+                    </select>
+                </li>
+                -->
+                    <li>
+                        <img src="../image/Carrinho.png" alt /><a
+                            href="#">Carrinho</a>
+                    </li>
+                    <li>
+                        <img src="../image/card_pay.png" alt /><a
+                            href="#">Minha Conta</a>
+                    </li>
+                    <li><img src alt /><a href="#">Sobre</a></li>
+                </ul>
+                <a href="#" id="contact"><img src="../image/phone_add.png"
+                        alt /><span>Contacto</span></a>
+
+                <div class="menu">
+                    <img src="../image/menu_fill.png" alt />
+                </div>
+            </nav>
+            <div class="menu_dropdown">
+                <ul class="links">
+                    <!--<li>
+                    <a href="/Loja Virtual/indexLoja.html">Início</a>
+                </li>
+                -->
+                    <li>
+                        <a href="../Pages/produtos.html">Produtos</a>
+                    </li>
+                    <!-- <li>
+                    <select id="cat">
+                        <option selected>Categorias</option>
+                        <option>Tecnologia</option>
+                        <option>Saúde</option>
+                        <option>Educação</option>
+                        <option>Entretenimento</option>
+                    </select>
+                </li>-->
+                    <li>
+                        <a href="#">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="#">Carrinho</a>
+                    </li>
+                    <li>
+                        <a href="#">Minha Conta</a>
+                    </li>
+                    <li>
+                        <a href="#" id="contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <main class="container">
+            <h1>Bem-vindo à ByteShop!🚀</h1>
+            <p>
+                Na <strong>ByteShop</strong>, você encontra tudo o que precisa
+                para o mundo da tecnologia! Oferecemos uma ampla
+                variedade de produtos de informática, desde <strong>hardware de
+                    alta performance</strong> até <strong>acessórios
+                    essenciais</strong>
+                para o seu dia a dia. Trabalhamos com as melhores marcas do
+                mercado para garantir <strong>qualidade, segurança e
+                    inovação</strong>.
+            </p>
+            <p>
+                Seja você um profissional de TI, gamer ou apenas alguém em busca
+                das melhores soluções tecnológicas, a <strong>ByteShop</strong>
+                é o lugar certo para você. Explore nosso catálogo e leve para
+                casa o que há de mais moderno em informática!
+            </p>
+            <p id="byteshop"><strong>💻 ByteShop – Tecnologia ao seu alcance! 🔥</strong></p>
+        </main>
+
+        <footer>
+            <div id="footer_content">
+                <div id="footer_contacts">
+                    <a href="inicio.html" id="logo">
+                        <img src="../image/ByteShop2-pq.jpg" alt />
+                        <!--<a href="/Loja Virtual/indexLoja.html">EpiCoder</a>-->
+                    </a>
+                </div>
+                <p>Estudantes e Técnicos de TI.
+                    <span>Transformando ideias em código</span> </p>
+                <div id="footer_social_media">
+                    <a href="#" id="insta"><img
+                            src="../image/insta_icon2.png" alt></a>
+                    <a href="#" id="facebook"> <img
+                            src="../image/facebook_icon2.png" alt></a>
+                    <a href="#" id="whats"><img
+                            src="../image/whatsapp_icon2.png" alt></a>
+                    <a href="#" id="github"><img
+                            src="../image/github_icon2.png" alt></a>
+                </div>
+
+            </div>
+            <div id="footer_copyright">
+                &#169 2025 todos os direitos resrvados | EpiCoder.
+            </div>
+        </footer>
+        <script src="../JS/script.js"></script>
+    </body>
+</html>

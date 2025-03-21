@@ -44,7 +44,7 @@ a {
 
 header {
     position: relative;
-    padding: 0 2rem;
+    padding: 1rem 2rem;
     background-color: var(--cor6);
 }
 
@@ -75,10 +75,17 @@ header #sms {
 }
 
 #nav_links #logo {
-    display: flex;
+    /*display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1px;
+    gap: 1px;*/
+    width: 190px;
+    height: 100%;
+}
+
+#logo  img{
+    width: 100%;
+    border-radius: 5px;
 }
 
 #nav_links #logo a {
@@ -250,11 +257,32 @@ main form {
     background-color: var(--cor6);
 }
 
-form h2 {
+form picture {
+    width: 100%;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.20);
+}
+
+form picture img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+form#login h2 {
+    font-size: 2em;
     color: var(--cor5);
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 1.2rem;
+
+    display: none;
+}
+
+form #slogan {
+    color: var(--cor5);
+    font-size: 9pt;
+    padding: 0 1.3rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1.2px;
 }
 
 form .box.dados.email {
@@ -276,7 +304,7 @@ form .box.dados {
     height: 100%;
     border: none;
     outline: none;
-    border-radius: 1.5rem;
+    border-radius: 5px;
     border: 2px solid var(--cor1);
     padding: 1rem 1.3rem;
     font-size: 12pt;
@@ -286,15 +314,15 @@ form .box.dados {
     transition: all .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.box #email:hover{
+.box #email:hover {
     box-shadow: 2px 8px 10px rgba(0, 0, 0, 0.20);
 }
 
-.box #senha:hover{
+.box #senha:hover {
     box-shadow: 2px 8px 10px rgba(0, 0, 0, 0.20);
 }
 
-form .box.dados.senha{
+form .box.dados.senha {
     margin-bottom: .3rem;
 }
 
@@ -305,31 +333,31 @@ form .box.dados2 {
     padding: 0 1rem;
 }
 
-.box.dados2 span{
+.box.dados2 span {
     display: flex;
     align-items: center;
     gap: 3px;
 }
 
-.box.dados2 span label{
+.box.dados2 span label {
     color: var(--cor5);
     font-size: 10pt;
     cursor: pointer;
 }
 
-.box.dados2 span a{
+.box.dados2 span a {
     color: var(--color-neutro-20);
     font-size: 10pt;
 
     transition: color .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.box.dados2 span a:hover{
+.box.dados2 span a:hover {
     color: var(--color-neutro-30);
     text-decoration: underline;
 }
 
-form .box.btns{
+form .box.btns {
     margin: 1.5rem 0;
     display: flex;
     align-items: center;
@@ -337,16 +365,20 @@ form .box.btns{
     gap: 1rem;
 }
 
-.box.btns button{
+.box.btns a {
+    width: 100%;
+}
+
+.box.btns button {
     width: 100%;
     padding: .3rem 0;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1.3rem;
     letter-spacing: 1px;
     border: none;
     outline: none;
-    cursor: pointer;
-    border-radius: 1.5rem;
+    cursor: alias;
+    border-radius: 5px;
     color: var(--color-neutro-30);
     background-color: var(--cor1);
 
@@ -354,20 +386,70 @@ form .box.btns{
     transition: scale .3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.box.btns button:hover{
+.box.btns button:hover {
     scale: 1.05;
     opacity: 0.9;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.20);
 }
 
-.box.btns button:active{
+.box.btns button:active {
     scale: 1;
 }
 
-.box.btns p{
+.box.btns p {
     color: var(--color-neutro-20);
 }
 
+/*CRIAR CONTA*/
+
+form#contaNova {
+    /*display: ;*/
+}
+
+form#contaNova h2 {
+    color: var(--cor1);
+    margin-bottom: 1.2rem;
+}
+
+#contaNova .box.dados {
+    margin-bottom: .5rem;
+
+    height: 50px;
+    width: 13em;
+
+    cursor: pointer;
+    transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#contaNova .box.dados:hover {
+    opacity: 0.7;
+}
+
+#contaNova .box.dados:active {
+    scale: .9;
+}
+
+.box.dados a.midia {
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-neutro-30);
+    color: var(--cor2);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.5em;
+    padding: 0rem 1.5rem;
+    border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+a.midia img {
+    height: 100%;
+    padding: 5px;
+}
 
 
 .container-content {
@@ -418,12 +500,11 @@ form .box.btns{
 
 footer {
     width: 100%;
-    border-top: 2px solid #8FFF0D;
     color: var(--color-neutro-30);
 }
 
 #footer_content {
-    background-color: var(--color-neutro-10);
+    background-color: var(--color-neutro-0);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
@@ -556,4 +637,5 @@ footer {
     font-size: .9rem;
     padding: 1.2rem;
     font-weight: 100;
+    border-top: 1px solid #8eff0d42;
 }
