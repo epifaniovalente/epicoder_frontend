@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listagem de Denúncias - Sistema de Denúncia Anônima Escolar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #4a90e2, #9013fe);
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background: #4a90e2;
+            color: white;
+            font-weight: bold;
+        }
+
+        tr:hover {
+            background: #f5f5f5;
+        }
+
+        .status-pendente {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+
+        .status-em-andamento {
+            color: #f1c40f;
+            font-weight: bold;
+        }
+
+        .status-resolvido {
+            color: #2ecc71;
+            font-weight: bold;
+        }
+
+        .action-button {
+            padding: 8px 12px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .view-button {
+            background: #4a90e2;
+        }
+
+        .view-button:hover {
+            background: #357abd;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            th, td {
+                padding: 8px;
+                font-size: 14px;
+            }
+
+            .action-button {
+                padding: 6px 10px;
+                font-size: 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                margin: 10px;
+            }
+
+            table {
+                font-size: 12px;
+            }
+
+            th, td {
+                padding: 6px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Listagem de Denúncias Recebidas</h1>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Data</th>
+                        <th>Categoria</th>
+                        <th>Descrição</th>
+                        <th>Status</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td>14/05/2025</td>
+                        <td>Bullying</td>
+                        <td>Incidente reportado na sala 3B durante o intervalo</td>
+                        <td class="status-pendente">Pendente</td>
+                        <td><button class="action-button view-button">Visualizar</button></td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>13/05/2025</td>
+                        <td>Assédio</td>
+                        <td>Comportamento inadequado no corredor principal</td>
+                        <td class="status-em-andamento">Em Andamento</td>
+                        <td><button class="action-button view-button">Visualizar</button></td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td>12/05/2025</td>
+                        <td>Vandalismo</td>
+                        <td>Danos na biblioteca escolar</td>
+                        <td class="status-resolvido">Resolvido</td>
+                        <td><button class="action-button view-button">Visualizar</button></td>
+                    </tr>
+                    <!-- Mais linhas podem ser adicionadas dinamicamente -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

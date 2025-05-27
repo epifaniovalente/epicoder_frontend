@@ -1,0 +1,17 @@
+# Justificativa para o Sistema de Denúncia Anônima Escolar
+
+A implementação de um Sistema de Denúncia Anônima Escolar é fundamental para promover um ambiente escolar seguro, inclusivo e ético. Este sistema tem como objetivo principal proporcionar um canal confidencial e acessível para que alunos, professores, funcionários e demais membros da comunidade escolar possam reportar situações de violência, bullying, discriminação, assédio, irregularidades administrativas ou qualquer outro problema que comprometa o bem-estar coletivo, sem medo de represálias ou exposição.
+
+A justificativa para a criação deste sistema baseia-se nos seguintes pontos:
+
+1. **Proteção e Segurança**: Muitas vezes, vítimas ou testemunhas de comportamentos inadequados não denunciam por receio de retaliação. Um sistema anônimo garante a proteção da identidade, incentivando a comunicação de incidentes que poderiam permanecer ocultos, permitindo intervenções rápidas e eficazes.
+
+2. **Prevenção e Conscientização**: O sistema não apenas facilita a resolução de problemas, mas também atua como ferramenta preventiva. Ao demonstrar que a instituição valoriza a transparência e a resolução de conflitos, promove-se uma cultura de respeito e responsabilidade, desestimulando comportamentos inadequados.
+
+3. **Fortalecimento da Confiança**: A existência de um canal estruturado e confiável para denúncias fortalece a confiança da comunidade escolar na gestão institucional. Isso demonstra compromisso com a justiça, a equidade e o bem-estar de todos os envolvidos.
+
+4. **Conformidade com Normas Éticas e Legais**: Escolas têm a responsabilidade de zelar pelo ambiente educacional, conforme diretrizes éticas e legais. Um sistema de denúncias anônimas alinha-se a essas obrigações, ajudando a identificar e corrigir problemas antes que se agravem ou resultem em consequências legais.
+
+5. **Apoio ao Desenvolvimento Integral**: Um ambiente escolar seguro e acolhedor é essencial para o desenvolvimento acadêmico, emocional e social dos alunos. Ao mitigar situações de conflito ou violência, o sistema contribui para a formação de indivíduos mais confiantes e engajados.
+
+Portanto, a criação de um Sistema de Denúncia Anônima Escolar é uma iniciativa estratégica que reforça os valores de integridade, segurança e inclusão, assegurando que a escola seja um espaço onde todos possam prosperar. A escolha de nomes como "Voz Silenciosa", "Alerta Escolar", "Escuta Segura", "Guardião Anônimo" e "Sinal Seguro" reflete a essência do sistema: um canal discreto, confiável e protetor, que dá voz à comunidade escolar e promove a resolução de problemas de forma ética e eficaz.
