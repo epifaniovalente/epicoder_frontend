@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portifólio</title>
-    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="src/CSS/style.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
@@ -12,39 +12,49 @@
   </head>
   <body>
     <header>
-      <a href="#" class="logo">EpiCoder</a>
+      <a href="index.html" target="_self" class="logo">EpiCoder</a>
 
-      <nav>
-        <a href="#">Início</a>
-        <a href="#">Projectos</a>
-        <a href="#">Habilidades</a>
-        <a href="#">Contacto</a>
+      <nav class="links">
+        <!--<a href="#" target="_self">Início</a>-->
+        <a href="#" target="_self">Projectos</a>
+        <a href="#" target="_self">Habilidades</a>
+        <a href="#" target="_self">Contacto</a>
       </nav>
+      <button type="button" id="menu-drop"><i class="bi bi-list"></i></button>
     </header>
 
     <section class="home">
       <div class="home-img">
-        <img src="image/pic-dead.jpeg" alt="" />
+        <img src="src/image/perfil-400x.jpeg" alt="" />
       </div>
       <div class="home-content">
         <h1>Olá, eu sou o <span>EpiCoder</span></h1>
-        <h3 class="tipo-texto">Sou Estudante de TI</h3>
+        <h3 class="texto-destaque">Estudante de TI</h3>
         <p>
-          No nível médio com interesse em desenvolvimento Web
-          (<strong>Programação</strong>) e Monitoramento de Redes (<strong
+          No nível médio com interesse em desenvolvimento Web (<strong
+            >Programação Front-end</strong
+          >) e Monitoramento de Dispositivos (<strong
             >Redes de Computador</strong
           >). Sempre tive interesse em tecnologia e programação, e esse site
           (<strong>Portifólio</strong>), foi criado para compartilhar um pouco
           do que estou aprendendo ao longo da minha jornada.
         </p>
-        <div class="social-icons">
-          <a href="#"><i class="bi bi-instagram"></i></a>
-          <a href="#"><i class="bi bi-github"></i></a>
-          <a href="#"><i class="bi bi-telegram"></i></a>
-          <a href="#"><i class="bi bi-linkedin"></i></a>
+        <div class="social-icons" id="icones">
+          <a href="#" target="_blank"><i class="bi bi-instagram"></i></a>
+          <a href="#" target="_blank"><i class="bi bi-github"></i></a>
+          <a href="#" target="_blank"><i class="bi bi-telegram"></i></a>
+          <a href="#" target="_blank"><i class="bi bi-linkedin"></i></a>
         </div>
-        <a href="#" class="btn">Sobre mim</a>
+
+        <div class="sobre"><a href="#" class="btn">Sobre mim</a></div>
       </div>
     </section>
+    <footer>
+      <div class="rodape">
+        &#x1F4BB;Epifânio Valente &#x1F680; | Todos os direitos reservados
+        &copy;
+      </div>
+    </footer>
+    <script src="src/JS/code.js"></script>
   </body>
 </html>
