@@ -8,6 +8,7 @@
     text-decoration: none;
     border: none;
     font-family: "Ancizar Serif", serif;
+    overflow: hidden;
 }
 
 :root {
@@ -77,6 +78,46 @@ nav a:hover {
     cursor: pointer;
 
     display: none;
+}
+
+.drop-list {
+    position: absolute;
+    right: 7%;
+    background-color: var(--cor1);
+    border-radius: 0 0 10px 10px;
+
+}
+
+.drop-list ul {
+    display: none;
+}
+
+.drop-list2 {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style-type: none;
+    transition: display .5s ease;
+}
+
+.drop-list ul li {
+    padding: .4rem 1rem;
+    transition: all .5s ease;
+}
+
+.drop-list ul li:hover {
+    background-color: #2c3e509c;
+    transform: scale(1.1);
+}
+
+.drop-list ul li a {
+    font-size: 1.1rem;
+    color: #E3E9F7;
+    font-weight: 500;
+    letter-spacing: 1px;
+
+    transition: all .5s ease-in-out;
 }
 
 /*------END HEADER---------*/
