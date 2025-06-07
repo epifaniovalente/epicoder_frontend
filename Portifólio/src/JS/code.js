@@ -1,3 +1,9 @@
-function midias() {
-    document.getElementById('icones').style.boxShadow = "0 0 25px #2980b9";
-}
+const btn_drop = document.getElementById("menu-drop");
+/*btn_drop.addEventListener("click", () => {
+  const links = document.getElementById("links2");
+  if (links.style.display == "none") {
+    links.style.display = "block";
+  } else {
+    links.style.display = "none";
+  }
+});*/

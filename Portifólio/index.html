@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portifólio</title>
     <link rel="stylesheet" href="src/CSS/style.css" />
+    <link rel="stylesheet" href="src/CSS/midias.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
+    <script src="src/JS/code.js" defer></script>
   </head>
   <body>
     <header>
-      <a href="index.html" target="_self" class="logo">EpiCoder</a>
+      <a href="index.html" target="_self" class="logo">Portifólio</a>
 
-      <nav class="links">
+      <nav class="links" id="links">
         <!--<a href="#" target="_self">Início</a>-->
         <a href="#" target="_self">Projectos</a>
         <a href="#" target="_self">Habilidades</a>
@@ -22,13 +24,10 @@
       </nav>
       <button type="button" id="menu-drop"><i class="bi bi-list"></i></button>
     </header>
-
-    <section class="home">
-      <div class="home-img">
-        <img src="src/image/perfil-400x.jpeg" alt="" />
-      </div>
-      <div class="home-content">
-        <h1>Olá, eu sou o <span>EpiCoder</span></h1>
+    <section class="container">
+      <img src="src/image/myself.jpg" alt="" />
+      <div class="box-content">
+        <h1>Olá, eu sou <span>Epifânio</span></h1>
         <h3 class="texto-destaque">Estudante de TI</h3>
         <p>
           No nível médio com interesse em desenvolvimento Web (<strong
@@ -36,8 +35,8 @@
           >) e Monitoramento de Dispositivos (<strong
             >Redes de Computador</strong
           >). Sempre tive interesse em tecnologia e programação, e esse site
-          (<strong>Portifólio</strong>), foi criado para compartilhar um pouco
-          do que estou aprendendo ao longo da minha jornada.
+          (Portifólio), foi criado para compartilhar um pouco do que estou
+          aprendendo ao longo da minha jornada.
         </p>
         <div class="social-icons" id="icones">
           <a href="#" target="_blank"><i class="bi bi-instagram"></i></a>
@@ -51,8 +50,7 @@
     </section>
     <footer>
       <div class="rodape">
-        &#x1F4BB;Epifânio Valente &#x1F680; | Todos os direitos reservados
-        &copy;
+        &#x1F4BB;Epifânio Valente | Este é o meu portifolio &#x1F680;
       </div>
     </footer>
     <script src="src/JS/code.js"></script>
