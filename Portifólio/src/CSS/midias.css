@@ -7,48 +7,37 @@
     --cor3: #E3E9F7;
 }
 
-@media screen and (max-width: 840px) {
-
-    .links{
+@media screen and (max-width: 800px) {
+    .box-img {
         display: none;
     }
+
+    .links {
+        display: none;
+    }
+
     #menu-drop {
         display: block;
     }
 
     .container {
-        flex-direction: column;
+        display: flex;
     }
 
-    .box-content {
-        padding: 0 1rem;
-
+    main #projetos {
+        flex-wrap: wrap;
     }
 
-    .box-content #icones {
-        width: 60%;
-    }
+
 }
 
 @media screen and (max-width: 690px) {
-    .container img {
-        display: none;
+    #menu-drop {
+        display: block;
     }
 
-    .container {
-        margin-top: 0;
-        padding: 1rem;
+    main #projetos .caixa {
+        flex: 1 1 300px;
     }
-
-
-    .box-content {
-        padding: 0 .2rem;
-
-    }
-
-    .box-content #icones {
-        width: 100%;
-    }
-    
 
 }

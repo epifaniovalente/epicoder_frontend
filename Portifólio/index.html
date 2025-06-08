@@ -17,23 +17,23 @@
 
       <nav class="links" id="links">
         <!--<a href="#" target="_self">Início</a>-->
-        <a href="#" target="_self">Projectos</a>
-        <a href="#" target="_self">Habilidades</a>
-        <a href="#" target="_self">Contacto</a>
+        <a href="src/pages/projetos.html" target="_self">Projectos</a>
+        <a href="src/pages/habilidades.html" target="_self">Habilidades</a>
+        <a href="src/pages/contacto.html" target="_self">Contacto</a>
       </nav>
-      <button type="button" id="menu-drop"><i class="bi bi-list"></i></button>
+      <button type="button" id="menu-drop" aria-controls="drop-list"><i class="bi bi-list"></i></button>
     </header>
-    <div class="drop-list" id="drop-list">
-      <ul>
-        <li><a href="#">Projectos</a></li>
-        <li><a href="#">Habilidades</a></li>
-        <li><a href="#">Contacto</a></li>
+    <div class="drop-list" id="drop-list" aria-labelledby="menu-drop">
+      <ul id="menu">
+        <li><a href="src/pages/projetos.html">Projectos</a></li>
+        <li><a href="src/pages/habilidades.html">Habilidades</a></li>
+        <li><a href="src/pages/contacto.html">Contacto</a></li>
       </ul>
     </div>
     <section class="container">
-      <img src="src/image/myself.jpg" alt="" />
+      <div class="box-img"><img src="src/image/pic-dead.jpeg" alt="" /></div>
       <div class="box-content">
-        <h1>Olá, eu sou <span>Epifânio</span></h1>
+        <h1 id="titulo">Olá, eu sou <span>Epifânio</span></h1>
         <h3 class="texto-destaque">Estudante de TI</h3>
         <p>
           No nível médio com interesse em desenvolvimento Web (<strong
