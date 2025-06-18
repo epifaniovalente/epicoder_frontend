@@ -5,27 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Voz Segura</title>
     <link rel="stylesheet" href="CSS/style1.css" />
+    <link rel="stylesheet" href="CSS/midias.css">
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   </head>
   <body>
     <header>
-      <div id="logo">
-        <h3>Voz Segura</h3>
-      </div>
-      <div class="cabeca">
-        <h1>Denúncia Anônima Escolar</h1>
-        <p>Sua voz importa. Sua identidade é protegida</p>
+      <div class="cabecalho">
+
+        <div id="logo">
+          <h2>Voz Segura</h2>
+        </div>
+        <div class="cabeca">
+          <h3>Denúncia Anônima Escolar</h3>
+          <span>Sua voz importa. Sua identidade é protegida</span>
+        </div>
       </div>
     </header>
-
     <nav>
-      <ul>
-        <li><a href="">Início</a></li>
+      <ul id="links">
+        <li><a href id="inicio">Home</a></li>
         <li><a href="pages/formulario.html">Denunciar</a></li>
         <li><a href="#denunciar">FAQ</a></li>
         <li><a href="#denunciar">Testemunhos</a></li>
         <li><a href="#denunciar">Acompanhar Denúncia</a></li>
         <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <button type="button" id="menu_drop"><i class="bi bi-list"></i></button>
+      <ul id="links_drop">
+        <li><a href id="inicio">Home</a></li>
+        <li><a href="pages/formulario.html">Denunciar</a></li>
+        <li><a href="#denunciar">FAQ</a></li>
+        <li><a href="#denunciar">Testemunhos</a></li>
+        <li><a href="#denunciar">Acompanhar Denúncia</a></li>
+        <li><a href="#sobre">Sobre</a></li>
       </ul>
     </nav>
 
@@ -33,12 +46,12 @@
       <div class="conteudo-hero">
         <h2>Construindo uma escola mais segura e acolhedora</h2>
         <p>
-          O Sistema de Denúncia Anônima Escolar foi criado para garantir que
+          A Plataforma de Denúncia Anônima Escolar foi criado para garantir que
           todos na comunidade escolar possam reportar situações de violência,
           bullying, discriminação ou irregularidades de forma segura e
           confidencial, sem medo de represálias.
         </p>
-        <a href="pages/formulario.html" class="cta-button">Faça sua denúncia</a>
+        <a href="pages/formulario.html" class="denunciar-btn">Faça sua denúncia</a>
       </div>
     </section>
 
@@ -61,6 +74,7 @@
         escola melhor para todos. Cada denúncia é tratada com seriedade,
         seguindo protocolos claros para investigação e resolução.
       </p>
+      <!--
       <h3>Por que denunciar?</h3>
       <p>
         Sua voz é essencial para prevenir e resolver problemas. Denunciar
@@ -68,24 +82,27 @@
         promovendo o bem-estar e o respeito mútuo. Juntos, podemos criar um
         ambiente onde todos se sintam valorizados e protegidos.
       </p>
+      -->
     </section>
 
     <footer>
-        <div class="conteudo-footer">
-            <h3>Voz Segura</h3>
-            <a href="#">Notícias e Atualizações</a>
-            <a href="#">Recursos e Apoio</a>
-            <a href="#">Política de Privacidade</a>
-            <a href="#">Como Funciona</a>
-            <a href="#">Estudantes</a>
-            <a href="#">O Colégio</a>
-            <a href="#">Consultar Denúncia</a>
+      <div class="conteudo-footer">
 
-        </div>
+        <a href="#">Notícias e Atualizações</a>
+        <a href="#">Política de Privacidade</a>
+
+        <a href="#">Como Funciona</a>
+        <a href="#">Estudantes</a>
+        <a href="#">O Colégio</a>
+
+        <a href="#">Consultar Denúncia</a>
+
+      </div>
       <p>
         &copy; 2025 Sistema de Denúncia Anônima Escolar. Todos os direitos
         reservados.
       </p>
     </footer>
+    <script src="JS/script.js"></script>
   </body>
 </html>

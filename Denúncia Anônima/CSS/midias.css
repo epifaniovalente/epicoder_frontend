@@ -1,0 +1,64 @@
+@media (max-width: 600px) {
+    nav #menu_drop {
+        display: block;
+    }
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero h2 {
+        font-size: 1.4rem;
+    }
+
+    .content h3 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 520px) {
+    nav #menu_drop {
+        display: block;
+    }
+    .cabeca h1 {
+        display: none;
+    }
+
+    header {
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 600px) {
+    nav #menu_drop {
+        display: block;
+    }
+    .confirmation-container {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .confirmation-container h2 {
+        font-size: 1.3rem;
+    }
+
+    .confirmation-code {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 750px) {
+    nav ul#links {
+        display: none;
+    }
+
+
+
+    nav #menu_drop {
+        display: block;
+    }
+}
