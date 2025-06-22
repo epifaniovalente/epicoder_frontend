@@ -11,12 +11,12 @@
 }
 
 :root {
-  /*PALETA 1
+ /*PALETA 1*/
   --cor1: #1A33A2;
   --cor2: #F4A95B;
   --cor3: #FFFFFF;
   --cor4: #000000;
-*/
+
   /*PALETE 2*/
   --cor5: #202C5C;
   /*cabeçalho e rodapé*/
@@ -30,17 +30,14 @@
 
 body {
   height: 100dvh;
-  background-color: var(--cor7);
+  background-color: var(--cor3);
   color: #333;
   line-height: 1.6;
 }
 
 header {
   width: 100%;
-  background-image: url('../midias/back.jpg');
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: var(--cor2);
 
   display: flex;
   align-items: center;
@@ -84,10 +81,9 @@ header .cabeca{
 }
 
 nav {
-  background-color: var(--cor5);
-  border-top: 2px solid var(--cor5);
-  padding: .5rem;
-  top: 0;
+  background-color: var(--cor2);
+  padding: .3rem;
+  top: -1px;
   left: 0;
   position: sticky;
   /*
@@ -99,19 +95,20 @@ nav {
 }
 
 #links_drop{
-  background-color: var(--cor5);
+  background-color: var(--cor3);
   max-width: 280px;
   position: absolute;
   right: 0;
-  top: -1px;
+  top: 0;
   overflow: hidden;
-  padding: .5rem 1rem;
   border-radius: 5px 0 0 5px;
 
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  display: none;
+  width: 0;
+  transition: width .5s ease;
+  
 }
 
 nav ul {
@@ -122,8 +119,10 @@ nav ul {
   letter-spacing: 1px;
   transition: display .3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-.abrir{
-  display: block;
+
+#links_drop.abrir{
+  width: 280px;
+  padding: 2%;
 }
 
 nav a {
@@ -144,7 +143,7 @@ nav #menu_drop{
   background: transparent;
   color: #fff;
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 2rem;
   border: none;
   cursor: pointer;
 
@@ -165,7 +164,7 @@ nav #menu_drop{
 .conteudo-hero h2 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
-  color: var(--cor7);
+  color: var(--cor5);
 }
 
 .hero p {
