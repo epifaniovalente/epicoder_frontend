@@ -1,6 +1,5 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Inconsolata:wght@200..900&family=Yrsa:ital,wght@0,300..700;1,300..700&display=swap');
-
 :root {
     --fundo: #000;
     --titulos: rgba(245, 245, 245, 0.746);
@@ -111,7 +110,6 @@ aside {
     color: var(--links);
     border-left: 3px solid transparent;
     transition: all 0.15s ease;
-
     text-shadow: 0px 0px 5px #1e8fff94;
 }
 
@@ -192,7 +190,7 @@ aside {
     transition: all var(--transition-speed) ease;
 }
 
-main a.sobre{
+main a.sobre {
     background-color: var(--links);
     width: fit-content;
     padding: .2rem .4rem;
@@ -214,7 +212,9 @@ main a.sobre{
     font-size: 1.5rem;
 }
 
+
 /* State when sidebar is collapsed */
+
 body.sidebar-collapsed {
     --sidebar-width: 80px;
 }
@@ -276,31 +276,25 @@ body.sidebar-collapsed .menu-item:hover .menu-tooltip {
     body {
         --sidebar-width: 80px;
     }
-
     body.sidebar-expanded {
         --sidebar-width: 280px;
     }
-
     .logo-text,
     .menu-text,
     .menu-title,
     .user-info {
         display: none;
     }
-
     .sidebar-menu {
         overflow: visible;
     }
-
     .menu-link {
         justify-content: center;
         padding: 0.75rem;
     }
-
     .menu-item {
         position: relative;
     }
-
     .menu-item:hover .menu-tooltip {
         display: block;
     }

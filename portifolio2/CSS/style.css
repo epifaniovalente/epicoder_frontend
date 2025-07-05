@@ -1,0 +1,39 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Inconsolata:wght@200..900&family=Yrsa:ital,wght@0,300..700;1,300..700&display=swap');
+:root {
+    --fundo: #000;
+    --titulos: rgba(245, 245, 245, 0.746);
+    --cor1: #124673;
+    --cor3: #0056b3;
+    --links: #1e90ff;
+    --secondary-color: #3a0ca3;
+    --accent-color: #f72585;
+    --text-color: rgba(245, 245, 245, 0.777);
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
+    --largura-aside: 280px;
+    --transition-speed: 0.3s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ancizar Serif", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--fundo);
+    color: var(--text-color);
+    transition: all var(--transition-speed) ease;
+}
+
+.top-header {
+    padding: .2rem .4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
