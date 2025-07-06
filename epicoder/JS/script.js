@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     const abrirmenu = document.querySelector('.menu-btn');
-    const sidebar = document.querySelector('.aside');
+    const menu = document.querySelector('.menu-drop');
 
-    abrirmenu.addEventListener('click', function abrir() {
-        sidebar.classList.toggle('abrir');
+    abrirmenu.addEventListener('click',function () {
+       menu.classList.toggle('abrir');
     })
 });

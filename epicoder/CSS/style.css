@@ -48,10 +48,6 @@ aside:hover{
     width: var(--largura-aside);
 }
 
-aside.abrir{
-    width: var(--largura-aside);
-}
-
 .sidebar-header {
     padding: .5rem;
     border-bottom: 1px solid var(--cor3);
@@ -195,6 +191,44 @@ aside:hover .user-info{
     font-size: 0.75rem;
 }
 
+/*Menu Drop*/
+.menu-drop{
+    background-attachment: fixed;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 2px 0 10px rgba(245, 245, 245, 0.184);
+}
+
+.menu-drop .list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    padding: .5rem;
+    gap: 5px;
+}
+.item{
+    flex: 1;
+    padding: 0.2rem .4em;
+    border: 1px solid var(--cor1);
+    border-radius: 5px;
+}
+
+.item .link{
+    color: var(--links);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.item.active{
+    color: var(--light-color);
+    border: 1.5px solid var(--light-color);
+    border-radius: 5px;
+}
+
 .main-content {
     flex: 1;
     display: flex;
@@ -229,25 +263,31 @@ main a.sobre {
     padding: 0.1rem .4rem;
     border-radius: 4px;
     cursor: pointer;
-    margin-bottom: 1rem;
     font-size: 1.5rem;
 
     display: none;
 }
 
-.box-btn{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: end;
+
+@media (min-width: 770px) {
+    nav{
+        display: none;
+    }
+    
 }
 
 @media (max-width: 768px) {
+    body{
+        display: block;
+    }
+    .aside{
+        display: none;
+    }
     .menu-btn{
         display: block;
     }
     .main-content{
-        margin-left: 60px;
+        margin: auto;
     }
     
 }
