@@ -1,8 +1,3 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const abrirmenu = document.querySelector('.menu-btn');
-    const menu = document.querySelector('.menu-drop');
+document.addEventListener('DOMContentLoaded', function () {
 
-    abrirmenu.addEventListener('click',function () {
-       menu.classList.toggle('abrir');
-    })
 });
