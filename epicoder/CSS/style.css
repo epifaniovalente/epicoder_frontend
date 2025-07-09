@@ -35,7 +35,7 @@ header {
     top: 0;
     padding: 1.5% 2%;
     backdrop-filter: blur(20px);
-    box-shadow: 0 0 15px rgba(245, 245, 245, 0.192);
+    box-shadow: 0 0 5px rgba(245, 245, 245, 0.192);
 }
 
 nav {
@@ -65,40 +65,46 @@ nav .logo-text {
 }
 
 nav .menu-link {
+    overflow-x: hidden;
     height: fit-content;
     display: flex;
     align-items: center;
     list-style: none;
     gap: 1rem;
     padding: 2px;
-    transition: all .3s ease;
-}
-
-.menu-link div:first-child{
-    display: none;
-}
-.fechar-menu{
-    width: 100%;
-    text-align: right;
-    padding-right: 5%;
-
-    cursor: pointer;
-    background: transparent;
-    outline: none;
-    border: none;
-    font-size: 1.7rem;
-    font-weight: 600;
-    color: var(--light-color);
-
-    transition: all .4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all .4s ease;
     transform-origin: left;
 }
 
-.menu-link .link.ativo {
-    border-bottom: 2px solid var(--cor3);
+.menu-link .logo-name{
+    width: 100%;
+    text-align: center;
+    border: 1px solid #8fff0d;
+    font-size: 1.5rem;
+    padding: 3%;
+    background: linear-gradient(130deg, #0461c4, #124673);
+}
+
+nav .menu-link.abrir {
+    display: block;
+}
+
+.menu-link div:first-child {
+    display: none;
+}
+
+.menu-link .link {
+    display: flex;
+}
+
+.menu-link .link a.ativo {
+    padding-left: .5rem;
+    color: var(--light-color);
+    border-left: 2px solid var(--cor3);
 }
 
 .menu-link .link a {
+    flex: 1;
     font-size: 1rem;
     text-decoration: none;
     color: #57ffc9;
@@ -112,6 +118,7 @@ nav .menu-link {
     color: var(--light-color);
     border: none;
     outline: none;
+    color: #1e90ff;
 }
 
 select option {
@@ -148,7 +155,7 @@ main.main-content {
 }
 
 .epicoder {
-    width: 80%;
+    width: 95%;
     height: 100px;
     margin: auto;
     border-radius: 5px;
@@ -193,8 +200,7 @@ main.main-content {
 }
 
 .main-content .perfil img {
-    flex: 1;
-    max-width: 300px;
+    max-width: 400px;
 }
 
 .infor {
@@ -263,21 +269,39 @@ footer p span {
         display: none;
     }
 
+    .perfil,
+    .perfil img {
+        display: none;
+    }
+
     nav .menu-link {
-        width: 100%;
+        width: 50%;
+        height: 100dvh;
         position: absolute;
         background-color: var(--fundo);
+        background-attachment: fixed;
+        border-right: 1px solid #1e8fff52;
+        position: absolute;
         top: 0;
         left: 0;
-        display: flex;
-        flex-direction: column;
-        padding: 1rem 0;
 
-        opacity: 0;
     }
-    .menu-link div:first-child{
-    display: block;
-}
+
+    nav .menu-link li a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: .5rem 1rem;
+    }
+
+    nav .menu-link li select {
+        padding: .5rem 1rem;
+        width: 100%;
+    }
+
+    .menu-link div:first-child {
+        display: block;
+    }
 
     nav {
         justify-content: space-between;
@@ -285,12 +309,6 @@ footer p span {
 }
 
 @media (max-width: 768px) {
-
-    .perfil,
-    .perfil img {
-        display: none;
-    }
-
     .epicoder {
         display: block;
     }
