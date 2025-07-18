@@ -15,12 +15,62 @@
         display: block;
     }
 
-    #navega .filho2 .resultado{
+    #navega .filho2 .resultado {
         display: block;
     }
 
 }
 
+@media screen and (max-width: 992px) {
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    main section#image-destaque{
+        display: none;
+    }
+
+    form picture{
+        width: 50%;
+    }
+
+    main form#login{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #footer_content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    form #slogan{
+        padding: .5rem 0;
+        font-size: 9pt;
+    }
+
+    .formulario{
+        width: 100%;
+    }
+
+    main form#login{
+        padding: 0 1.5rem;
+    }
+
+}
+
+@media screen and (max-width: 690px) {
+    #home {
+        flex-wrap: wrap;
+    }
+
+    #navega .filho2 {
+        display: none;
+    }
+
+}
 
 @media screen and (max-width: 600px) {
 
@@ -37,32 +87,15 @@
         left: 2rem;
         width: unset;
     }
+
     #navega .filho2 {
         display: none;
     }
 
-    #navega .resultado{
+    #navega .resultado {
         display: none;
     }
 
-}
-
-@media screen and (max-width: 690px) {
-    #home {
-        flex-wrap: wrap;
-    }
-
-    #navega .filho2{
-        display: none;
-    }
-
-}
-
-@media screen and (max-width: 768px) {
-    #footer_content {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-    }
 }
 
 @media screen and (max-width: 426px) {

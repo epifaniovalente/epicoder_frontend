@@ -1,60 +1,68 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>ByteShop - Conta</title>
-        <link rel="shortcut icon" href="../image/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="../CSS/estilo0.css" />
-        <link rel="stylesheet" href="../CSS/mideas.css">
-    </head>
-    <body>
 
-        <main>
-            <section>
-                <!--
-                    imagem Add a partir das CSS
-                -->
-            </section>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>ByteShop - Conta</title>
+    <link rel="shortcut icon" href="../image/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/estilo.css" />
+    <link rel="stylesheet" href="../CSS/mideas.css">
+</head>
 
-            <form action method="post" id="contaNova">
-                <picture>
-                    <img src="../image/ByteShop2-pq.jpg" alt>
-                </picture>
-                <p id="slogan">Sua loja de informática confiável! Aqui você
-                    encontra tecnologia de ponta com qualidade e segurança.</p>
+<body>
+    <main class="conta">
+        <section class="informacao">
+            <h1>Welcome To</h1>
+            <h2 id="logo">ByteShop <i class="fa-solid fa-toggle-on"></i></h2>
+            <p id="slogan">Sua loja de informática confiável! <br> Aqui você
+                encontra tecnologia <br> de ponta com qualidade e segurança.</p>
+        </section>
 
-                <h2>Crie sua conta com:</h2>
-                <div class="box dados">
-                    <a href="../Pages/produtos.html" class="midia"><p>google</p> <img
-                            src="../image/google-1.png" alt></a>
+        <form action method="post" id="contaNova" autocomplete="off">
+            <h1>Sign In</h1>
+            <p>Realize seu cadastro e adquira seus produtos.</p>
+            <div class="box">
+                <div class="input-box">
+                    <input type="text" name="nome" id="nome" placeholder="seu nome">
+                    <i class="fa-regular fa-user"></i>
                 </div>
-                <div class="box dados">
-                    <a href="../Pages/produtos.html" class="midia">e-mail <img src="../image/gmail.png"
-                            alt></a>
-                </div>
-                <div class="box dados">
-                    <a href="../Pages/produtos.html" class="midia">facebook<img
-                            src="../image/facebook_icon2.png" alt></a>
-                </div>
-
-                <div class="box btns">
-                    <!--<a href="src/Pages/produtos.html"><button type="submit" id="confirmar">Confirmar</button></a>-->
-                    <p>Já tem uma conta?</p>
-                    <a href="/Loja Virtual/indexLoja.html">
-                        <button type="button" id="entrar">Entrar</button>
-                    </a>
-                </div>
-            </form>
-
-        </main>
-
-        <footer>
-            <div id="footer_copyright">
-                &#169 2025 todos os direitos resrvados | EpiCoder.
+                <span class="error"></span>
             </div>
-        </footer>
-        <script src="src/JS/script.js"></script>
-    </body>
+            <div class="box">
+                <div class="input-box">
+                    <input type="email" name="email" id="email" placeholder="muhongo@gmai.com">
+                    <i class="fa-regular fa-envelope"></i>
+                </div>
+                <span class="error"></span>
+            </div>
+            <div class="box">
+                <div class="input-box">
+                    <input type="password" name="senha" id="senha" placeholder="*****">
+                    <i class="fa-regular fa-eye-slash"></i>
+                </div>
+                <span class="error"></span>
+            </div>
+            <div class="box botoes">
+                <button type="submit">Sing In</button>
+            </div>
+            <p id="temConta">Já tem uma com?
+                <a href="#">log in</a>
+            </p>
+        </form>
+
+    </main>
+
+    <footer>
+        <div id="footer_copyright">
+            &#169 2025 todos os direitos resrvados | EpiCoder.
+        </div>
+    </footer>
+    <script src="src/JS/script.js"></script>
+</body>
+
 </html>

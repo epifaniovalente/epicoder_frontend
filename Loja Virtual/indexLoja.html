@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>ByteShop - Login</title>
-        <link rel="shortcut icon" href="src/image/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="src/CSS/estilo0.css" />
-        <link rel="stylesheet" href="src/CSS/mideas.css">
-    </head>
-    <body>
-        <!--<header>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>ByteShop - Login</title>
+    <link rel="shortcut icon" href="src/image/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="src/CSS/estilo0.css" />
+    <link rel="stylesheet" href="src/CSS/mideas.css">
+</head>
+
+<body>
+    <!--<header>
             <nav id="nav_links">
                 <div id="logo">
                     <img src="src/image/code_line.png" alt />
@@ -86,30 +91,36 @@
                 </ul>
             </div>
         </header> -->
-        <main>
-            <section>
-                <!--
+    <main>
+        <section id="image-destaque">
+            <!--
                     imagem Add a partir das CSS
                 -->
-            </section>
-            <form action method="post" id="login">
-                <picture>
-                    <img src="src/image/ByteShop2-pq.jpg" alt>
-                </picture>
-                <h2>ByteShop</h2>
-                <p id="slogan">Sua loja de informática confiável! Aqui você
-                    encontra tecnologia de ponta com qualidade e segurança.</p>
+        </section>
+        <form action method="post" id="login">
+            <picture>
+                <img src="src/image/ByteShop2-pq.jpg" alt>
+            </picture>
+            <h2>ByteShop</h2>
+            <p id="slogan">Sua loja de informática confiável! Aqui você
+                encontra tecnologia de ponta com qualidade e segurança.</p>
 
-                <div class="box dados email">
-                    <input type="email" id="email"
-                        placeholder="seu e-mail ex.:muhongo@gmail.com" required
-                        autocomplete="off">
+            <section class="formulario">
+                <div class="box">
+                    <div class="input-form">
+                        <input type="email" id="email" placeholder="ex.:muhongo@gmail.com" autocomplete="off">
+                        <i class="fa-regular fa-user" style="color: #74C0FC;"></i>
+                    </div>
+                    <span class="error" id="errorEmail"></span>
                 </div>
-                <div class="box dados senha">
-                    <input type="password" id="senha" placeholder="seu senha"
-                        required>
+                <div class="box">
+                    <div class="input-form">
+                        <input type="password" id="senha" placeholder="******">
+                        <i class="fa-solid fa-key" style="color: #74C0FC;"></i>
+                    </div>
+                    <span class="error" id="errorSenha"></span>
                 </div>
-                <div class="box dados2">
+                <div class="outros">
                     <span>
                         <input type="checkbox" name="lembrar" id="lembrar">
                         <label for="lembrar">Lembrar-me</label>
@@ -118,21 +129,17 @@
                         <a href="#">esqueci-me</a>
                     </span>
                 </div>
-                <div class="box btns">
-                    <a href="src/Pages/inicio.html">
-                        <button type="button">Entrar</button>
-                    </a>
-                    <p>Não tem uma conta?</p>
-                    <a href="src/Pages/conta.html">
-                        <button type="button">Criar uma conta</button>
-                    </a>
-                </div>
-            </form>
+            </section>
+            <div class="box btns">
+                <button type="submit">Entrar</button>
+                <p>Não tem uma conta? <a href="src/Pages/conta.html">Criar uma conta</a></p>
+            </div>
+        </form>
 
-        </main>
+    </main>
 
-        <footer>
-            <!--
+    <footer>
+        <!--
             <div id="footer_content">
                 <div id="footer_contacts">
                     <div id="logo">
@@ -192,10 +199,11 @@
                 </div>
             </div>
             -->
-            <div id="footer_copyright">
-                &#169 2025 todos os direitos resrvados | EpiCoder.
-            </div>
-        </footer>
-        <script src="src/JS/script.js"></script>
-    </body>
+        <div id="footer_copyright">
+            &copy; 2025 - ByteShop | EpiCoder - todos os direitos resrvados.
+        </div>
+    </footer>
+    <script src="src/JS/script.js"></script>
+</body>
+
 </html>

@@ -25,9 +25,10 @@
     --color-neutro-30: #F5F5F5;
 }
 
+html,
 body {
-    height: 100vh;
-    background-color: #fff;
+    min-height: 100vh;
+    background-color: var(--cor6);
 }
 
 li {
@@ -83,7 +84,7 @@ header #sms {
     height: 100%;
 }
 
-#logo  img{
+#logo img {
     width: 100%;
     border-radius: 5px;
 }
@@ -224,14 +225,15 @@ select {
     cursor: pointer;
 }
 
-/* Pagina Inicial*/
+/* Pagina Inicial - LOGIN*/
 
 main {
     width: 100%;
     height: 100dvh;
 }
 
-main section {
+/*IMAGEM*/
+main section#image-destaque {
     float: left;
     height: 100%;
     width: 60%;
@@ -241,7 +243,8 @@ main section {
     background-size: cover;
 }
 
-main form {
+/*FOMULARIO*/
+main form#login {
     float: right;
     height: 100%;
     width: 40%;
@@ -253,16 +256,16 @@ main form {
     /*gap: 2rem;*/
 
     padding: 0 4rem;
-    background-color: var(--color-neutro-30);
-    background-color: var(--cor6);
+
+    overflow: hidden;
 }
 
-form picture {
+#login picture {
     width: 100%;
     box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.20);
 }
 
-form picture img {
+#login picture img {
     width: 100%;
     height: 100%;
     border-radius: 5px;
@@ -277,104 +280,97 @@ form#login h2 {
     display: none;
 }
 
-form #slogan {
+#login #slogan {
     color: var(--cor5);
-    font-size: 9pt;
-    padding: 0 1.3rem;
-    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 10pt;
+    padding: 1rem 0;
     letter-spacing: 1.2px;
 }
 
-form .box.dados.email {
-    margin-bottom: 1.2rem;
-}
-
-form .box {
+.formulario {
     width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1pc;
 }
 
-form .box.dados {
-    height: 2.5rem;
-
+.formulario .box {
+    display: flex;
+    flex-direction: column;
 }
 
-.box #email,
-#senha {
+.formulario .input-form {
+    border: 1px solid #1F54BF;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    background-color: var(--color-neutro-30);
+}
+
+.input-form input {
+    padding: 10px;
     width: 100%;
-    height: 100%;
     border: none;
     outline: none;
-    border-radius: 5px;
-    border: 2px solid var(--cor1);
-    padding: 1rem 1.3rem;
-    font-size: 12pt;
-    font-weight: 400;
-    letter-spacing: 2px;
-
-    transition: all .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background: transparent;
 }
 
-.box #email:hover {
-    box-shadow: 2px 8px 10px rgba(0, 0, 0, 0.20);
+.input-form input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #f5f5f5 inset !important;
 }
 
-.box #senha:hover {
-    box-shadow: 2px 8px 10px rgba(0, 0, 0, 0.20);
+.input-form i {
+    font-size: 1.2rem;
+    padding: 5px;
 }
 
-form .box.dados.senha {
-    margin-bottom: .3rem;
-}
-
-form .box.dados2 {
+.formulario .outros {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 0 1rem;
-}
-
-.box.dados2 span {
-    display: flex;
     align-items: center;
-    gap: 3px;
 }
 
-.box.dados2 span label {
-    color: var(--cor5);
-    font-size: 10pt;
-    cursor: pointer;
+.error {
+    font-size: 12px;
+    color: #dc2626;
+    max-width: 200px;
 }
 
-.box.dados2 span a {
-    color: var(--color-neutro-20);
-    font-size: 10pt;
-
-    transition: color .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+.outros:first-child {
+    display: flex;
 }
 
-.box.dados2 span a:hover {
+.outros span input {
+    accent-color: #74C0FC;
+}
+
+.outros span label {
     color: var(--color-neutro-30);
-    text-decoration: underline;
+    font-size: .8rem;
 }
 
-form .box.btns {
-    margin: 1.5rem 0;
+.outros span a {
+    color: var(--color-neutro-20);
+    font-size: .8rem;
+}
+
+#login .box.btns {
+    margin: 1rem 0;
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 1rem;
-}
-
-.box.btns a {
-    width: 100%;
+    gap: .5rem;
 }
 
 .box.btns button {
     width: 100%;
-    padding: .3rem 0;
-    font-weight: bold;
-    font-size: 1.3rem;
+    padding: .3rem .2rem;
+    font-weight: 500;
+    font-size: 1.2rem;
     letter-spacing: 1px;
+    text-transform: uppercase;
     border: none;
     outline: none;
     cursor: alias;
@@ -383,72 +379,134 @@ form .box.btns {
     background-color: var(--cor1);
 
 
-    transition: scale .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all .3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .box.btns button:hover {
-    scale: 1.05;
     opacity: 0.9;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.20);
 }
 
-.box.btns button:active {
-    scale: 1;
-}
-
 .box.btns p {
     color: var(--color-neutro-20);
+    font-size: .8rem;
+}
+
+.box.btns p a {
+    font-size: .8rem;
+    color: var(--color-neutro-30);
+    text-decoration: underline;
+    transition: color .3s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.box.btns p a:hover {
+    color: #4c73c0f6;
 }
 
 /*CRIAR CONTA*/
-
-form#contaNova {
-    /*display: ;*/
-}
-
-form#contaNova h2 {
-    color: var(--cor1);
-    margin-bottom: 1.2rem;
-}
-
-#contaNova .box.dados {
-    margin-bottom: .5rem;
-
-    height: 50px;
-    width: 13em;
-
-    cursor: pointer;
-    transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-#contaNova .box.dados:hover {
-    opacity: 0.7;
-}
-
-#contaNova .box.dados:active {
-    scale: .9;
-}
-
-.box.dados a.midia {
-    width: 100%;
-    height: 100%;
-    background-color: var(--color-neutro-30);
-    color: var(--cor2);
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 1.5em;
-    padding: 0rem 1.5rem;
-    border-radius: 5px;
-
+.conta {
+    background-attachment: fixed;
+    
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1em;
+    padding: 2rem;
+    gap: 5rem;
 }
 
-a.midia img {
-    height: 100%;
-    padding: 5px;
+#logo{
+    position: relative;
+    text-align: center;
+    color: var(--cor1);
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+#logo i{
+    color: var(--color-neutro-30);
+    font-size: 12pt;
+}
+
+#logo::after{
+    content: '';
+    position: absolute;
+    height: 5px;
+}
+
+.informacao {
+    padding: 1.5rem;
+    width: fit-content;
+    color: var(--color-neutro-30);
+    display: flex;
+    
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+form#contaNova {
+    padding: 1.5rem;
+    border-radius: 10px;
+    background-color: var(--color-neutro-30);
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    box-shadow: 0 0 10px rgba(44, 44, 44, 0.377);
+}
+
+form#contaNova h1 {
+    color: var(--cor1);
+}
+
+.input-box {
+    border: 1px solid var(--cor8);
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: .5rem;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.input-box i {
+    font-size: 1.2rem;
+    color: var(--cor1);
+    padding: .5rem;
+}
+
+.box.botoes button {
+    color: var(--color-neutro-30);
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: .5rem;
+    width: 100%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: linear-gradient(to right, var(--cor3), var(--cor1), var(--cor3));
+}
+
+#contaNova #temConta{
+    margin-top: 2rem;
+    color: var(--cor8);
+    text-align: center;
+}
+
+#temConta a{
+    color: var(--cor1);
+    font-weight: 500;
 }
 
 
@@ -634,8 +692,8 @@ footer {
     display: flex;
     justify-content: center;
     background-color: var(--color-neutro-0);
-    font-size: .9rem;
-    padding: 1.2rem;
+    font-size: .7rem;
+    padding: .5rem;
     font-weight: 100;
     border-top: 1px solid #8eff0d42;
 }
