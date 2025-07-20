@@ -10,8 +10,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>ByteShop - Login</title>
     <link rel="shortcut icon" href="src/image/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="src/CSS/estilo0.css" />
-    <link rel="stylesheet" href="src/CSS/mideas.css">
+    <link rel="stylesheet" href="../CSS/estilo0.css" />
+    <link rel="stylesheet" href="../CSS/mideas.css">
+    <link rel="stylesheet" href="../CSS/forms.css">
 </head>
 
 <body>
@@ -91,32 +92,26 @@
                 </ul>
             </div>
         </header> -->
-    <main>
-        <section id="image-destaque">
-            <!--
-                    imagem Add a partir das CSS
-                -->
-        </section>
-        <form action method="post" id="login">
-            <picture>
-                <img src="src/image/ByteShop2-pq.jpg" alt>
-            </picture>
-            <h2>ByteShop</h2>
-            <p id="slogan">Sua loja de informática confiável! Aqui você
-                encontra tecnologia de ponta com qualidade e segurança.</p>
+    <main class="login">
+        <section id="img-destaque">
 
-            <section class="formulario">
+        </section>
+
+        <section class="formulario">
+            <form action method="post" id="login">
+                <h1>Bem-Vindo de Volta</h1>
+                <p>Acesse sua conta e contitue onde parou.</p>
                 <div class="box">
                     <div class="input-form">
                         <input type="email" id="email" placeholder="ex.:muhongo@gmail.com" autocomplete="off">
-                        <i class="fa-regular fa-user" style="color: #74C0FC;"></i>
+                        <i class="fa-regular fa-user"></i>
                     </div>
                     <span class="error" id="errorEmail"></span>
                 </div>
                 <div class="box">
                     <div class="input-form">
                         <input type="password" id="senha" placeholder="******">
-                        <i class="fa-solid fa-key" style="color: #74C0FC;"></i>
+                        <i class="fa-solid fa-key"></i>
                     </div>
                     <span class="error" id="errorSenha"></span>
                 </div>
@@ -129,12 +124,12 @@
                         <a href="#">esqueci-me</a>
                     </span>
                 </div>
-            </section>
-            <div class="box btns">
-                <button type="submit">Entrar</button>
-                <p>Não tem uma conta? <a href="src/Pages/conta.html">Criar uma conta</a></p>
-            </div>
-        </form>
+                <div class="btns">
+                    <button type="submit">Entrar</button>
+                </div>
+                <p class="naoTemConta">Não tem uma conta? <a href="conta.html">Criar uma conta</a></p>
+            </form>
+        </section>
 
     </main>
 
@@ -203,7 +198,7 @@
             &copy; 2025 - ByteShop | EpiCoder - todos os direitos resrvados.
         </div>
     </footer>
-    <script src="src/JS/script.js"></script>
+    <script src="../JS/script.js"></script>
 </body>
 
 </html>

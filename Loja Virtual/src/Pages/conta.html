@@ -12,18 +12,19 @@
     <link rel="shortcut icon" href="../image/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../CSS/estilo0.css" />
     <link rel="stylesheet" href="../CSS/mideas.css">
+    <link rel="stylesheet" href="../CSS/forms.css">
 </head>
 
 <body>
     <main class="conta">
         <section class="informacao">
-            <h1>Welcome To</h1>
-            <h2 id="logo">ByteShop </h2>
+            <h1>Bem-Vindo à</h1>
+            <h2 id="logo">ByteShop <i class="fa-solid fa-toggle-on"></i></h2>
             <p id="slogan">Sua loja de informática confiável! <br> Aqui você
                 encontra tecnologia <br> de ponta com qualidade e segurança.</p>
         </section>
 
-        <form action method="post" id="contaNova" autocomplete="off">
+        <form action method="post" id="contaNova" onsubmit="Validar(event)" autocomplete="off">
             <h1>Sign In</h1>
             <p>Realize seu cadastro e adquira seus produtos.</p>
             <div class="box">
@@ -31,27 +32,27 @@
                     <input type="text" name="nome" id="nome" placeholder="seu nome">
                     <i class="fa-regular fa-user"></i>
                 </div>
-                <span class="error"></span>
+                <span class="error" id="errorNome"></span>
             </div>
             <div class="box">
                 <div class="input-box">
                     <input type="email" name="email" id="email" placeholder="muhongo@gmai.com">
                     <i class="fa-regular fa-envelope"></i>
                 </div>
-                <span class="error"></span>
+                <span class="error" id="errorEmail"></span>
             </div>
             <div class="box">
                 <div class="input-box">
                     <input type="password" name="senha" id="senha" placeholder="*****">
                     <i class="fa-regular fa-eye-slash"></i>
                 </div>
-                <span class="error"></span>
+                <span class="error" id="errorSenha"></span>
             </div>
-            <div class="box botoes">
+            <div class="botao">
                 <button type="submit">Sing In</button>
             </div>
             <p id="temConta">Já tem uma com?
-                <a href="#">log in</a>
+                <a href="login.html">log in</a>
             </p>
         </form>
 
@@ -59,10 +60,10 @@
 
     <footer>
         <div id="footer_copyright">
-            &#169 2025 todos os direitos resrvados | EpiCoder.
+            &copy; 2025 - ByteShop | EpiCoder - todos os direitos resrvados.
         </div>
     </footer>
-    <script src="src/JS/script.js"></script>
+    <script src="../JS/script.js"></script>
 </body>
 
 </html>

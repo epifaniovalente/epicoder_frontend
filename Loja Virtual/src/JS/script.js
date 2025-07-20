@@ -5,6 +5,29 @@ function Verificar(variavel) {
     return true
 }
 
+function ValidarEmail(variavel) {
+    return variavel.includes('@') &&
+        variavel.indexOf('.') > variavel.indexOf('@') + 1 && variavel.length > 12;
+}
+function ValidarSenha(variavel) {
+    if (variavel.length < 12) return false;
+    if (!/[A-Z]/.test(variavel)) return false;
+    if (!/[a-z]/.test(variavel)) return false;
+    if (!/[0-9]/.test(variavel)) return false;
+    if (!/[\W_]/.test(variavel)) return false;
+
+    return true;
+}
+
+function ValidarNome(variavel) {
+    if (variavel.length < 12) return false;
+    if (!/[A-Z]/.test(variavel)) return false;
+    if (!/[a-z]/.test(variavel)) return false;
+    if (!/[0-9]/.test(variavel)) return false;
+
+    return true;
+}
+
 const formulario = document.getElementById('login');
 
 formulario.addEventListener('submit', function (evento) {
@@ -27,22 +50,40 @@ formulario.addEventListener('submit', function (evento) {
     } else {
         errorSenha.textContent = ''
     }
-
-    /*
-    function ValidarEmail(variavel) {
-        return variavel.includes('@') && 
-        variavel.indexOf('.') > variavel.indexOf('@') + 1 && variavel.length > 12;
-    }
-    function ValidarSenha(variavel) {
-        if (variavel.length < 0) return false;
-        if (!/[A-Z]/.test(variavel)) return false;
-        if (!/[a-z]/.test(variavel)) return false;
-        if (!/[0-9]/.test(variavel)) return false;
-        if (!/[\W_]/.test(variavel)) return false;
-        return true;
-    }
-    */
 })
+
+function Validar(event) {
+    event.preventDefault();
+    /*Variaveis de inputs */    
+    const name = document.getElementById('nome').value;
+    const email = document.getElementById('email').value;
+    const senha = document.getElementById('senha').value;
+
+    /*variaveis de sms de erro */
+    let errorName = document.getElementById('errorNome');
+    let errorEmail = document.getElementById('errorEmail');
+    let errorSenha = document.getElementById('errorSenha');
+
+    if (!ValidarNome(name)) {
+        errorName.textContent = 'Erro!'
+    }else{
+        errorName.textContent = '';
+    }
+
+    if (!ValidarEmail(email)) {
+        errorEmail.textContent = 'Erro! Por favor verifique seu email.'
+    } else {
+        errorEmail.textContent = '';
+    }
+
+    if (!ValidarSenha(senha)) {
+        errorSenha.textContent = 'Não permitida! Escreva em senha forte.'
+    } else {
+        errorSenha.textContent = '';
+    }
+
+}
+
 
 /*FIM VALIDAÇÃO */
 
