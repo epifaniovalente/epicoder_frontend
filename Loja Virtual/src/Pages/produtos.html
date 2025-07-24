@@ -1,315 +1,152 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>ByteShop - Produtos</title>
-        <link rel="shortcut icon" href="../image/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="../CSS/estilo0.css">
-        <link rel="stylesheet" href="../CSS/estilo1.CSS">
-        <link rel="stylesheet" href="../CSS/mideas.css">
-    </head>
-    <body>
-        <header>
-            <nav id="nav_links">
-                <a href="inicio.html" id="logo">
-                    <img src="../image/ByteShop2-pq.jpg" />
-                <!--<a href="/Loja Virtual/indexLoja.html">EpiCoder</a>-->
-                </a>
-                <ul class="links">
-                    <li><img src="../image/home_3_line.png" alt><a
-                            href="inicio.html">Início</a></li>
-                    <!-- <li>
-                        <img src="../image/produtos.png" alt /><a
-                            href="../Pages/produtos.html">Produtos</a>
-                    </li>-->
-                    <li>
-                        <img src="../image/Categoria.png" alt /><select
-                            id="cat">
-                            <option selected>Categorias</option>
-                            <option><a href>Tecnologia</a></option>
-                            <option><a href>Saúde</a></option>
-                            <option><a href>Educação</a></option>
-                            <option><a href>Entretenimento</a></option>
-                        </select>
-                    </li>
-                    <li>
-                        <img src="../image/Carrinho.png" alt /><a
-                            href="#">Carrinho</a>
-                    </li>
-                    <li>
-                        <img src="../image/card_pay.png" alt /><a
-                            href="#">Minha Conta</a>
-                    </li>
-                    <li><img src alt /><a href="#">Sobre</a></li>
-                </ul>
-                <a href="#" id="contact"><img src="../image/phone_add.png"
-                        alt /><span>Contacto</span></a>
 
-                <div class="menu">
-                    <img src="../image/menu_fill.png" alt />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>ByteShop - Produtos</title>
+    <link rel="shortcut icon" href="../image/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/estilo1.CSS">
+    <link rel="stylesheet" href="../CSS/estilo0.css">
+    <link rel="stylesheet" href="../CSS/mideas.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" id="logo">ByteShop</a>
+        <nav id="nav_links">
+            <ul class="itens-links">
+                <li>
+                    <a href="#" id="login">Log In</a>
+                </li>
+                <li>
+                    <a href="#" id="singin">Sing In</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="procurar-item">
+            <input type="search" name="pesquisa" id="pesquisa">
+            <label for="pesquisa"><i class="fa-solid fa-magnifying-glass"></i></label>
+        </div>
+        <a href="#" id="contact">WhatsApp</a>
+        <div id="btn-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+    <div class="container">
+        <aside class="menu-lateral">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/index.html" class="link ativo"><i class="fas fa-home"></i>Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="link "><i class="fas fa-boxes"></i>Produtos</a>
+                    </li>
+                    <li>
+                        <a href="#" class="link "><i class="fas fa-shopping-cart"></i>Carrinho</a>
+                    </li>
+                    <li>
+
+                        <a href="#" class="link "><i class="fas fa-receipt"></i>Pedidos</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="link "><i class="fas fa-cog"></i> Configurações</a>
+                    </li>
+
+                </ul>
+                <div id="conta">
+                    <div class="perfil">
+                        <img src="/src/image/avatarUser.png" class="perfil-avatar" alt="perfil">
+                    </div>
+                    <div class="user-infor">
+                        <span id="user-name">Fulano de Tall</span>
+                        <a href="#">minha conta</a>
+                    </div>
+                    <a href="#"><i class="fas fa-sign-out-alt"></i></a>
                 </div>
             </nav>
-            <article id="sms">
-                Produto adicionado ao carrinho✅
-            </article>
-            <div class="menu_dropdown">
-                <ul class="links">
-                    <li>
-                        <a href="inicio.html">Início</a>
-                    </li>
-                    <li>
-                        <a href="../Pages/produtos.html">Produtos</a>
-                    </li>
-                    <li>
-                        <select id="cat">
-                            <option selected>Categorias</option>
-                            <option>Tecnologia</option>
-                            <option>Saúde</option>
-                            <option>Educação</option>
-                            <option>Entretenimento</option>
-                        </select>
-                    </li>
-                    <li>
-                        <a href="#">Sobre</a>
-                    </li>
-                    <li>
-                        <a href="#">Carrinho</a>
-                    </li>
-                    <li>
-                        <a href="#">Minha Conta</a>
-                    </li>
-                    <li>
-                        <a href="#" id="contact">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-        </header>
-        <div id="navega">
-            <span class="filho2">
-                adicionandos <img src="../image/Carrinho.png" alt>
-                <span id="nitem"></span>
-            </span>
-
-            <span class="resultado">
-                Nº de Itens:
-                <span id="itens"></span>
-            </span>
-
-            <span class="filho1">
-                <input type="text" placeholder="Pesquisar produtos..."
-                    id="pesquisa">
-                <button type="button"><img src="../image/procurar.png" alt=""></button>
-            </span>
-        </div>
-        <section id="produtos">
-            <div class="container">
+        </aside>
+        <main class="conteudo-principal">
+            <section id="produtos">
                 <h2>Produtos</h2>
-                <p class="descricao">Na ByteShop, você encontra uma seleção completa de produtos tecnológicos para todas as necessidades. Contamos com componentes de alto desempenho, como processadores, placas-mãe, memórias RAM e SSDs, além de periféricos essenciais, como teclados, mouses e monitores de alta resolução.
-                     <br>
-                     Para quem busca mobilidade e potência, temos notebooks e desktops de última geração. E para os gamers e profissionais de design, oferecemos placas de vídeo avançadas e acessórios que garantem máxima performance. Tudo isso com a qualidade e segurança que você merece!
+                <p>Na ByteShop, você encontra uma seleção completa de produtos tecnológicos para
+                    todas as
+                    necessidades. Contamos com componentes de alto desempenho, como processadores, placas-mãe,
+                    memórias RAM
+                    e SSDs, além de periféricos essenciais, como teclados, mouses e monitores de alta resolução.
                 </p>
-                <div class="produtos-lista">
+                <div class="lista-produtos">
+                    <div class="item-produto">
+                        <img src="../image/back_!.jpg" alt="Produto 1">
+                        <h3 class="nome-item">Nome do Produto</h3>
+                        <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur.</p>
+                        <p class="preco">AKZ 00.000,00</p>
+                        <button class="adicionar" id="btn_add" onclick="notificar()">Adicionar ao
+                            Carrinho</button>
+                    </div>
+                    <div class="item-produto">
+                        <img src="../image/produtos/ram.jpg" alt="Produto 2">
+                        <h3 class="nome-item">Nome do Produto</h3>
+                        <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur.</p>
+                        <p class="preco">AKZ 00.000,00</p>
+                        <button class="adicionar" id="btn_add" onclick="notificar()">Adicionar ao
+                            Carrinho</button>
+                    </div>
+                    <div class="item-produto">
+                        <img src="../image/back_!.jpg" alt="Produto 3">
+                        <h3 class="nome-item">Nome do Produto</h3>
+                        <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur.</p>
+                        <p class="preco">AKZ 00.000,00</p>
+                        <button class="adicionar" id="btn_add" onclick="notificar()">Adicionar ao
+                            Carrinho</button>
+                    </div>
+                    <div class="item-produto">
+                        <img src="../image/back_!.jpg" alt="Produto 1">
+                        <h3 class="nome-item">Nome do Produto</h3>
+                        <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur.</p>
+                        <p class="preco">AKZ 00.000,00</p>
+                        <button class="adicionar" id="btn_add" onclick="notificar()">Adicionar ao
+                            Carrinho</button>
+                    </div>
+                    <div class="item-produto">
+                        <img src="../image/back_!.jpg" alt="Produto 1">
+                        <h3 class="nome-item">Nome do Produto</h3>
+                        <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur.</p>
+                        <p class="preco">AKZ 00.000,00</p>
+                        <button class="adicionar" id="btn_add" onclick="notificar()">Adicionar ao
+                            Carrinho</button>
+                    </div>
+            </section>
+        </main>
+    </div>
 
-                    <div class="produto">
-                        <img src="../image/produtos/alicate.jpg"
-                            alt="Produto 1">
-                        <h3>Alicate</h3>
-                        <p class="descricao">Descrição do Produto 1. Produto de
-                            alta qualidade e muito útil.</p>
-                        <p class="preco">AKZ 00.000,00</p>
-                        <button class="adicionar" id="btn_add"
-                            onclick="notificar()">Adicionar ao
-                            Carrinho</button>
-                    </div>
-
-                    <div class="produto">
-                        <img src="../image/produtos/biometrico.jpg"
-                            alt="Produto 2">
-                        <h3>Biométrico</h3>
-                        <p class="descricao">Descrição do Produto 2. Ideal para
-                            quem busca durabilidade e estilo.</p>
-                        <p class="preco">AKZ 00.000,00</p>
-                        <button class="adicionar" id="btn_add2"
-                            onclick="notificar()">Adicionar ao
-                            Carrinho</button>
-                    </div>
-
-                    <div class="produto">
-                        <img src="../image/produtos/camera.jpg"
-                            alt="Produto 3">
-                        <h3>Camâra de Vigilância</h3>
-                        <p class="descricao">Descrição do Produto 3. Conforto e
-                            performance em um único produto.</p>
-                        <p class="preco">AKZ 00.000,00</p>
-                        <button class="adicionar" id="btn_add3"
-                            onclick="notificar()">Adicionar ao
-                            Carrinho</button>
-                    </div>
-
-                    <div class="produto">
-                        <img src="../image/produtos/conector.webp"
-                            alt="Produto 1">
-                        <h3>Conector RJ-45</h3>
-                        <p class="descricao">Descrição do Produto 1. Produto de
-                            alta qualidade e muito útil.</p>
-                        <p class="preco">AKZ 00.000,00</p>
-                        <button class="adicionar" id="btn_add4"
-                            onclick="notificar()">Adicionar ao
-                            Carrinho</button>
-                    </div>
-
-                    <div class="produto">
-                        <img src="../image/produtos/hdhost.webp"
-                            alt="Produto 2">
-                        <h3>Disco Rigido</h3>
-                        <p class="descricao">Descrição do Produto 2. Ideal para
-                            quem busca durabilidade e estilo.</p>
-                        <p class="preco">AKZ 00.000,00</p>
-                        <button class="adicionar" id="btn_add5"
-                            onclick="notificar()">Adicionar ao
-                            Carrinho</button>
-                    </div>
-
-                    <div class="produto">
-                        <img src="../image/produtos/memoria.png"
-                            alt="Produto 3">
-                        <h3>Memória RAM</h3>
-                        <p class="descricao">Descrição do Produto 3. Conforto e
-                            performance em um único produto.</p>
-                        <p class="preco">AKZ 00.000,00</p>
-                        <button class="adicionar" id="btn_add6"
-                            onclick="notificar()">Adicionar ao
-                            Carrinho</button>
-                    </div>
-                    <div class="produto">
-                        <img src="../image/produtos/iphone.png" alt>
-                        <h3>Smartphone</h3>
-                        <p>Descrição do Produto 1. Conforto e
-                            performance em um único produto.</p>
-                        <p class="preco">AKZ 00.000,00</p>
-                        <button class="adicionar" id="btn_add7"
-                            onclick="notificar()">Adicionar ao
-                            Carrinho</button>
-                    </div>
-                    <div class="produto">
-                        <img src="../image/produtos/pc.jpg" alt>
-                        <h3>Host</h3>
-                        <p>Descrição do Produto 2. Conforto e
-                            performance em um único produto.</p>
-                        <p class="preco">AKZ 000.00,00</p>
-                        <button class="adicionar" id="btn_add8"
-                            onclick="notificar()">Adicionar ao
-                            Carrinho</button>
-                    </div>
-                    <div class="produto">
-                        <img src="../image/produtos/pcportatil.jpg" alt>
-                        <h3>Computador</h3>
-                        <p>Descrição do Produto 3. Conforto e
-                            performance em um único produto.</p>
-                        <p class="preco">AKZ 00.000,00</p>
-                        <button class="adicionar" id="btn_add9"
-                            onclick="notificar()">Adicionar ao
-                            Carrinho</button>
-                    </div>
-                    <div class="produto">
-                        <img src="../image/produtos/pcportatil.jpg" alt>
-                        <h3>Computador</h3>
-                        <p>Descrição do Produto 3. Conforto e
-                            performance em um único produto.</p>
-                        <p class="preco">AKZ 00.000,00</p>
-                        <button class="adicionar" id="btn_add10"
-                            onclick="notificar()">Adicionar ao
-                            Carrinho</button>
-                    </div>
-                    <div class="produto">
-                        <img src="../image/produtos/pcportatil.jpg" alt>
-                        <h3>Computador</h3>
-                        <p>Descrição do Produto 3. Conforto e
-                            performance em um único produto.</p>
-                        <p class="preco">AKZ 00.000,00</p>
-                        <button class="adicionar" id="btn_add11"
-                            onclick="notificar()">Adicionar ao
-                            Carrinho</button>
-                    </div>
-                    <div class="produto">
-                        <img src="../image/produtos/pcportatil.jpg" alt>
-                        <h3>Computador</h3>
-                        <p>Descrição do Produto 3. Conforto e
-                            performance em um único produto.</p>
-                        <p class="preco">AKZ 00.000,00</p>
-                        <button class="adicionar" id="btn_add12"
-                            onclick="notificar()">Adicionar ao
-                            Carrinho</button>
-                    </div>
-                </div>
+    <footer>
+        <div id="footer_content">
+            <p>EpiCoder.<span>Transformando ideias em código</span></p>
+            <div id="footer_social_media">
+                <a href="#" id="insta"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" id="facebook"><i class="fa-brands fa-facebook"></i> </a>
+                <a href="#" id="whats"><i class="fa-brands fa-whatsapp"></i></a>
             </div>
-        </section>
-
-        <footer>
-            <div id="footer_content">
-                <div id="footer_contacts">
-                    <a href="inicio.html" id="logo">
-                        <img src="../image/ByteShop2-pq.jpg" />
-                    <!--<a href="/Loja Virtual/indexLoja.html">EpiCoder</a>-->
-                    </a>
-                    <p>Estudantes e Técnicos de TI.
-                        <span>Transformando ideias em código</span> </p>
-                    <div id="footer_social_media">
-                        <a href="#" id="insta"><img
-                                src="../image/insta_icon2.png" alt></a>
-                        <a href="#" id="facebook"> <img
-                                src="../image/facebook_icon2.png" alt></a>
-                        <a href="#" id="whats"><img
-                                src="../image/whatsapp_icon2.png" alt></a>
-                        <a href="#" id="github"><img
-                                src="../image/github_icon2.png" alt></a>
-                    </div>
-                </div>
-                <ul class="footer_list">
-                    <li>Blog</li>
-                    <li>
-                        <a href="#">Área Técnica</a>
-                    </li>
-                    <li>
-                        <a href="#">Adventures</a>
-                    </li>
-                    <li>
-                        <a href="#">Canais</a>
-                    </li>
+            <div class="categoria">
+                <h3>produtos</h3>
+                <ul>
+                    <li>Hardware</li>
+                    <li>Software</li>
                 </ul>
-                <ul class="footer_list">
-                    <li>Produtos</li>
-                    <li>
-                        <a href="#">Tecnologia</a>
-                    </li>
-                    <li>
-                        <a href="#">Saúde</a>
-                    </li>
-                    <li>
-                        <a href="#">Educação</a>
-                    </li>
-                    <li>
-                        <a href="#">Entretenimento</a>
-                    </li>
-                </ul>
-                <div id="footer_subscreve">
-                    <h3>Subscrever-se</h3>
-                    <p>Envia seu e-mail para obter informações sobre novas
-                        soluções</p>
-                    <div id="input_group">
-                        <input type="email" id="email">
-                        <button>
-                            <img src="../image/email_icon.png" alt>
-                        </button>
-                    </div>
-                </div>
             </div>
-            <div id="footer_copyright">
-                &#169 2025 todos os direitos resrvados | EpiCoder.
-            </div>
-        </footer>
-        <script src="../JS/script.js"></script>
-    </body>
+        </div>
+        <div id="footer_copyright">
+            &#169 2025 todos os direitos resrvados | EpiCoder.
+        </div>
+    </footer>
+    <script src="../JS/script.js"></script>
+</body>
+
 </html>
