@@ -9,7 +9,7 @@
     font-family: "IBM Plex Serif", serif;
 }
 
-    /*ESTILIZAÇÃO APENAS DO HEADER & FOOTER - GERAL*/
+/*ESTILIZAÇÃO APENAS DO HEADER & FOOTER - GERAL*/
 
 :root {
     --cor1: #1F54BF;
@@ -60,13 +60,13 @@ header {
     justify-content: space-between;
 }
 
-#logo{
+#logo {
     font-size: 1.5rem;
     color: var(--cor1);
     font-weight: 500;
 }
 
-.itens-links{
+.itens-links {
     display: flex;
     align-items: center;
 }
@@ -86,25 +86,37 @@ header #sms {
     z-index: 1000;
 }
 
-#nav_links{
+#nav_links {
     display: flex;
     align-items: center;
 }
 
-.itens-links{
+.itens-links {
     display: flex;
     align-items: center;
     gap: 15px;
 }
 
-.itens-links li a{
+.itens-links li:first-child {
     border-radius: 5px;
-    padding: .1rem;
+    padding: .1rem .3rem;
+    border: 1px solid var(--cor4);
+}
+
+.itens-links li:last-child {
+    border-radius: 5px;
+    background-color: #719ED9;
+    padding: .1rem .3rem;
+}
+
+.itens-links li:last-child a {
+    color: var(--cor3);
+}
+
+.itens-links li a {
     color: var(--cor4);
     text-decoration: underline;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
 }
 
 #contact {
@@ -120,7 +132,7 @@ header #sms {
     font-size: .9rem;
     font-weight: bold;
     cursor: pointer;
-
+    display: none;
     transition: scale .2 ease;
     animation: pulse 1.5s infinite;
 }
@@ -147,57 +159,9 @@ header #sms {
 #btn-menu {
     font-size: 1.5rem;
     cursor: pointer;
-    display: none;
-}
-
-/*Menu Drop*/
-
-.menu_dropdown {
-    display: none;
-
-    position: absolute;
-    right: 2rem;
-    top: 60px;
-    width: 320px;
-    height: 0;
-    background-color: var(--cor6);
-    backdrop-filter: blur(30px);
-    border-radius: 10px;
-    overflow: hidden;
-
-    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.menu_dropdown.abrir {
-    height: 320px;
-}
-
-.menu_dropdown li {
-    padding: .5rem 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: .5rem;
-
-}
-
-.menu_dropdown #contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: .5rem;
-    color: var(--cor6);
-    font-weight: bold;
-    font-size: 1.2rem;
-    background-color: #8FFF0D;
-    border-radius: 20px;
-    padding: .5rem .8rem;
-    width: 100%;
-}
-
-.menu_dropdown li a:hover {
-    color: #8FFF0D;
-    cursor: pointer;
+    display: block;
+    color: var(--color-neutro-30);
+    background: none;
 }
 
 /* Conteudo Principal*/
@@ -207,11 +171,18 @@ header #sms {
 }
 
 .menu-lateral {
-    height: 100dvh;
-    width: 230px;
     position: fixed;
+    height: 100dvh;
+    width: 40px;
+    overflow: hidden;
     background-color: #042c50;
     padding-top: 80px;
+
+    transition: .3s ease;
+}
+
+.menu-lateral.open {
+    width: 230px;
 }
 
 .menu-lateral nav {
@@ -234,12 +205,13 @@ header #sms {
     display: flex;
     align-items: center;
     gap: 20px;
-    font-size: 1.1rem;
+    font-size: 1em;
+    text-wrap: nowrap;
 
     transition: background .3s;
 }
 
-.menu-lateral nav ul li>.link:hover{
+.menu-lateral nav ul li>.link:hover {
     background: #151515ad;
 }
 
@@ -273,31 +245,41 @@ header #sms {
 nav #conta .user-infor #user-name {
     color: var(--cor5);
     font-size: 12pt;
+    text-wrap: nowrap;
 }
 
-.user-infor a{
+.user-infor a {
     color: var(--cor7);
     font-size: 9pt;
     text-decoration: underline;
 }
 
-.conteudo-principal{
+.conteudo-principal {
+    max-width: 992px;
+    margin: auto;
     margin-top: 60px;
-    margin-left: 230px;
 }
 
 /* FOOTER */
 
 footer {
-    margin-left: 230px;
     background: var(--color-neutro-0);
+    color: var(--cor7);
+    font-size: .8rem;
 }
 
 #footer_content {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 
+#footer_content p {
+    padding: .5rem;
+}
+
+#footer_content p a {
+    text-decoration: underline;
+}
 
 #footer_social_media {
     display: flex;
@@ -306,25 +288,31 @@ footer {
 }
 
 #footer_social_media a {
+    color: var(--cor4);
     font-size: 1.2rem;
+    transition: .3s ease;
 }
 
 #footer_social_media a:hover {
-    
+    color: var(--cor1);
 }
 
-#insta img {
-    
+#insta img {}
+
+#facebook img {}
+
+#whats img {}
+
+.categoria h3 {
+    color: var(--cor8);
 }
 
-#facebook img {
-
+.categoria ul {
+    list-style-position: inside;
+    display: flex;
+    flex-direction: column;
+    padding: .5rem .5rem;
 }
-
-#whats img {
-
-}
-
 
 #footer_copyright {
     display: flex;

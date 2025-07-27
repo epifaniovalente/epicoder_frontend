@@ -81,12 +81,12 @@ header #sms {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 15px;
     margin: 2rem;
 }
 
 .item-produto {
-    flex: 0 1 320px;
+    flex: 0 1 280px;
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -105,9 +105,9 @@ header #sms {
 }
 
 .item-produto .nome-item {
-    font-size: 1.2em;
+    font-size: 1em;
     margin-bottom: 5px;
-    color: var(--cor6);
+    color: var(--cor3);
 }
 
 .descricao {
@@ -116,10 +116,21 @@ header #sms {
 }
 
 .item-produto .preco {
-    font-size: 1.2em;
+    font-size: .9em;
     font-weight: bold;
     color: var(--cor3);
     margin-bottom: 10px;
+}
+
+.item-produto .preco-antigo{
+    font-size: .8em;
+    font-weight: 500;
+    color: crimson;
+    opacity: .9;
+    text-decoration: line-through;
+}
+.avaliacao{
+    color: #ffcb0c;
 }
 
 .item-produto .adicionar {

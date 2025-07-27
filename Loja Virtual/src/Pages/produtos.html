@@ -21,10 +21,10 @@
         <nav id="nav_links">
             <ul class="itens-links">
                 <li>
-                    <a href="#" id="login">Log In</a>
+                    <a href="login.html" id="login">Log In</a>
                 </li>
                 <li>
-                    <a href="#" id="singin">Sing In</a>
+                    <a href="conta.html" id="singin">Sing In</a>
                 </li>
             </ul>
         </nav>
@@ -38,7 +38,7 @@
         </div>
     </header>
     <div class="container">
-        <aside class="menu-lateral">
+        <aside class="menu-lateral" id="menu">
             <nav>
                 <ul>
                     <li>
@@ -56,7 +56,7 @@
                     </li>
 
                     <li>
-                        <a href="#" class="link "><i class="fas fa-cog"></i> Configurações</a>
+                        <a href="#" class="link"><i class="fas fa-user"></i>Minha conta</a>
                     </li>
 
                 </ul>
@@ -66,7 +66,7 @@
                     </div>
                     <div class="user-infor">
                         <span id="user-name">Fulano de Tall</span>
-                        <a href="#">minha conta</a>
+                        <a href="#">Configurações</a>
                     </div>
                     <a href="#"><i class="fas fa-sign-out-alt"></i></a>
                 </div>
@@ -85,40 +85,45 @@
                     <div class="item-produto">
                         <img src="../image/back_!.jpg" alt="Produto 1">
                         <h3 class="nome-item">Nome do Produto</h3>
-                        <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur.</p>
-                        <p class="preco">AKZ 00.000,00</p>
+                        <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="preco">00.000,00 Kz <sub class="preco-antigo">00.000,00</sub></p>
+                        <div class="avaliacao">★★★★★</div>
                         <button class="adicionar" id="btn_add" onclick="notificar()">Adicionar ao
                             Carrinho</button>
                     </div>
                     <div class="item-produto">
                         <img src="../image/produtos/ram.jpg" alt="Produto 2">
                         <h3 class="nome-item">Nome do Produto</h3>
-                        <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur.</p>
-                        <p class="preco">AKZ 00.000,00</p>
+                        <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="preco">00.000,00 Kz <sub class="preco-antigo">00.000,00</sub></p>
+                        <div class="avaliacao">★★★★★</div>
                         <button class="adicionar" id="btn_add" onclick="notificar()">Adicionar ao
                             Carrinho</button>
                     </div>
                     <div class="item-produto">
                         <img src="../image/back_!.jpg" alt="Produto 3">
                         <h3 class="nome-item">Nome do Produto</h3>
-                        <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur.</p>
-                        <p class="preco">AKZ 00.000,00</p>
+                        <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="preco">00.000,00 Kz <sub class="preco-antigo">00.000,00</sub></p>
+                        <div class="avaliacao">★★★★★</div>
                         <button class="adicionar" id="btn_add" onclick="notificar()">Adicionar ao
                             Carrinho</button>
                     </div>
                     <div class="item-produto">
                         <img src="../image/back_!.jpg" alt="Produto 1">
                         <h3 class="nome-item">Nome do Produto</h3>
-                        <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur.</p>
-                        <p class="preco">AKZ 00.000,00</p>
+                        <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="preco">00.000,00 Kz <sub class="preco-antigo">00.000,00</sub></p>
+                        <div class="avaliacao">★★★★★</div>
                         <button class="adicionar" id="btn_add" onclick="notificar()">Adicionar ao
                             Carrinho</button>
                     </div>
                     <div class="item-produto">
                         <img src="../image/back_!.jpg" alt="Produto 1">
                         <h3 class="nome-item">Nome do Produto</h3>
-                        <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur.</p>
-                        <p class="preco">AKZ 00.000,00</p>
+                        <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="preco">00.000,00 Kz <sub class="preco-antigo">00.000,00</sub></p>
+                        <div class="avaliacao">★★★★★</div>
                         <button class="adicionar" id="btn_add" onclick="notificar()">Adicionar ao
                             Carrinho</button>
                     </div>
@@ -126,16 +131,16 @@
         </main>
     </div>
 
-    <footer>
+    <footer style="margin-left: 40px;">
         <div id="footer_content">
-            <p>EpiCoder.<span>Transformando ideias em código</span></p>
+            <p><a href="">EpiCoder</a>. Transformando ideias em código</p>
             <div id="footer_social_media">
                 <a href="#" id="insta"><i class="fa-brands fa-instagram"></i></a>
                 <a href="#" id="facebook"><i class="fa-brands fa-facebook"></i> </a>
                 <a href="#" id="whats"><i class="fa-brands fa-whatsapp"></i></a>
             </div>
             <div class="categoria">
-                <h3>produtos</h3>
+                <h3>Categorias</h3>
                 <ul>
                     <li>Hardware</li>
                     <li>Software</li>
@@ -146,7 +151,7 @@
             &#169 2025 todos os direitos resrvados | EpiCoder.
         </div>
     </footer>
-    <script src="../JS/script.js"></script>
+    <script src="../JS/script.js" defer></script>
 </body>
 
 </html>

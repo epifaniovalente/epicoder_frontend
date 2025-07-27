@@ -87,14 +87,10 @@ function Validar(event) {
 
 /*FIM VALIDAÇÃO */
 
-
-const menuBtn = document.querySelector('.menu');
-const menuDrop = document.querySelector('.menu_dropdown');
-
-menuBtn.onclick = function () {
-    menuDrop.classList.toggle('abrir');
-    const mostrar = menuDrop.classList.contains('abrir')
-}
+const menuBtn = document.getElementById('btn-menu').addEventListener('click', function () {
+    const aside = document.getElementById('menu');
+    aside.classList.toggle('open');
+});
 
 //Numero de Itens
 function itens() {
