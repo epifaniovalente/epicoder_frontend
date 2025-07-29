@@ -12,46 +12,39 @@
 <body>
     <header>
         <nav>
-            <div class="logo">
-                <span class="logo-icon">E.F</span>
-                <span class="logo-text">Portifólio</span>
-            </div>
+            <h1 class="logo-text">
+                Portifólio
+            </h1>
             <ul class="menu-link">
                 <div class="logo-name">
-                    Epifânio Fernando
+                    Epifânio EpiCoder
                 </div>
                 <li class="link">
-                    <a href="#" target="_self" class="ativo">
+                    <a href="#home" target="_self" class="ativo">
                         <i class="bi bi-house"></i>
                         <span class="">Home</span>
                     </a>
                 </li>
                 <li class="link">
-                    <a href="#" target="_self">
+                    <a href="#sobre" target="_self">
                         <i class="bi bi-person"></i>
                         <span class="">Sobre Mim</span>
                     </a>
                 </li>
                 <li class="link">
-                    <a href="#" target="_self">
+                    <a href="#projectos" target="_self">
                         <i class="bi bi-code-slash"></i>
                         <span class="">Projectos</span>
                     </a>
                 </li>
                 <li class="link">
-                    <a href="#" target="_self">
+                    <a href="#habilidades" target="_self">
                         <i class="bi bi-laptop"></i>
                         <span class="">Habilidades</span>
 
                     </a>
                 </li>
-                <li>
-                    <select name="secoes" id="" onchange="window.location.href=this.value">
-                        <option value="" disabled selected class="selecionada">Seções Extra</option>
-                        <option value="">Blog</option><!--epicoder/pages/blog.html-->
-                        <option value="Certificados">Certificados</option>
-                    </select>
-                </li>
+
             </ul>
             <button type="button" class="menu-btn" id="botao">
                 <i class="bi bi-list-ul"></i>
@@ -59,43 +52,124 @@
         </nav>
     </header>
     <main class="main-content">
-        <div class="conteudo">
-            <div class="epicoder">
+        <div class="container">
+            <div class="conteudo" id="home">
+                <h1 class="destaque">Olá! &#x1F44B; Eu sou <span class="nome">EpiCoder</span></h1>
+                <h3>Estudante de Informática | Programador | Técnico de Redes</h3>
+                <p>Apaixonando por tecnologia, estou sempre em busca de aprender e
+                    criar soluções que geram impacto.
+                    <br> Tenho eperiênçia com desenvolvimento web, banco de dados e
+                    redes de computadores, e estou constantemente evoluindo minhas
+                    habilidades.
+                </p>
+                <p>
+                    Explore meus projectos, conheça minhas habilidades ou entra em
+                    contacto para colaborarmos.
+                </p>
+                <div class="infor">
+                    <div class="item1">
+                        <span>1+</span>
+                        <span>anos</span>
+                    </div>
+                    <div class="item2">
+                        <span>4+</span>
+                        <span>Projectos</span>
+                    </div>
+                    <div class="item3">
+                        <span>100%</span>
+                        <span>Dedicação</span>
+                    </div>
+                </div>
             </div>
+            <div class="perfil">
+                <img src="epicoder/image/perfil.png" alt="perfil">
+            </div>
+        </div>
+        <section id="sobre">
+            <h2 class="destaque">Sobre o Epicoder</h2>
+            <p>Estudante de Informática no nível médio apaixonado por tecnologia e desenvolvimento web, gosto de transformar ideias em códigos e estou sempre buscando aprender novas ferramentas e linguagens para me tornar um desenvolvedor completo.</p>
+            <p style="align-self: flex-end;">
+                Criei o EpiCoder nas redes socias como forma de representar minha identidade na área de TI. Meu objectivo é crescer na area, desenvolver soluções criativas e contribuir para projetos que impactem positivamente as pessoas.
+            </p>
+        </section>
+        <section id="projectos">
+            <h2 class="destaque">Projectos</h2>
+            <div class="projectos-container">
+                <div class="projeto">
+                    <h3>ByteShop</h3>
+                    <p>Site de E-commerce ficticío para venda de produtos informáticos.</p>
+                    <a href="#" target="_blank">Ver Projecto</a>
+                </div>
+                <div class="projeto">
+                    <h3>Plataforma de Denuncia Escolar</h3>
+                    <p>Sistema de denúncias anônimas voltado para instituições escolares.</p>
+                    <a href="#" target="_blank">Ver Projecto</a>
+                </div>
+                <div class="projeto">
+                    <h3>Sistema para Oficina Mecânica</h3>
+                    <p>Plataforma web desenvolvida, com funcionalidades de <strong>marcação de serviços</strong> e <strong>gestão de atendimentos</strong> permitem que os clientes agendem revisões, consertos e outros serviços online.</p>
+                    <a href="#" target="_blank">Ver Projecto</a>
+                </div>
+            </div>
+        </section>
+        <section id="habilidades">
+            <h2 class="destaque">Habilidades</h2>
 
-            <h1>Olá! &#x1F44B; Eu sou <span class="nome" style="color:#1e90ff;">Epifânio Fernando</span></h1>
-            <h3>Estudante de Informática | Programador | Técnico de Redes</h3>
-            <p>Apaixonando por tecnologia, estou sempre em busca de aprender e
-                criar soluções que geram impacto.
-                <br> Tenho eperiênçia com desenvolvimento web, banco de dados e
-                redes de computadores, e estou constantemente evoluindo minhas
-                habilidades.
-            </p>
-            <p>
-                Explore meus projectos, conheça minhas habilidades ou entra em
-                contacto para colaborarmos.
-            </p>
-            <div class="infor">
-                <div class="item1">
-                    <span>1+</span>
-                    <span>anos</span>
+            <div class="skills-container">
+
+                <div class="skill">
+                    <h3>💻 Front-end</h3>
+                    <ul class="skill-itens">
+                        <li class="skill-item">
+                            HTML
+                        </li>
+                        <li class="skill-item">
+                            CSS
+                        </li>
+                        <li class="skill-item">
+                            JavaScript
+                        </li>
+                        <li class="skill-item">
+                            React (Aprendendo...)
+                        </li>
+                        <li class="skill-item">
+                            Bootstrap
+                        </li>
+                    </ul>
                 </div>
-                <div class="item2">
-                    <span>4+</span>
-                    <span>Projectos</span>
+                <div class="skill">
+                    <h3>🗃️ Back-end</h3>
+                    <ul class="skill-itens">
+                        <li class="skill-item">
+                            PHP
+                        </li>
+                        <li class="skill-item">
+                            Laravel (Aprendendo...)
+                        </li>
+                        <li class="skill-item">
+                            MySQL
+                        </li>
+                    </ul>
                 </div>
-                <div class="item3">
-                    <span>100%</span>
-                    <span>Dedicação</span>
+                <div class="skill">
+                    <h3>🌐 Redes e Infraestruturas</h3>
+                    <ul class="skill-itens">
+                        <li class="skill-item">Configuração de Redes Locais</li>
+                        <li class="skill-item">Sub-redes e máscaras de rede</li>
+                    </ul>
+                </div>
+                <div class="skill">
+                    <h3>🛠️ Outras competencias</h3>
+                    <ul class="skill-itens">
+                        <li class="skill-item">Versionamento com Git e GitHub</li>
+                        <li class="skill-item">Organizção e trabalho em equipe</li>
+                    </ul>
                 </div>
             </div>
-        </div>
-        <div class="perfil">
-            <img src="epicoder/image/perfil.png" alt="perfil">
-        </div>
+        </section>
     </main>
     <footer>
-        <p>Epifnaio fernando - <span>epicoder</span> | portifolio 2025*</p>
+        <p>&copy; Epifnaio - <span>epicoder</span> | meu portifolio 2025*</p>
     </footer>
 
     <script src="epicoder/JS/script.js" defer></script>
