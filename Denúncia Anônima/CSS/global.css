@@ -1,0 +1,277 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Inconsolata:wght@200..900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ancizar Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+:root {
+ /*PALETA 1*/
+  --cor1: #1A33A2;
+  --cor2: #F4A95B;
+  --cor3: #FFFFFF;
+  --cor4: #000000;
+
+  /*PALETE 2*/
+  --cor5: #202C5C;
+  /*cabeçalho e rodapé*/
+  --cor6: #C97B3C;
+  /*Botões, links em destaque*/
+  --cor7: #FBE4C0;
+  /*Fundo da pagina, caixas*/
+  --cor8: #42388E;
+  /*Titulo, bordar, textos secundário*/
+}
+
+/*ESTILO GLOBALA*/
+body {
+  height: 100dvh;
+  background-color: var(--cor3);
+  color: #242323;
+  line-height: 1.6;
+}
+
+header {
+  width: 100%;
+  background-color: var(--cor5);
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cabecalho{
+  width: 100%;
+  max-width: 1280px;
+  
+  color: white;
+  text-align: center;
+
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#logo {
+  color: var(--cor6);
+  border-radius: 5px;
+  transition: all .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  cursor: pointer;
+}
+
+#logo:hover {
+opacity: .8;
+}
+header .site{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0;
+  color: #FBE4C0;
+}
+
+
+nav {
+  background-color: var(--cor3);
+  top: 0;
+  left: 0;
+  position: sticky;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#links{
+  padding: .2rem;
+}
+
+#links_drop{
+  background-color: var(--cor3);
+  /*width: 100%;*/
+  position: absolute;
+  top: 35px;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+  border-radius: 5px 0 0 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 0;
+  height: 50vh;
+  list-style: none;
+  
+  transition: width .5s ease;
+}
+
+#links_drop li{
+  padding-left: 1rem;
+  text-wrap: nowrap;
+}
+
+nav ul#links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  letter-spacing: 1px;
+  transition: display .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#links_drop.abrir{
+  width: 100%;
+}
+
+nav a {
+  color: var(--cor5);
+  text-decoration: none;
+  font-weight: bold;
+  transition: all .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: var(--cor4);
+}
+
+#colegio{
+  display: none;
+}
+
+nav > #menu-btn{
+  background: transparent;
+  color: var(--cor5);
+  font-weight: 600;
+  font-size: 2rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: none;
+}
+
+/*----------------------*/
+
+/*ESTILO DA PRIMEIRA PAGINA - INDEX*/
+
+.hero {
+  background-color: #fff;
+  background: url('../midias/backclosed-woman.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 3rem 1rem;
+  text-align: center;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.conteudo-hero h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--cor5);
+}
+
+.hero p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.content {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.content h3 {
+  font-size: 1.5rem;
+  color: var(--cor5);
+  margin-bottom: 1rem;
+}
+
+.content p {
+  color: var(--cor8);
+  margin-bottom: 1rem;
+}
+
+.content ul {
+  width: fit-content;
+  list-style-position: inside;
+  list-style: circle;
+  margin-left: 1.5rem;
+}
+
+.content ul li {
+  color: var(--cor8);
+}
+
+.denunciar-btn {
+  display: inline-block;
+  background-color: var(--cor8);
+  color: white;
+  padding: 0.5rem 1.1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 1rem;
+  letter-spacing: 1px;
+
+  transition: all .3s ease-in-out;
+}
+
+.denunciar-btn:hover{
+  background-color: #5c51acef;
+}
+
+.voltar-button:hover {
+  background-color: #005566;
+}
+
+footer {
+  background-color: var(--cor4);
+  border-top: 1px solid #747070;
+  color: white;
+  text-align: center;
+  padding: .5rem 2%;
+
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.conteudo-footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+
+}
+.conteudo-footer a{
+  text-decoration: underline;
+  color: #94a0cf;
+  font-size: .8rem;
+}
+
+.conteudo-footer a:hover{
+  text-decoration: underline;
+}
+
+footer p {
+  color: #74707096;
+  font-size: .8rem;
+  flex: auto;
+}

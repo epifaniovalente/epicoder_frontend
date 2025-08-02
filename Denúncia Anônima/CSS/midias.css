@@ -1,36 +1,15 @@
-@media (max-width: 600px) {
-    nav #menu_drop {
-        display: block;
-    }
-    header h1 {
-        font-size: 1.5rem;
-    }
-
-    .hero h2 {
-        font-size: 1.4rem;
-    }
-
-    .content h3 {
-        font-size: 1.2rem;
-    }
-}
-
 @media (max-width: 520px) {
-    nav #menu_drop {
+    nav > #menu-btn {
         display: block;
     }
     .cabeca h1 {
         display: none;
     }
-
-    header {
-        flex-direction: column;
-    }
 }
 
 
 @media (max-width: 600px) {
-    nav #menu_drop {
+    nav > #menu-btn {
         display: block;
     }
     .confirmation-container {
@@ -56,14 +35,19 @@
 }
 
 @media (max-width: 750px) {
-    nav ul#links {
+    nav > ul#links {
         display: none;
     }
-    nav{
 
+    nav{
+        justify-content: space-between;
+        padding: 0 1rem;
     }
 
-    nav #menu_drop {
+    nav > #menu-btn {
+        display: block;
+    }
+    #colegio{
         display: block;
     }
 }

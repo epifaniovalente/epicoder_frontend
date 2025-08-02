@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /*PALETA 1*/
+  --cor1: #1a33a2;
+  --cor2: #f4a95b;
+  --cor3: #ffffff;
+  --cor4: #000000;
+
+  /*PALETE 2*/
+  --cor5: #202c5c;
+  /*cabeçalho e rodapé*/
+  --cor6: #c97b3c;
+  /*Botões, links em destaque*/
+  --cor7: #fbe4c0;
+  /*Fundo da pagina, caixas*/
+  --cor8: #42388e;
+  /*Titulo, bordar, textos secundário*/
+}
+
+body {
+  background-color: #f4f4f9;
+  line-height: 1.6;
+}
+
+.form-container {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+  font-size: 1.5rem;
+  color: var(--cor5);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.form-group input[type="file"] {
+  padding: 0.3rem;
+}
+
+.form-group select {
+  appearance: none;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><path fill="%23333" d="M6 9L2 5h8z"/></svg>')
+    no-repeat right 0.8rem center/12px;
+}
+
+.form-group .optional {
+  font-style: italic;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.submit-button {
+  display: block;
+  width: 100%;
+  background-color: var(--cor8);
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #005566;
+}
+
+.info-text {
+  font-size: 0.9rem;
+  color: #555;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .form-container {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .form-container h2 {
+    font-size: 1.3rem;
+  }
+}
