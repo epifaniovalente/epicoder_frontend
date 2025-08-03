@@ -3,27 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <title>Listagem de Denúncias - Sistema de Denúncia Anônima Escolar</title>
+    <link rel="stylesheet" href="/CSS/global.css" />
     <link rel="stylesheet" href="/CSS/adm.css" />
-    <!--
-    <link rel="stylesheet" href="/CSS/global.css" />-->
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <style></style>
   </head>
   <body>
-    <!-- <header>
+    <header>
       <div class="cabecalho">
         <div id="logo">
           <h2>Voz Segura</h2>
         </div>
         <div class="site">
-          <h4>Confirmação de Denúncia</h4>
+          <h4>Área Administrativa</h4>
         </div>
       </div>
-    </header> -->
+    </header>
 
-    <main class="container">
-      <section>
+    <main class="principal">
+      <aside>
+        <h1>Dashboard</h1>
+        <nav>
+          <div class="user-admin">
+            <div class="user-perfil"></div>
+            <div class="user-info"></div>
+          </div>
+          <ul>
+            <li><a href="#" target="_self">Recebidos</a></li>
+            <li><a href="#" target="_self">Resolvidas</a></li>
+            <li><a href="#" target="_self">Relatórios</a></li>
+            <li><a href="#" target="_self">Feedback</a></li>
+          </ul>
+        </nav>
+        <button type="button" class="danger">Logout</button>
+      </aside>
+      <section class="container">
         <table class="table table-striped table-bordered border-secondary">
           <thead>
             <tr>
@@ -54,6 +69,16 @@
               <td class="status-em-andamento">Em Andamento</td>
               <td>
                 <button class=" view-button bg-info">Visualizar</button>
+              </td>
+            </tr>
+            <tr>
+              <td>003</td>
+              <td>12/05/2025</td>
+              <td>Vandalismo</td>
+              <td>Danos na biblioteca escolar</td>
+              <td class="status-resolvido">Resolvido</td>
+              <td>
+                <button class="view-button bg-info">Visualizar</button>
               </td>
             </tr>
             <tr>

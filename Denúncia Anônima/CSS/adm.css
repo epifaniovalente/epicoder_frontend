@@ -16,16 +16,7 @@
   /*Titulo, bordar, textos secundário*/
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background-color: var(--cor3);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}
+
 
 .login-container {
   background-color: #fff;
@@ -38,8 +29,7 @@ body {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-h1,
-h2 {
+.h {
   color: var(--cor5);
 }
 
@@ -174,6 +164,32 @@ tr:hover {
   cursor: pointer;
   transition: background 0.3s;
   width: 100%;
+}
+
+
+/*PAINEL DE CONTROLO*/
+
+.principal{
+  display: flex;
+}
+
+aside{
+  height: 100vh;
+  width: 300px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+aside h1{
+  text-align: center;
+}
+
+aside nav{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 @media (max-width: 768px) {
