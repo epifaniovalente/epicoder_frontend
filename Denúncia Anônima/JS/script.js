@@ -42,3 +42,12 @@ login_btn.addEventListener("click", function (event) {
     error_senha.textContent = '';
   }
 });
+
+
+/*SCRIPT PAGINA DENUNCIAR */
+
+const send_btn = document.getElementById('send-btn');
+
+send_btn.addEventListener('click',function (event) {
+  event.preventDefault();
+})

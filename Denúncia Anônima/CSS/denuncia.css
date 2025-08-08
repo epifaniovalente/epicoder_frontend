@@ -1,11 +1,5 @@
 @charset "UTF-8";
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 :root {
   /*PALETA 1*/
   --cor1: #1a33a2;
@@ -24,14 +18,18 @@
   /*Titulo, bordar, textos secundário*/
 }
 
-body {
+/* body {
   background-color: #f4f4f9;
   line-height: 1.6;
+} */
+
+.container{
+  max-width: 700px;
+  margin: 10rem auto;
 }
 
 .form-container {
-  max-width: 700px;
-  margin: 2rem auto;
+  max-width: 100%;
   padding: 2rem;
   background-color: white;
   border-radius: 8px;
@@ -53,7 +51,7 @@ body {
   display: block;
   font-weight: bold;
   margin-bottom: 0.5rem;
-  color: #333;
+  color: var(--cor5);
 }
 
 .form-group input,
@@ -61,9 +59,21 @@ body {
 .form-group textarea {
   width: 100%;
   padding: 0.8rem;
+  outline: none;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 1rem;
+}
+
+.form-group input:focus-within{
+  border: 1px solid var(--cor8);
+}
+.form-group select:focus-within{
+  border: 1px solid var(--cor8);
+}
+
+.form-group textarea:focus-within{
+  border: 1px solid var(--cor8);
 }
 
 .form-group textarea {
@@ -82,7 +92,6 @@ body {
 }
 
 .form-group .optional {
-  font-style: italic;
   color: #666;
   font-size: 0.9rem;
 }
@@ -110,6 +119,13 @@ body {
   color: #555;
   text-align: center;
   margin-bottom: 1.5rem;
+}
+
+/*ELEMENTOS DE ERROS*/
+
+.error{
+  color: red;
+  font-size: .8rem;
 }
 
 @media (max-width: 600px) {

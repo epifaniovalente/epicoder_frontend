@@ -4,10 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Ancizar Serif", serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 :root {
@@ -43,6 +40,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 60px;
+  position: fixed;
+  top: 0;
 }
 .cabecalho{
   width: 100%;
@@ -75,18 +75,43 @@ header .site{
 }
 
 
-nav {
+nav#navbar-desk {
   background-color: var(--cor3);
-  top: 0;
+  top: 60px;
   left: 0;
-  position: sticky;
+  width: 100%;
+  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: .5rem;
 }
 
 #links{
   padding: .2rem;
+}
+nav a {
+  color: var(--cor5);
+  text-decoration: none;
+  font-weight: bold;
+  transition: all .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+
+#links li > .item::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--cor2);
+  transform: scaleX(0);
+  transition: transform .3s;
+}
+
+#links li > .item:hover::after{
+  transform: scaleX(1);
 }
 
 #links_drop{
@@ -124,18 +149,6 @@ nav ul#links {
 
 #links_drop.abrir{
   width: 100%;
-}
-
-nav a {
-  color: var(--cor5);
-  text-decoration: none;
-  font-weight: bold;
-  transition: all .3s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-
-nav a:hover {
-  text-decoration: underline;
-  color: var(--cor4);
 }
 
 #colegio{
