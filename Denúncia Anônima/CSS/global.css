@@ -66,6 +66,10 @@ header {
 #logo:hover {
 opacity: .8;
 }
+#slogan{
+  font-size: .9rem;
+  color: var(--cor7);
+}
 header .site{
   display: flex;
   align-items: center;
@@ -115,7 +119,7 @@ nav a {
 }
 
 #links_drop{
-  background-color: var(--cor3);
+  background-color: var(--cor5);
   /*width: 100%;*/
   position: absolute;
   top: 35px;
@@ -124,6 +128,7 @@ nav a {
   overflow: hidden;
   border-radius: 5px 0 0 5px;
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: space-evenly;
   width: 0;
@@ -134,8 +139,11 @@ nav a {
 }
 
 #links_drop li{
-  padding-left: 1rem;
+  padding-left: .5rem;
   text-wrap: nowrap;
+}
+#links_drop li a{
+  color: var(--cor3);
 }
 
 nav ul#links {
@@ -249,10 +257,19 @@ nav > #menu-btn{
   background-color: #5c51acef;
 }
 
+.denunciar-btn:active{
+  transform: scale(.9);
+}
+
 .voltar-button:hover {
   background-color: #005566;
 }
 
+.voltar-button:active{
+  transform: scale(.9);
+}
+
+/*RODAPE*/
 footer {
   background-color: var(--cor4);
   border-top: 1px solid #747070;

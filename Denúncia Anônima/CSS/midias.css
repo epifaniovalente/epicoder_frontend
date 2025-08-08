@@ -1,17 +1,17 @@
-@media (max-width: 520px) {
-    nav > #menu-btn {
-        display: block;
-    }
-    .cabeca h1 {
+@media (min-width: 752px) {
+
+    nav#navbar-desk > #slogan{
         display: none;
     }
 }
 
 
 @media (max-width: 600px) {
+
     nav > #menu-btn {
         display: block;
     }
+
     .confirmation-container {
         margin: 1rem;
         padding: 1.5rem;
@@ -35,19 +35,28 @@
 }
 
 @media (max-width: 750px) {
-    nav > ul#links {
+    header #slogan{
+        display: none;
+    }
+    nav#navbar-desk > ul#links {
         display: none;
     }
 
-    nav{
-        justify-content: space-between;
-        padding: 0 1rem;
+    nav#navbar-desk > #menu-btn {
+        display: block;
+    }
+    nav#navbar-desk > #colegio{
+        display: block;
     }
 
-    nav > #menu-btn {
+    nav#navbar-desk > #slogan{
         display: block;
+        color: #202C5C;
+        font-size: small;
     }
-    #colegio{
-        display: block;
+
+    nav#navbar-desk{ 
+        padding: 0 1rem;
+        justify-content: space-between;
     }
 }
