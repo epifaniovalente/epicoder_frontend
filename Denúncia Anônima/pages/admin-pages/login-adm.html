@@ -1,38 +1,44 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/CSS/adm.css">
-  <title>Login do Administrador</title>
-  
-</head>
-<body>
-<section class="form-conatiner">
-  
-    <div class="login-container">
-      <h1 class="h">Voz Segura</h1>
-      <h2 class="h">Área Administrativa</h2>
-      <p class="sms-error">
-  
-      </p>
-      <form action="" method="POST">
-        <div class="form-box">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" placeholder="ex.: muhongo@email.com">
-          <span id="error_email"></span>
-        </div>
-  
-        <div class="form-box">
-          <label for="senha">Senha:</label>
-          <input type="password" id="senha" name="senha" placeholder="******">
-          <span id="error_senha"></span>
-        </div>
-  
-        <button type="submit" id="login-btn">Entrar</button>
-      </form>
-    </div>
-</section>
-  <script src="/JS/script.js"></script>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS/adm.css" />
+    <title>Login Administrador</title>
+  </head>
+  <body>
+    <section class="form-conatiner">
+      <div class="login-container">
+        <h1 class="h">Safe Voice</h1>
+        <h3 class="h">Área Administrativa</h3>
+        <p class="sms-error"></p>
+        <form action="" method="post">
+          <div class="form-box">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="ex.: muhongo@email.com"
+            />
+            <span id="error_email"></span>
+          </div>
+
+          <div class="form-box">
+            <label for="senha">Senha:</label>
+            <input
+              type="password"
+              id="senha"
+              name="senha"
+              placeholder="******"
+            />
+            <span id="error_senha"></span>
+          </div>
+
+          <button type="submit" id="login-btn">Entrar</button>
+        </form>
+      </div>
+    </section>
+    <script src="/JS/script.js"></script>
+  </body>
 </html>
