@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+}
+
+#container {
+    width: 100%;
+    background-color: whitesmoke;
+    background-image: url('../midias/sala-de-aula.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1rem;
+}
+
+section{
+    margin: 0 auto;
+    max-width: 992px;
+    height: 100%;
+    padding: 1rem 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    width: 400px;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    border-radius: 10px;
+}
+
+.first-box{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.second-box{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.fourth-box{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.fiveth-box{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-left: .5rem 0;
+}
+
+.form-container.last{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.error{
+    font-size: .9rem;
+    font-weight: 400;
+    color: rgb(247, 27, 27);
+    margin-bottom: .5rem;
+}
+
+.logo{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.logo img{
+    flex: 1;
+}

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Painel de Controlo</title>
+    <link rel="stylesheet" href="/CSS/painel.css" />
+  </head>
+  <body>
+    <aside id="sidebar">
+      <div class="header-aside">
+        <div>
+          <img src="/midias/icones/shield_person.png" alt="" />
+          <a href="#" id="logo">SafeVoice</a>
+        </div>
+        <button type="button" id="aside-btn">
+          <img src="/midias/icones/menu.png" alt="">
+        </button>
+      </div>
+
+      <nav id="navbar">
+        <ul>
+          <li class="nav-item activo">
+            <img src="/midias/icones/dashboard.png" alt="" />
+            <a href="#" target="_self" class="menu_text">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <img src="/midias/icones/activo.png" alt="" />
+            <a href="#" target="_self" class="menu_text">Denuncias activas</a>
+          </li>
+          <li class="nav-item">
+            <img src="/midias/icones/check_circle.png" alt="" />
+            <a href="#" target="_self" class="menu_text"
+              >Denuncias Resolvidas</a
+            >
+          </li>
+          <li class="nav-item">
+            <img src="/midias/icones/tags.png" alt="" />
+            <a href="#" target="_self" class="menu_text">Categorias</a>
+          </li>
+          <li class="nav-item">
+            <img src="/midias/icones/account_circle.png" alt="" />
+            <a href="#" target="_self" class="menu_text">Usuários</a>
+          </li>
+          <li class="nav-item">
+            <img src="/midias/icones/chart_data.png" alt="" />
+            <a href="#" target="_self" class="menu_text">Relatórios</a>
+          </li>
+          <li class="nav-item">
+            <img src="/midias/icones/settings.png" alt="" />
+            <a href="#" target="_self" class="menu_text">Configurações</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="sair">
+        <img src="/midias/icones/logout.png" alt="" />
+        <a href="#" id="goout" class="menu_text">Sair</a>
+      </div>
+    </aside>
+
+    <!------------ fim aside ----------->
+
+    <div id="conteudo-principal">
+      <!--Cabeçalho-->
+      <header>
+        <h2>Dashboard</h2>
+        <div id="user_admin">
+          <div class="perfil-adm">
+            <img src="/midias/user_perfil.jpeg" alt="">
+          </div>
+          <div class="nome-adm">Admin</div>
+        </div>
+      </header>
+      <!--Fim-->
+      <main id="principal_content">
+        <!-- Caixas de Denuncias -->
+        <div id="box-denuncias">
+          <!--Total de denuncias-->
+          <div id="total" class="box-item">
+            <div class="container_box">
+              <div class="item-total">
+                <p class="titulo_box">Total denúncias</p>
+                <p class="qnt_box">124</p>
+              </div>
+              <span id="icone-total" class="icone_box">
+                <img src="/midias/icones/den_activa.png" alt="">
+              </span>
+            </div>
+            <div id="detalhe-total" class="detalhe_box">
+              <p>+24%</p>
+              <p>este mês</p>
+            </div>
+          </div>
+          <!--Fim Total-->
+
+          <!--Denuncias activas-->
+          <div id="ativas" class="box-item">
+            <div class="container_box">
+              <div class="item-ativa">
+                <p class="titulo_box">Den. Ativas</p>
+                <p class="qnt_box">16</p>
+              </div>
+              <span id="icone-ativa" class="icone_box">
+                <img src="/midias/icones/release_alert.png" alt="">
+              </span>
+            </div>
+            <div id="detalhe-ativa" class="detalhe_box">
+              <p>+5%</p>
+              <p>este mês</p>
+            </div>
+          </div>
+          <!--Fim Activas-->
+
+          <!--Denuncias Resolvidas-->
+          <div id="resolvidas" class="box-item">
+            <div class="container_box">
+              <div class="item-resolvida">
+                <p class="titulo_box">Den. Resolvidas</p>
+                <p class="qnt_box">38</p>
+              </div>
+              <span id="icone-resolvida" class="icone_box"><img src="/midias/icones/check_circle_r.png" alt=""></span>
+            </div>
+            <div id="detalhe-resolvida" class="detalhe_box">
+              <p>+9% </p>
+              <p>este mês</p>
+            </div>
+          </div>
+          
+        </div>
+        <!--Fim Caixas de Denuncias-->
+
+        <!--Denuncias Recentes-->
+        <section id="recentes">
+          <h3>Denuncias Recentes</h3>
+          <div class="container-recentes">
+            <div class="item-recente">
+              <div class="icone">&circ;</div>
+              <div class="detalhes-recentes">
+                <h4>Relato de Bullying</h4>
+                <p>Contabilidade A</p>
+                <p>
+                  <span>Nova</span>
+                  <span>00/00/0000</span>
+                </p>
+              </div>
+            </div>
+            <div class="item-recente">
+              <div class="icone">&circ;</div>
+              <div class="detalhes-recentes">
+                <h4>Danos à escola</h4>
+                <p>
+                  <span>Urgente</span>
+                  <span>00/00/0000</span>
+                </p>
+              </div>
+            </div>
+            <div class="item-recente">
+              <div class="icone">&circ;</div>
+              <div class="detalhes-recentes">
+                <h4>Agressão verbal</h4>
+                <p>
+                  <span>Resolvida</span>
+                  <span>00/00/0000</span>
+                </p>
+              </div>
+            </div>
+            <div class="item-recente">
+              <div class="icone">&circ;</div>
+              <div class="detalhes-recentes">
+                <h4>Uso de drogas</h4>
+                <p>
+                  <span>Urgente </span>
+                  <span>00/00/0000 </span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <a href="#">Ver todas as denúncias &rightarrow;</a>
+        </section>
+
+        <!-- DISTRIBUIÇÃO POR CATEGORIA -->
+
+        <section id="categoria">
+          <!-- TIPOS DE DENUNCIAS -->
+          <div id="cat_denuncias">
+            <div class="items-den">
+              <div class="item">
+                <span class="icone">&circ;</span>
+                <span class="tipo_dn">Bullying</span>
+              </div>
+              <span class="porcento">78%</span>
+            </div>
+            <div class="items-den">
+              <div class="item">
+                <span class="icone">&circ;</span>
+                <span class="tipo_dn">Vandalismo</span>
+              </div>
+              <span class="porcento">45%</span>
+            </div>
+            <div class="items-den">
+              <div class="item">
+                <span class="icone">&circ;</span>
+                <span class="tipo_dn">Assedio</span>
+              </div>
+              <span class="porcento">17%</span>
+            </div>
+          </div>
+
+          <div id="importantes_info">
+            <h3 class="">Informações importantes</h3>
+            <ul>
+              <li>
+                <span class="icone_info">&circ;</span>
+                <span class="info_content"
+                  >65% das denúncias de bullying ocorrem durante o
+                  intervalo</span
+                >
+              </li>
+              <li>
+                <span class="icone_info">&circ;</span>
+                <span class="info_content"
+                  >Denúncias de vandalismo aumentaram 30% no trimestre</span
+                >
+              </li>
+              <li>
+                <span class="icone_info">&circ;</span>
+                <span class="info_content"
+                  >Tempo média de resolução caiu para 3.2 dias</span
+                >
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script>
+      const btn_aside = document.getElementById("aside-btn");
+      const aside = document.getElementById("sidebar");
+
+      btn_aside.addEventListener("click", function () {
+        aside.classList.toggle("close_menu")
+      });
+    </script>
+  </body>
+</html>

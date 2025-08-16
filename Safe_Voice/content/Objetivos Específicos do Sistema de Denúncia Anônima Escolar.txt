@@ -1,0 +1,11 @@
+# Objetivos Específicos do Sistema de Denúncia Anônima Escolar
+
+1. **Garantir a confidencialidade das denúncias**: Implementar mecanismos que assegurem o anonimato dos denunciantes, protegendo sua identidade para incentivar a participação sem receio de represálias.
+
+2. **Facilitar o acesso ao sistema**: Desenvolver uma plataforma simples, intuitiva e acessível, disponível em formatos digitais e, se necessário, físicos, para que todos os membros da comunidade escolar possam utilizá-la com facilidade.
+
+3. **Agilizar a identificação e resolução de problemas**: Estabelecer procedimentos claros para o recebimento, triagem e encaminhamento das denúncias, garantindo respostas rápidas e eficazes a situações de violência, bullying, discriminação ou irregularidades.
+
+4. **Promover a conscientização da comunidade escolar**: Realizar campanhas educativas sobre a importância do sistema, seus objetivos e como utilizá-lo, incentivando uma cultura de respeito, transparência e responsabilidade.
+
+5. **Monitorar e avaliar o impacto do sistema**: Criar indicadores para acompanhar a eficácia do sistema, como o número de denúncias recebidas, o tempo de resposta e a satisfação da comunidade, ajustando-o conforme necessário para melhorar sua eficiência e alcance.

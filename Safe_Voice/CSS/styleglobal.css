@@ -1,0 +1,295 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-optical-sizing: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body,
+html {
+  height: 100vh;
+  background-color: #ffffff;
+}
+:root {
+  /*PALETA 1*/
+  --cor1: #1a33a2;
+  --cor2: #f4a95b;
+  --cor3: #ffffff;
+  --cor4: #000000;
+
+  /*PALETE 2*/
+  --cor5: #202c5c;
+  /*cabeçalho e rodapé*/
+  --cor6: #c97b3c;
+  /*Botões, links em destaque*/
+  --cor7: #fbe4c0;
+  /*Fundo da pagina, caixas*/
+  --cor8: #42388e;
+  /*Titulo, bordar, textos secundário*/
+}
+
+/*ESTILO GLOBALA*/
+/*CAbeçalho*/
+
+header {
+  width: 100%;
+  background-color: var(--cor3);
+  /*padding: 0 1rem;*/
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  /*height: 60px;*/
+  position: fixed;
+  top: 0;
+}
+
+.cabecalho {
+  width: 100%;
+  background-color: #202c5c;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+#logo {
+  color: var(--cor7);
+  border-radius: 5px;
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+#logo:hover {
+  opacity: 0.8;
+}
+#slogan {
+  font-size: 0.9rem;
+  color: var(--cor2);
+}
+header .site {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0;
+  color: var(--cor3);
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+nav {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+#links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style-type: none;
+}
+
+#links li a {
+  width: 100%;
+  padding: 4px;
+  border-radius: 5px;
+
+  transition: 0.3s ease;
+}
+
+#links li .item-link:hover {
+  color: var(--cor3);
+  background: var(--cor5);
+}
+
+/*Adiciona esta clsse quando clicado*/
+.item .item-link.activo {
+  color: var(--cor3);
+  background: var(--cor5);
+}
+/*---------------*/
+
+#links li a {
+  text-decoration: none;
+  color: var(--cor5);
+  font-weight: 500;
+}
+
+#links li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+
+  background: var(--cor6);
+  transform: scaleX(0);
+  transition: transform 0.3s;
+}
+
+#links li a:hover::after {
+  transform: scaleX(1);
+}
+
+nav #colegio {
+  color: var(--cor6);
+  font-weight: 600;
+}
+#menu-btn {
+  color: var(--cor5);
+  font-weight: 600;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: none;
+  background: transparent;
+  font-weight: 600;
+}
+
+/*Conteudo Principal*/
+
+#container {
+  width: 100%;
+  margin-top: 60px;
+}
+.hero_container {
+  background-color: var(--cor3);
+  height: 100dvh;
+  background-image: url("../midias/backclosed-woman.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.hero_container::before {
+  content: "";
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.conteudo-hero h2 {
+  color: var(--cor8);
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.conteudo-hero p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.denunciar-btn {
+  display: inline-block;
+  background-color: var(--cor8);
+  color: white;
+  padding: 0.5rem 1.1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 1rem;
+  letter-spacing: 1px;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.denunciar-btn:hover {
+  background-color: #5c51acef;
+}
+
+.denunciar-btn:active {
+  transform: scale(0.9);
+}
+
+#sobre {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#sobre h3 {
+  font-size: 1.5rem;
+  color: var(--cor5);
+  margin-bottom: 1rem;
+}
+#sobre p {
+  color: var(--cor4);
+  margin-bottom: 1rem;
+}
+
+#sobre ul {
+  width: fit-content;
+  list-style-position: inside;
+  list-style: none;
+  margin-left: 1.5rem;
+
+}
+
+#sobre ul li {
+  color: var(--cor8);
+  padding: .5rem;
+}
+/*RODAPE*/
+
+footer {
+  background-color: var(--cor4);
+  border-top: 1px solid #747070;
+  color: white;
+  text-align: center;
+  padding: 0.5rem 2%;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.conteudo-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.conteudo-footer a {
+  text-decoration: underline;
+  color: #94a0cf;
+  font-size: 0.8rem;
+}
+
+.conteudo-footer a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  color: #74707096;
+  font-size: 0.8rem;
+  flex: auto;
+}
+
+/*Responividade*/

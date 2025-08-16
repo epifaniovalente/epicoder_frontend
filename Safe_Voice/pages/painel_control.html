@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Listagem de Denúncias - Sistema de Denúncia Anônima Escolar</title>
+    <link rel="stylesheet" href="/CSS/global.css" />
+    <link rel="stylesheet" href="/CSS/adm.css" />
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <style></style>
+  </head>
+  <body>
+    <header>
+      <div class="cabecalho">
+        <div id="logo">
+          <h2>Voz Segura</h2>
+        </div>
+        <div class="site">
+          <h4>Área Administrativa</h4>
+        </div>
+        <button type="button" id="btn-sair" class="">Logout</button>
+      </div>
+    </header>
+
+    <main class="principal">
+      <aside>
+        <h3 class="h3 text-primary text-center bg-info bg-opacity-75">
+          Dashboard
+        </h3>
+        <nav>
+          <div class="user-admin">
+            <div class="user-perfil"></div>
+            <div class="user-info"></div>
+          </div>
+          <div id="links-itens">
+            <a href="#" target="_self" class="">Pagina</a>
+            <a href="#" target="_self" class="">Recebidos</a>
+            <a href="#" target="_self" class="">Resolvidas</a>
+            <a href="#" target="_self" class="">Relatórios</a>
+            <a href="#" target="_self" class="">Feedback</a>
+          </div>
+        </nav>
+      </aside>
+      <section class="conteudo">
+        <div class="container-fluid">
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Data</th>
+                <th>Categoria</th>
+                <th>Descrição</th>
+                <th>Status</th>
+                <th>Ação</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>001</td>
+                <td>14/05/2025</td>
+                <td>Bullying</td>
+                <td>Incidente acontidco na sala 3B durante o intervalo</td>
+                <td id="status-pendente">Pendente</td>
+                <td>
+                  <button class="action-button view-button">Visualizar</button>
+                </td>
+              </tr>
+              <tr>
+                <td>002</td>
+                <td>13/05/2025</td>
+                <td>Assédio</td>
+                <td>Comportamento inadequado no corredor do segundo andar</td>
+                <td id="status-em-andamento">Em Andamento</td>
+                <td>
+                  <button class="action-button view-button">Visualizar</button>
+                </td>
+              </tr>
+              <tr>
+                <td>003</td>
+                <td>12/05/2025</td>
+                <td>Vandalismo</td>
+                <td>Danos no multiuso escolar</td>
+                <td id="status-resolvido">Resolvido</td>
+                <td>
+                  <button class="action-button view-button">Visualizar</button>
+                </td>
+              </tr>
+              <!-- Mais linhas podem ser adicionadas dinamicamente -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

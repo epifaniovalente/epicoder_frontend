@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de Denúncia Anônima</title>
+    <link rel="stylesheet" href="../CSS/denuncia.css" />
+    <link rel="stylesheet" href="../CSS/styleglobal.css" />
+    <link rel="stylesheet" href="../CSS/midias.css" />
+  </head>
+  <body>
+        <header class="">
+      <div class="cabecalho">
+        <div id="logo">
+          <h2 class="h2">Voz Segura</h2>
+        </div>
+        <span id="slogan">Sua voz importa. Sua identidade é protegida</span>
+        <div class="site">
+          <h4 class="h5">Formulário de denúncia</h4>
+        </div>
+      </div>
+      <nav class="">
+        <ul id="links" class="nav-link">
+          <li class="item"><a href="#" class="item-link">Denunciar</a></li>
+          <li class="item"><a href="#" class="item-link">Acompanhar Denúncia</a></li>
+          <li class="item"><a href="#" class="item-link">Testemunhos</a></li>
+          <li class="item"><a href="#" class="item-link">Sobre</a></li>
+        </ul>
+        <a href="#" id="colegio">School</a>
+        <button type="button" id="menu-btn">
+          <img src="../midias/menu_2.png" alt="" />
+        </button>
+        <!-- <ul id="links_drop">
+        <li><a href="pages/formulario.html">Denunciar</a></li>
+        <li><a href="#denunciar">Acompanhar Denúncia</a></li>
+        <li><a href="#denunciar">Testemunhos</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+      </ul> -->
+      </nav>
+    </header>
+
+    <main id="container_dn">
+      <section class="form-container">
+        <h2>Envie sua Denúncia</h2>
+        <p class="info-text">
+          Todas as informações fornecidas são confidenciais e sua identidade
+          será protegida. Preencha os campos abaixo com o máximo de detalhes
+          possível.
+        </p>
+
+        <form action="" method="POST" enctype="multipart/form-data" onsubmit="validator(event)">
+          <div class="form-group">
+            <label for="tipo-denuncia">Tipo de Denúncia *</label>
+            <select id="tipo-denuncia" name="tipo-denuncia">
+              <option value="" disabled selected>Selecione uma opção</option>
+              <option value="bullying">Bullying</option>
+              <option value="violencia">Violência Física ou Verbal</option>
+              <option value="discriminacao">Discriminação</option>
+              <option value="assedio">Assédio</option>
+              <option value="irregularidade">
+                Irregularidade Administrativa
+              </option>
+              <option value="outro">Outro</option>
+            </select>
+            <span id="error-tipo" class="error"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="data-incidente"
+              >Data do Incidente <span class="optional">(Opcional)</span></label
+            >
+            <input type="date" id="data-incidente" name="data-incidente" />
+          </div>
+
+          <div class="form-group">
+            <label for="local-incidente">Local do Incidente *</label>
+            <input
+              type="text"
+              id="local-incidente"
+              name="local-incidente"
+              placeholder="Ex.: Sala de aula, pátio, corredor"
+            />
+            <span id="error-local" class="error"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="envolvidos"
+              >Pessoas Envolvidas
+              <span class="optional">(Opcional)</span></label
+            >
+            <input
+              type="text"
+              id="envolvidos"
+              name="envolvidos"
+              placeholder="Descreva os envolvidos, se souber (ex.: aluno, professor, funcionário)"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="descricao">Descrição do Incidente *</label>
+            <textarea
+              id="descricao"
+              name="descricao"
+              placeholder="Descreva o que aconteceu com o maior número de detalhes possível"
+            ></textarea>
+            <span id="error-desc" class="error"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="evidencias"
+              >Anexar Evidências <span class="optional">(Opcional)</span></label
+            >
+            <input
+              type="file"
+              id="evidencias"
+              name="evidencias"
+              accept="image/*,video/*,application/pdf"
+              multiple
+            />
+            <p class="optional">
+              Você pode anexar fotos, vídeos ou documentos (PDF) que ajudem a
+              esclarecer a denúncia.
+            </p>
+          </div>
+
+          <div class="form-group">
+            <label for="apoio"
+              >Deseja Apoio Psicológico?
+              <span class="optional">(Opcional)</span></label
+            >
+            <select id="apoio" name="apoio">
+              <option value="nao">Não</option>
+              <option value="sim">Sim, desejo orientação anônima</option>
+            </select>
+          </div>
+
+          <button type="submit" class="submit-button" >Enviar Denúncia</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="conteudo-footer">
+        <a href="#">Atualizações</a>
+        <a href="#">Política</a>
+
+        <a href="#">Como Funciona</a>
+        <a href="#">Estudantes</a>
+        <a href="#">O Colégio</a>
+
+        <a href="#">Consultar Denúncia</a>
+      </div>
+      <p>
+        &copy; 2025 Sistema de Denúncia Anônima Escolar. Todos os direitos
+        reservados.
+      </p>
+    </footer>
+    <script src="../JS/scriptCode.js"></script>
+  </body>
+</html>
