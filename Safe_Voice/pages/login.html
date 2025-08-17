@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/forms.css" />
+    <title>Login Safe-Voice</title>
+  </head>
+
+  <body>
+    <main id="container" class="">
+      <section class="">
+        <form action="" method="post" class="" autocomplete="off">
+          <div class="header-form">
+              <h2 id="logo">SafeVoice</h2>
+              <h2 id="titulo">Login</h2>
+          </div>
+
+          <div class="form-container">
+            <label for="email">Email</label>
+            <div class="form-box">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="ex.: kinavuidi@email.com"
+                class=""
+              />
+            </div>
+            <span class="error" id="error_email"></span>
+          </div>
+
+          <div class="form-container">
+            <label for="password">Senha</label>
+            <div class="form-box fourth-box">
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="*********"
+                class=""
+              />
+            </div>
+            <span class="error" id="error_senha"></span>
+          </div>
+
+          <div class="form-container last">
+            <div class="form-box fiveth-box">
+              <label for="notification" class="">lembrar</label>
+              <input
+                type="checkbox"
+                name="notification"
+                id="notification"
+                class=""
+              />
+            </div>
+            <a href="#" class="">esqueci-me</a>
+          </div>
+          <button type="submit" class="" id="entrar_btn">Entrar</button>
+          <p class="">Não tem uma conta? <a href="#">Sing In</a></p>
+        </form>
+      </section>
+    </main>
+    <script>
+      /*LOGICA para validar email */
+      function verificar(variavel) {
+        return variavel.length < 10;
+      }
+
+      /*Variaveis de erro */
+
+      let error_email = document.getElementById("error_email");
+      let error_senha = document.getElementById("error_senha");
+
+      const entrar_user = document.getElementById("entrar_btn");
+
+      entrar_user.addEventListener("click", function (event) {
+        event.preventDefault();
+
+        const email = document.getElementById("email").value;
+        const senha = document.getElementById("password").value;
+
+        let error_email = document.getElementById("error_email");
+        let error_senha = document.getElementById("error_senha");
+
+        if (verificar(email)) {
+          error_email.textContent = "Preencha o campo corretamente!";
+        } else {
+          error_email.textContent = "";
+        }
+
+        if (verificar(senha)) {
+          error_senha.textContent = "Preencha o campo corretamente!";
+        } else {
+          error_senha.textContent = "";
+        }
+      });
+    </script>
+  </body>
+</html>

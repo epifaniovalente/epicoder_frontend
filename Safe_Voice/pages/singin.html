@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../CSS/forms.css" />
+    <title>Cadastro Safe-Voice</title>
+  </head>
+
+  <body>
+    <main id="container" class="container-fluid">
+      <section class="">
+        <form action="" method="post" class="p-2 shadow" autocomplete="off">
+          <div class="header-form">
+            <h1 id="logo">SafeVoice</h1>
+            <h3 id="titulo">Sing In</h3>
+          </div>
+
+          <div class="form-container">
+            <div class="form-box first-box">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="First nanme"
+                class=""
+              />
+              <input
+                type="text"
+                name="surname"
+                id="surname"
+                placeholder="surname"
+                class=""
+              />
+            </div>
+            <span class="error" id="error_name"></span>
+          </div>
+
+          <div class="form-container">
+            <div class="form-box second-box">
+              <input
+                type="text"
+                name="course"
+                id="course"
+                placeholder="course"
+                class=""
+              />
+              <input
+                type="text"
+                name="classroom"
+                id="classroom"
+                placeholder="classroom"
+                class=""
+              />
+            </div>
+            <span class="error" id="error_course"></span>
+          </div>
+
+          <div class="form-container">
+            <div class="form-box">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="your email"
+                class=""
+              />
+            </div>
+            <span class="error" id="error_email"></span>
+          </div>
+
+          <div class="form-container">
+            <div class="form-box fourth-box">
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="your password"
+                class=""
+              />
+              <input
+                type="password"
+                name="password2"
+                id="password2"
+                placeholder="confirm"
+                class=""
+              />
+            </div>
+            <span class="error" id="error_password"></span>
+          </div>
+
+          <div class="form-box fiveth-box c">
+            <label for="notification" class="">notificar</label>
+            <input
+              type="checkbox"
+              name="notification"
+              id="notification"
+            />
+          </div>
+          <button type="submit" class="">
+            Realizar cadastro
+          </button>
+          <p class="text-center">Já tem uma conta? <a href="#">login</a></p>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

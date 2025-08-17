@@ -4,19 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/CSS/adm.css" />
-    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <title>Login do Administrador</title>
   </head>
   <body>
-    <div class="container">
+    <div id="container">
 
       <div class="login-container">
-        <h1 class="h">Voz Segura</h1>
-        <h2 class="h">Área Administrativa</h2>
+        <h1 id="logo">SafeVoice</h1>
+        <h2 id="titulo">Área Administrativa</h2>
         <p class="sms-error"></p>
         <form action="" method="POST" class="form-container">
           <div class="form-box">
-            <label for="email" class="form-label">Email:</label>
+            <label for="email" class="">Email:</label>
             <input
               type="email"
               id="email"
@@ -27,7 +26,7 @@
             <span id="error_email"></span>
           </div>
           <div class="form-box">
-            <label for="senha" class="form-label">Senha:</label>
+            <label for="senha" class="element-error">Senha:</label>
             <input
               type="password"
               id="senha"
@@ -35,9 +34,9 @@
               class="form-control"
               placeholder="******"
             />
-            <span id="error_senha" class="form-text"></span>
+            <span id="error_senha" class="e"></span>
           </div>
-          <button type="submit" id="login-btn" class="btn btn-primary mt-3 w-100 text-w">Entrar</button>
+          <button type="submit" id="login-btn" class="">Entrar</button>
         </form>
       </div>
     </div>

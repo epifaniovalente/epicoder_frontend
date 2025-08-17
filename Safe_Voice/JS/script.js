@@ -18,13 +18,13 @@ login_btn.addEventListener("click", function (event) {
   let error_senha = document.getElementById("error_senha");
 
   if (verificar(email)) {
-    error_email.textContent = "Preencha corretamente!";
+    error_email.textContent = "Preencha o campo corretamente!";
   } else {
     error_email.textContent = "";
   }
 
   if (verificar(senha)) {
-    error_senha.textContent = "Preencha corretamente!";
+    error_senha.textContent = "Preencha o campo corretamente!";
   } else {
     error_senha.textContent = "";
   }

@@ -1,22 +1,41 @@
 *{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  /*PALETA 1*/
+  --cor1: #1a33a2;
+  --cor2: #f4a95b;
+  --cor3: #ffffff;
+  --cor4: #000000;
+
+  /*PALETE 2*/
+  --cor5: #202c5c;
+  /*cabeçalho e rodapé*/
+  --cor6: #c97b3c;
+  /*Botões, links em destaque*/
+  --cor7: #fbe4c0;
+  /*Fundo da pagina, caixas*/
+  --cor8: #42388e;
+  /*Titulo, bordar, textos secundário*/
 }
 
 #container {
-    width: 100%;
+    height: 100vh;
     background-color: whitesmoke;
-    background-image: url('../midias/sala-de-aula.jpg');
+    /* background-image: url('../midias/sala-de-aula.jpg');
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
-    padding: 1rem;
+    background-size: cover; */
+
 }
 
 section{
     margin: 0 auto;
-    max-width: 992px;
     height: 100%;
-    padding: 1rem 0;
 
     display: flex;
     align-items: center;
@@ -29,8 +48,45 @@ form{
 
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    gap: 1rem;
     border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.411) ;
+    padding: 1rem;
+}
+
+.header-form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#logo{
+    color: #3498db;
+    text-align: center;
+}
+#titulo{
+    font-size: 1.2rem;
+    color: var(--cor5);
+    text-align: center;
+}
+
+.form-box input{
+    width: 100%;
+    padding: .5rem;
+    outline: none;
+    border: none;
+    border: 1.5px solid darkgray;
+    border-radius: 5px;
+}
+
+.form-box input:focus-within{
+    border: 1.5px solid rgb(52, 152, 219);
+    box-shadow: 0px 0px 15px rgba(52, 152, 219, 0.411);
+}
+
+.form-container label{
+    color: var(--cor5);
+    font-weight: 600;
 }
 
 .first-box{
@@ -52,13 +108,27 @@ form{
     display: flex;
     align-items: center;
     gap: .5rem;
-    margin-left: .5rem 0;
+    color: rgb(97, 96, 96);
 }
 
 .form-container.last{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.form-container.last label{
+    font-weight: 100;
+}
+
+.fiveth-box.c{
+ display: flex;   
+ width: fit-content;
+}
+
+form a{
+    color: var(--cor1);
+    text-decoration: none;
 }
 
 .error{
@@ -68,14 +138,37 @@ form{
     margin-bottom: .5rem;
 }
 
-.logo{
-    width: 100%;
-    height: 200px;
-    display: flex;
-    justify-content: center;
+button {
+  width: 50%;
+  padding: 0.5rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: auto;
 
+  transition: 0.3s ease;
 }
 
-.logo img{
-    flex: 1;
+button:active {
+  scale: 0.9;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+#entrar_btn {
+  font-weight: 500;
+  font-size: 14pt;
+  transition: .3s ease;
+}
+
+form p{
+    font-size: .9rem;
+    margin-top: .5rem;
+    text-align: center;
+    color: rgb(97, 96, 96);
 }
