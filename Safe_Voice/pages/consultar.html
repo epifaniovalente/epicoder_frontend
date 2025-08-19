@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Confirmação de Denúncia</title>
+    <title>Consultar Status</title>
     <link rel="stylesheet" href="../CSS/styleglobal.css" />
+    <link rel="stylesheet" href="../CSS/midias.css">
     <link rel="stylesheet" href="../CSS/global2.css" />
-    <link rel="stylesheet" href="../CSS/midias.css" />
   </head>
   <body>
- <header class="">
+    <header class="">
       <div class="cabecalho">
         <div id="logo">
           <h2 class="h2">Voz Segura</h2>
@@ -24,38 +24,48 @@
         <ul id="links" class="nav-link">
           <li class="item"><a href="denunciar.html" class="item-link">Denunciar</a></li>
           <li class="item">
-            <a href="consultar.html" class="item-link">Acompanhar denúncia</a>
+            <a href="consultar.html" class="item-link">Acompanhar Denúncia</a>
           </li>
           <li class="item"><a href="testemunhos.html" class="item-link">Testemunhos</a></li>
           <li class="item"><a href="/index.html" class="item-link">Sobre</a></li>
         </ul>
         <a href="#" id="colegio">School</a>
         <button type="button" id="menu-btn">
-          <img src="../midias/menu_2.png" alt="" />
+          <img src="../midias/menu_1.png" alt="menu" />
         </button>
       </nav>
     </header>
-    <main id="container">
-      <section class="confirmation-container">
-        <h2>Denúncia Enviada com Sucesso!</h2>
+    <main class="container">
+      <section class="acompanhar-container">
+        <h2>Consulte e Acompanhe o Satus da sua Denúncia</h2>
         <p>
-          Obrigado por sua colaboração. Sua denúncia foi recebida e será tratada
-          com total confidencialidade e seriedade pela equipe responsável.
+          Nesta seção, tu podes verificar o status da sua denúncia garantindo a
+          sua segurança e anónimato.
         </p>
-        <p>
-          Para acompanhar o andamento da sua denúncia, guarde o código abaixo.
-          Ele é a única forma de verificar o status sem comprometer seu
-          anonimato:
-        </p>
-        <div class="confirmation-code">CÓDIGO: DEN-2025-XXXX-1234</div>
-        <p>
-          Você pode usar este código na seção "Acompanhar Denúncia" em nossa
-          plataforma. Caso tenha solicitado apoio psicológico, você será
-          contatado(a) de forma anônima em breve.
-        </p>
+        <form action="" method="post" autocomplete="off">
+          <div class="form-box">
+            <h3>Código SafeVoice</h3>
+            <span id="slogan">Sua voz importa. Sua identidade é protegida</span>
+          </div>
+          <div class="form-box">
+            <input
+              type="search"
+              name="procurar"
+              id="procurar"
+              placeholder="digite aqui"
+            />
+            <button type="button" id="verificar">verificar</button>
+          </div>
+        </form>
+        <h4>Resultado</h4>
+        <div class="resultado">
+          <p id="information">Pesquise o seu código no campo acima &uparrow;</p>
+        </div>
+
         <a href="/index.html" class="voltar-button">Voltar ao Início</a>
       </section>
     </main>
+
     <footer>
       <div class="conteudo-footer">
         <a href="#">Atualizações</a>

@@ -9,22 +9,25 @@
     <link rel="stylesheet" href="../CSS/midias.css" />
   </head>
   <body>
-        <header class="">
+    <header class="">
       <div class="cabecalho">
         <div id="logo">
           <h2 class="h2">Voz Segura</h2>
         </div>
         <span id="slogan">Sua voz importa. Sua identidade é protegida</span>
-        <div class="site">
-          <h4 class="h5">Formulário de denúncia</h4>
+        <div class="site_forms">
+          <a href="#">Login</a>
+          <a href="#">cadastro</a>
         </div>
       </div>
       <nav class="">
         <ul id="links" class="nav-link">
-          <li class="item"><a href="#" class="item-link">Denunciar</a></li>
-          <li class="item"><a href="#" class="item-link">Acompanhar Denúncia</a></li>
-          <li class="item"><a href="#" class="item-link">Testemunhos</a></li>
-          <li class="item"><a href="#" class="item-link">Sobre</a></li>
+          <li class="item"><a href="/index.html" class="item-link">Início</a></li>
+          <li class="item">
+            <a href="consultar.html" class="item-link">Acompanhar denúncia</a>
+          </li>
+          <li class="item"><a href="testemunhos.html" class="item-link">Testemunhos</a></li>
+          <li class="item"><a href="/index.html/" class="item-link">Sobre</a></li>
         </ul>
         <a href="#" id="colegio">School</a>
         <button type="button" id="menu-btn">
@@ -48,7 +51,12 @@
           possível.
         </p>
 
-        <form action="" method="POST" enctype="multipart/form-data" onsubmit="validator(event)">
+        <form
+          action=""
+          method="POST"
+          enctype="multipart/form-data"
+          onsubmit="validator(event)"
+        >
           <div class="form-group">
             <label for="tipo-denuncia">Tipo de Denúncia *</label>
             <select id="tipo-denuncia" name="tipo-denuncia">
@@ -134,7 +142,7 @@
             </select>
           </div>
 
-          <button type="submit" class="submit-button" >Enviar Denúncia</button>
+          <button type="submit" class="submit-button">Enviar Denúncia</button>
         </form>
       </section>
     </main>

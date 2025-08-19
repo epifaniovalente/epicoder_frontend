@@ -29,7 +29,7 @@ body {
   line-height: 1.6;
 }
 #container_dn{
-  margin-top: 90px;
+  margin: 90px auto;
 }
 .form-container {
   max-width: 700px;
@@ -37,7 +37,6 @@ body {
   padding: 2rem;
   background-color: white;
   border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .form-container h2 {
@@ -104,7 +103,7 @@ body {
 }
 
 .submit-button:hover {
-  background-color: #005566;
+  background-color: var(--cor1);
 }
 
 .info-text {

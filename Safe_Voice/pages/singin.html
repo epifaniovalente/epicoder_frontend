@@ -3,18 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
-    />
     <link rel="stylesheet" href="../CSS/forms.css" />
     <title>Cadastro Safe-Voice</title>
   </head>
 
   <body>
-    <main id="container" class="container-fluid">
+    <main id="container" class="">
       <section class="">
-        <form action="" method="post" class="p-2 shadow" autocomplete="off">
+        <form action="" method="post" class="" autocomplete="off">
           <div class="header-form">
             <h1 id="logo">SafeVoice</h1>
             <h3 id="titulo">Sing In</h3>
@@ -26,14 +22,14 @@
                 type="text"
                 name="name"
                 id="name"
-                placeholder="First nanme"
+                placeholder="First nanme *"
                 class=""
               />
               <input
                 type="text"
                 name="surname"
                 id="surname"
-                placeholder="surname"
+                placeholder="surname (opcional)"
                 class=""
               />
             </div>
@@ -46,18 +42,18 @@
                 type="text"
                 name="course"
                 id="course"
-                placeholder="course"
+                placeholder="course "
                 class=""
               />
               <input
                 type="text"
                 name="classroom"
                 id="classroom"
-                placeholder="classroom"
+                placeholder="classroom *"
                 class=""
               />
             </div>
-            <span class="error" id="error_course"></span>
+            <span class="error" id="error_classe"></span>
           </div>
 
           <div class="form-container">
@@ -66,7 +62,7 @@
                 type="email"
                 name="email"
                 id="email"
-                placeholder="your email"
+                placeholder="your email (opcional)"
                 class=""
               />
             </div>
@@ -79,34 +75,88 @@
                 type="password"
                 name="password"
                 id="password"
-                placeholder="your password"
+                placeholder="your password *"
                 class=""
               />
               <input
                 type="password"
                 name="password2"
                 id="password2"
-                placeholder="confirm"
+                placeholder="confirm *"
                 class=""
               />
             </div>
             <span class="error" id="error_password"></span>
           </div>
-
-          <div class="form-box fiveth-box c">
-            <label for="notification" class="">notificar</label>
-            <input
-              type="checkbox"
-              name="notification"
-              id="notification"
-            />
-          </div>
-          <button type="submit" class="">
+          <button type="submit" class="" id="btn_cadastrar">
             Realizar cadastro
           </button>
           <p class="text-center">Já tem uma conta? <a href="#">login</a></p>
         </form>
       </section>
     </main>
+
+    <!--SCRIPT PARA VALIDAÇãO-->
+    <script>
+      /*LOGICA PARA VALIDAÇÃO*/
+      function verificarSenha(variavel) {
+        if (variavel.length < 12) return false;
+        return true;
+      }
+
+      function verificar(variavel) {
+        if (variavel.length <= 2) return false;
+        return true;
+      }
+
+      /*------- --------- ------- --------*/
+
+      const btn_form = document.getElementById("btn_cadastrar");
+
+      /*Ação do botão*/
+
+      btn_form.addEventListener("click", function (event) {
+        event.preventDefault();
+        /*-------- Variaveis --------*/
+        const user_name = document.getElementById("name").value;
+        const user_classe = document.getElementById("classroom").value;
+        const user_senha = document.getElementById("password").value;
+        const user_confirm = document.getElementById("password2").value;
+        /* --------- -------- -------- ----------- */
+
+        /*Variaveis de erro*/
+        let error_name = document.getElementById("error_name");
+        let error_classe = document.getElementById("error_classe");
+        let error_senha = document.getElementById("error_password");
+
+        /*Validar nome*/
+        if (verificar(user_name) == false) {
+          error_name.textContent = "Preencha o campo, porfavor!";
+        } else {
+          error_name.textContent = "";
+        }
+
+        /*validar* classe*/
+        if (verificar(user_classe) == false) {
+          error_classe.textContent = "Digite sua classe, porfavor!";
+        } else {
+          error_classe.textContent = "";
+        }
+
+        /*validar senha*/
+        if (
+          (verificarSenha(user_senha) & verificarSenha(user_confirm)) == false
+        ) {
+          error_senha.textContent = "Preencha corretamente os dois campos, porfavor!";
+        } else {
+          if (user_senha === user_confirm) {
+            error_senha.textContent = "";
+          } else {
+            error_senha.textContent = "As senhas precisam ser iguais";
+          }
+        }
+      });
+    </script>
   </body>
 </html>
+0
