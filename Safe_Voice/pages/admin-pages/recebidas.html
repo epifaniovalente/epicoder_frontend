@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Den. Recebidas</title>
+    <link rel="stylesheet" href="/CSS/painel.css">
+</head>
+<body>
+    <aside id="sidebar">
+      <div class="header-aside">
+        <div>
+          <img src="/midias/icones/shield_person.png" alt="" />
+          <a href="painel_control.html" id="logo">SafeVoice</a>
+        </div>
+        <button type="button" id="aside-btn">
+          <img src="/midias/icones/menu.png" alt="">
+        </button>
+      </div>
+
+      <nav id="navbar">
+        <ul>
+          <li class="nav-item activo">
+            <img src="/midias/icones/dashboard.png" alt="" />
+            <a href="painel_control.html" target="_self" class="menu_text">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <img src="/midias/icones/activo.png" alt="" />
+            <a href="recebidas.html" target="_self" class="menu_text">Denuncias activas</a>
+          </li>
+          <li class="nav-item">
+            <img src="/midias/icones/check_circle.png" alt="" />
+            <a href="#" target="_self" class="menu_text"
+              >Denuncias Resolvidas</a
+            >
+          </li>
+          <li class="nav-item">
+            <img src="/midias/icones/tags.png" alt="" />
+            <a href="#" target="_self" class="menu_text">Categorias</a>
+          </li>
+          <li class="nav-item">
+            <img src="/midias/icones/account_circle.png" alt="" />
+            <a href="#" target="_self" class="menu_text">Usuários</a>
+          </li>
+          <li class="nav-item">
+            <img src="/midias/icones/chart_data.png" alt="" />
+            <a href="#" target="_self" class="menu_text">Relatórios</a>
+          </li>
+          <li class="nav-item">
+            <img src="/midias/icones/settings.png" alt="" />
+            <a href="#" target="_self" class="menu_text">Configurações</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="sair">
+        <img src="/midias/icones/logout.png" alt="" />
+        <a href="#" id="goout" class="menu_text">Sair</a>
+      </div>
+    </aside>
+    <!-- ------------ FIM ASIDE ---------------- -->
+     <div id="conteudo-principal">
+         <!--Cabeçalho-->
+      <header>
+        <div id="ativas">
+                <h2>
+                    <img src="/midias/icones/warning.png" alt="">
+                    Denúncias Activas
+                </h2>
+            <p id="aviso">Total de 37 denuncias não resolvidas</p>
+        </div>
+        <div id="user_admin">
+          <div class="perfil-adm">
+            <img src="/midias/user_perfil.jpeg" alt="">
+          </div>
+          <div class="nome-adm">Admin</div>
+        </div>
+      </header>
+      <!--Fim-->
+
+      <main id="principal_content">
+        <!-- -------- FILTRO DENUNCIAS -------- -->
+        <div id="filtro_container">
+            <div class="input_filtro">
+              <label for="categoria">Categoria</label>
+              <select name="" id="">
+                  <option value="todas" selected>Todas</option>
+                <option value="bullying">Bullying</option>
+                <option value="vandalismo">Vandalismo</option>
+                <option value="assedio">Assedio</option>
+                <option value="outros">Outros</option>
+            </select>
+            </div>
+            <div class="input_filtro">
+                <label for="status">Status</label>
+                <select name="status" id="status">
+                    <option value="todas">Todas</option>
+                    <option value="Nova" selected>Nova</option>
+                    <option value="análise">Em analise</option>
+                    <option value="urgente">Urgente</option>
+                </select>
+            </div>
+            <div class="input_filtro">
+                <label for="periodo">Periodo</label>
+                <select name="periodo" id="periodo">
+                    <option value="todos">Todos</option>
+                    <option value="7" selected>Ultimos 7 dias</option>
+                    <option value="30">Ultimos 30 dias</option>
+                    <option value="semestre">Semestre</option>
+                </select>
+            </div>
+            <div class="add_filtro">
+                <button type="button">Aplicar Filtro</button>
+            </div>
+        </div>
+
+        <!-- ---------- Tabela de Denuncias ----------- -->
+
+        <div id="tabela_denuncia">
+
+            <div id="tabela_container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Descrição</th>
+                            <th>Categoria</th>
+                            <th>Local</th>
+                            <th>Data</th>
+                            <th>Status</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- -------- Linha 1  -------- -->
+                        <tr>
+                            <td>
+                                <p class="id_dn">11</p>
+                            </td>
+                            <td>
+                                <p class="descricao_dn">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, provident?</p>
+                            </td>
+                            <td>
+                                <p>Bullying</p>
+                            </td>
+                            <td>
+                                <p>Patio</p>
+                            </td>
+                            <td>
+                                <p>23/08/2025</p>
+                            </td>
+                            <td>
+                                <p>Urgente</p>
+                            </td>
+                            <td>
+                                <button type="button">Ver</button>
+                                <button type="button">Resolver</button>
+                            </td>
+                        </tr>
+                        <!-- -------- Linha 2  -------- -->
+                        <tr>
+                            <td>
+                                <p class="id_dn">22</p>
+                            </td>
+                            <td>
+                                <p class="descricao_dn">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, provident?</p>
+                            </td>
+                            <td>
+                                <p>Violência</p>
+                            </td>
+                            <td>
+                                <p>Banheiro</p>
+                            </td>
+                            <td>
+                                <p>23/08/2025</p>
+                            </td>
+                            <td>
+                                <p>Nova</p>
+                            </td>
+                            <td>
+                                <button type="button">Ver</button>
+                                <button type="button">Resolver</button>
+                            </td>
+                        </tr>
+                        <!-- -------- Linha 3  -------- -->
+                        <tr>
+                            <td>
+                                <p class="id_dn">33</p>
+                            </td>
+                            <td>
+                                <p class="descricao_dn">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, provident?</p>
+                            </td>
+                            <td>
+                                <p>Descriminação</p>
+                            </td>
+                            <td>
+                                <p>Multiuso</p>
+                            </td>
+                            <td>
+                                <p>23/08/2025</p>
+                            </td>
+                            <td>
+                                <p>Em Analise</p>
+                            </td>
+                            <td>
+                                <button type="button">Ver</button>
+                                <button type="button">Resolver</button>
+                            </td>
+                        </tr>
+                        <!-- -------- Linha 4 -------- -->
+                        <tr>
+                            <td>
+                                <p class="id_dn">44</p>
+                            </td>
+                            <td>
+                                <p class="descricao_dn">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, provident?</p>
+                            </td>
+                            <td>
+                                <p>Assedio</p>
+                            </td>
+                            <td>
+                                <p>Sala de Aula</p>
+                            </td>
+                            <td>
+                                <p>23/08/2025</p>
+                            </td>
+                            <td>
+                                <p>Nova</p>
+                            </td>
+                            <td>
+                                <button type="button">Ver</button>
+                                <button type="button">Resolver</button>
+                            </td>
+                        </tr>
+                        <!-- -------- Linha 5 -------- -->
+                        <tr>
+                            <td>
+                                <p class="id_dn">55</p>
+                            </td>
+                            <td>
+                                <p class="descricao_dn">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, provident?</p>
+                            </td>
+                            <td>
+                                <p>Irregularidade</p>
+                            </td>
+                            <td>
+                                <p>Refetorio</p>
+                            </td>
+                            <td>
+                                <p>23/08/2025</p>
+                            </td>
+                            <td>
+                                <p>Em Analise</p>
+                            </td>
+                            <td>
+                                <button type="button">Ver</button>
+                                <button type="button">Resolver</button>
+                            </td>
+                        </tr>
+                        <!-- -------- Linha 6 -------- -->
+                        <tr>
+                            <td>
+                                <p class="id_dn">55</p>
+                            </td>
+                            <td>
+                                <p class="descricao_dn">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, provident?</p>
+                            </td>
+                            <td>
+                                <p>Drogas</p>
+                            </td>
+                            <td>
+                                <p>Refetorio</p>
+                            </td>
+                            <td>
+                                <p>23/08/2025</p>
+                            </td>
+                            <td>
+                                <p>Em Analise</p>
+                            </td>
+                            <td>
+                                <button type="button">Ver</button>
+                                <button type="button">Resolver</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+            <!-- --------Paginação -------- -->
+
+        </div>
+      </main>
+     </div>
+</body>
+</html>

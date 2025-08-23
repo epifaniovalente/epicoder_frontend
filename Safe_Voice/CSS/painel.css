@@ -461,3 +461,132 @@ header h2 {
   height: 3rem;
   border-radius: 50%;
 }
+
+
+/*---------- DENUNCIAS RECEBIDAS ---------*/
+
+header #ativas{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+#ativas h2{
+  color: #374151;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+#ativas img{
+  background: #dc2626;
+  border-radius: 50%;
+  padding: 4px;
+}
+
+#ativas p#aviso{
+  color: gray;
+  font-size: 11pt;
+}
+
+#filtro_container{
+  background: var(--cor3);
+  border-radius: 5px;
+  padding: .5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+
+}
+
+.input_filtro{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.input_filtro label{
+  display: block;
+  color: #374151;
+  font-weight: 600;
+  font-size: 11pt;
+}
+
+.input_filtro select{
+  width: 100%;
+  background: #f3f4f6;
+  padding: .5rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  border: 1px solid gray;
+}
+
+.add_filtro{
+  height: 100%;
+  flex: 1;
+  display: flex;
+  align-items: end;
+}
+
+.add_filtro > button{
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: var(--cor3);
+  padding: .5rem;
+  background-color: #2563eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13pt;
+  cursor: pointer;
+}
+
+.add_filtro > button:active{
+
+}
+
+#tabela_container{
+  min-height: calc(100vh - 300px);
+  overflow-x: auto;
+  width: 100%;
+}
+
+#tabela_container table{
+  background: var(--cor3);
+  border-radius: 5px;
+  width: 100%;
+  overflow-x: hidden;
+  border-collapse: collapse;
+}
+
+table thead{
+  background: #f3f4f6;
+}
+
+table thead tr th{
+  padding: .5rem;
+  font-weight: 500;
+  color: gray;
+}
+
+table  tbody tr:nth-child(odd){
+  background-color: #f9fafb;
+}
+
+table tbody tr td{
+  padding: 1rem .5rem;
+  white-space: nowrap;
+  color: gray;
+}
+
+table tbody tr td p.id_dn{
+  font-weight: bold;
+  color: #000000;
+}
