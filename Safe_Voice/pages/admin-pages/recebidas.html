@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Den. Recebidas</title>
+    <title>Den. Activas</title>
     <link rel="stylesheet" href="/CSS/painel.css">
 </head>
 <body>
@@ -30,13 +30,13 @@
           </li>
           <li class="nav-item">
             <img src="/midias/icones/check_circle.png" alt="" />
-            <a href="#" target="_self" class="menu_text"
+            <a href="resolvidas.html" target="_self" class="menu_text"
               >Denuncias Resolvidas</a
             >
           </li>
           <li class="nav-item">
             <img src="/midias/icones/tags.png" alt="" />
-            <a href="#" target="_self" class="menu_text">Categorias</a>
+            <a href="categorias.html" target="_self" class="menu_text">Categorias</a>
           </li>
           <li class="nav-item">
             <img src="/midias/icones/account_circle.png" alt="" />
@@ -96,7 +96,7 @@
                     <option value="todas">Todas</option>
                     <option value="Nova" selected>Nova</option>
                     <option value="análise">Em analise</option>
-                    <option value="urgente">Urgente</option>
+                    <option value="urgente">Resolvida</option>
                 </select>
             </div>
             <div class="input_filtro">
@@ -122,12 +122,12 @@
                     <thead>
                         <tr>
                             <th>ID</th>
-                            <th>Descrição</th>
-                            <th>Categoria</th>
-                            <th>Local</th>
-                            <th>Data</th>
-                            <th>Status</th>
-                            <th>Ações</th>
+                            <th>DESCRIÇÃO</th>
+                            <th>CATEGORIA</th>
+                            <th>LOCAL</th>
+                            <th>DATA</th>
+                            <th>STATUS</th>
+                            <th>AÇÕES</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -136,11 +136,11 @@
                             <td>
                                 <p class="id_dn">11</p>
                             </td>
-                            <td>
-                                <p class="descricao_dn">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, provident?</p>
+                            <td class="descricao_dn">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, provident?
                             </td>
-                            <td>
-                                <p>Bullying</p>
+                            <td >
+                                <p class="urgente">Bullying</p>
                             </td>
                             <td>
                                 <p>Patio</p>
@@ -149,11 +149,11 @@
                                 <p>23/08/2025</p>
                             </td>
                             <td>
-                                <p>Urgente</p>
+                                <p class="nova">Nova</p>
                             </td>
-                            <td>
-                                <button type="button">Ver</button>
-                                <button type="button">Resolver</button>
+                            <td class="botoes">
+                                <button type="button" class="ver">Ver</button>
+                                <button type="button" class="resolver">Resolver</button>
                             </td>
                         </tr>
                         <!-- -------- Linha 2  -------- -->
@@ -161,11 +161,11 @@
                             <td>
                                 <p class="id_dn">22</p>
                             </td>
-                            <td>
-                                <p class="descricao_dn">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, provident?</p>
+                            <td class="descricao_dn">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, provident?</p>
                             </td>
                             <td>
-                                <p>Violência</p>
+                                <p class="comportamento_b">Violência</p>
                             </td>
                             <td>
                                 <p>Banheiro</p>
@@ -174,11 +174,11 @@
                                 <p>23/08/2025</p>
                             </td>
                             <td>
-                                <p>Nova</p>
+                                <p class="nova">Nova</p>
                             </td>
-                            <td>
-                                <button type="button">Ver</button>
-                                <button type="button">Resolver</button>
+                            <td class="botoes">
+                                <button type="button" class="ver">Ver</button>
+                                <button type="button" class="resolver">Resolver</button>
                             </td>
                         </tr>
                         <!-- -------- Linha 3  -------- -->
@@ -186,11 +186,11 @@
                             <td>
                                 <p class="id_dn">33</p>
                             </td>
-                            <td>
-                                <p class="descricao_dn">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, provident?</p>
+                            <td class="descricao_dn">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, provident?</p>
                             </td>
                             <td>
-                                <p>Descriminação</p>
+                                <p class="comportamento">Descriminação</p>
                             </td>
                             <td>
                                 <p>Multiuso</p>
@@ -199,11 +199,11 @@
                                 <p>23/08/2025</p>
                             </td>
                             <td>
-                                <p>Em Analise</p>
+                                <p class="analise">Em Analise</p>
                             </td>
-                            <td>
-                                <button type="button">Ver</button>
-                                <button type="button">Resolver</button>
+                            <td class="botoes">
+                                <button type="button" class="ver">Ver</button>
+                                <button type="button" class="resolver">Resolver</button>
                             </td>
                         </tr>
                         <!-- -------- Linha 4 -------- -->
@@ -211,11 +211,11 @@
                             <td>
                                 <p class="id_dn">44</p>
                             </td>
-                            <td>
-                                <p class="descricao_dn">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, provident?</p>
+                            <td class="descricao_dn">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, provident?</p>
                             </td>
                             <td>
-                                <p>Assedio</p>
+                                <p class="comportamento">Assedio</p>
                             </td>
                             <td>
                                 <p>Sala de Aula</p>
@@ -224,11 +224,11 @@
                                 <p>23/08/2025</p>
                             </td>
                             <td>
-                                <p>Nova</p>
+                                <p class="nova">Nova</p>
                             </td>
-                            <td>
-                                <button type="button">Ver</button>
-                                <button type="button">Resolver</button>
+                            <td class="botoes">
+                                <button type="button" class="ver">Ver</button>
+                                <button type="button" class="resolver">Resolver</button>
                             </td>
                         </tr>
                         <!-- -------- Linha 5 -------- -->
@@ -236,11 +236,11 @@
                             <td>
                                 <p class="id_dn">55</p>
                             </td>
-                            <td>
-                                <p class="descricao_dn">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, provident?</p>
+                            <td class="descricao_dn">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, provident?</p>
                             </td>
                             <td>
-                                <p>Irregularidade</p>
+                                <p class="comportamento">Irregularidade</p>
                             </td>
                             <td>
                                 <p>Refetorio</p>
@@ -249,23 +249,23 @@
                                 <p>23/08/2025</p>
                             </td>
                             <td>
-                                <p>Em Analise</p>
+                                <p class="analise">Em Analise</p>
                             </td>
-                            <td>
-                                <button type="button">Ver</button>
-                                <button type="button">Resolver</button>
+                            <td class="botoes">
+                                <button type="button" class="ver">Ver</button>
+                                <button type="button" class="resolver">Resolver</button>
                             </td>
                         </tr>
                         <!-- -------- Linha 6 -------- -->
                         <tr>
                             <td>
-                                <p class="id_dn">55</p>
+                                <p class="id_dn">66</p>
+                            </td>
+                            <td  class="descricao_dn">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, provident?
                             </td>
                             <td>
-                                <p class="descricao_dn">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, provident?</p>
-                            </td>
-                            <td>
-                                <p>Drogas</p>
+                                <p class="urgente">Drogas</p>
                             </td>
                             <td>
                                 <p>Refetorio</p>
@@ -274,11 +274,36 @@
                                 <p>23/08/2025</p>
                             </td>
                             <td>
-                                <p>Em Analise</p>
+                                <p class="analise">Em Analise</p>
+                            </td>
+                            <td class="botoes">
+                                <button type="button" class="ver">Ver</button>
+                                <button type="button" class="resolver">Resolver</button>
+                            </td>
+                        </tr>
+                        <!-- -------- Linha 7 -------- -->
+                        <tr>
+                            <td>
+                                <p class="id_dn">77</p>
+                            </td>
+                            <td  class="descricao_dn">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, provident?
                             </td>
                             <td>
-                                <button type="button">Ver</button>
-                                <button type="button">Resolver</button>
+                                <p class="urgente">Drogas</p>
+                            </td>
+                            <td>
+                                <p>Corredo 1º andar</p>
+                            </td>
+                            <td>
+                                <p>27/08/2025</p>
+                            </td>
+                            <td>
+                                <p class="nova">Nova</p>
+                            </td>
+                            <td class="botoes">
+                                <button type="button" class="ver">Ver</button>
+                                <button type="button" class="resolver">Resolver</button>
                             </td>
                         </tr>
                     </tbody>

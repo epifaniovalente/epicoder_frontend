@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Categorias de Denúncia</title>
+        <link rel="stylesheet" href="/CSS/painel.css">
+    </head>
+    <body>
+
+        <aside id="sidebar">
+            <div class="header-aside">
+                <div>
+                    <img src="/midias/icones/shield_person.png" alt />
+                    <a href="#" id="logo">SafeVoice</a>
+                </div>
+                <button type="button" id="aside-btn">
+                    <img src="/midias/icones/menu.png" alt>
+                </button>
+            </div>
+
+            <nav id="navbar">
+                <ul>
+                    <li class="nav-item activo">
+                        <img src="/midias/icones/dashboard.png" alt />
+                        <a href="painel_control.html" target="_self"
+                            class="menu_text">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <img src="/midias/icones/activo.png" alt />
+                        <a href="recebidas.html" target="_self"
+                            class="menu_text">Denuncias activas</a>
+                    </li>
+                    <li class="nav-item">
+                        <img src="/midias/icones/check_circle.png" alt />
+                        <a href="resolvidas.html" target="_self"
+                            class="menu_text">Denuncias Resolvidas</a>
+                    </li>
+                    <li class="nav-item">
+                        <img src="/midias/icones/tags.png" alt />
+                        <a href="categorias.html" target="_self"
+                            class="menu_text">Categorias</a>
+                    </li>
+                    <li class="nav-item">
+                        <img src="/midias/icones/account_circle.png" alt />
+                        <a href="#" target="_self"
+                            class="menu_text">Usuários</a>
+                    </li>
+                    <li class="nav-item">
+                        <img src="/midias/icones/chart_data.png" alt />
+                        <a href="#" target="_self"
+                            class="menu_text">Relatórios</a>
+                    </li>
+                    <li class="nav-item">
+                        <img src="/midias/icones/settings.png" alt />
+                        <a href="#" target="_self"
+                            class="menu_text">Configurações</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sair">
+                <img src="/midias/icones/logout.png" alt />
+                <a href="#" id="goout" class="menu_text">Sair</a>
+            </div>
+        </aside>
+
+        <!------------ fim aside ----------->
+
+        <div id="conteudo-principal">
+
+            <!--Cabeçalho-->
+            <header>
+                <div id="categorias_denuncias">
+                    <h2>
+                        <img src="/midias/icones/categoria.png" alt>
+                        Categorias de Denúncia
+                    </h2>
+                    <p id="aviso">6 categorias cadastradas</p>
+                </div>
+                <div id="user_admin">
+                    <div class="perfil-adm">
+                        <img src="/midias/user_perfil.jpeg" alt>
+                    </div>
+                    <div class="nome-adm">Admin</div>
+                </div>
+            </header>
+            <!--Fim-->
+        </div>
+
+        <script>
+      const btn_aside = document.getElementById("aside-btn");
+      const aside = document.getElementById("sidebar");
+
+      btn_aside.addEventListener("click", function () {
+        aside.classList.toggle("close_menu")
+      });
+    </script>
+    </body>
+</html>
