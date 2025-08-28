@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Usuários - SafeVoice</title>
+        <link rel="stylesheet" href="/CSS/painel.css">
+    </head>
+    <body>
+
+        <aside id="sidebar">
+            <div class="header-aside">
+                <div>
+                    <img src="/midias/icones/shield_person.png" alt />
+                    <a href="#" id="logo">SafeVoice</a>
+                </div>
+                <button type="button" id="aside-btn">
+                    <img src="/midias/icones/menu.png" alt>
+                </button>
+            </div>
+
+            <nav id="navbar">
+                <ul>
+                    <li class="nav-item activo">
+                        <img src="/midias/icones/dashboard.png" alt />
+                        <a href="painel_control.html" target="_self"
+                            class="menu_text">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <img src="/midias/icones/activo.png" alt />
+                        <a href="recebidas.html" target="_self"
+                            class="menu_text">Denuncias activas</a>
+                    </li>
+                    <li class="nav-item">
+                        <img src="/midias/icones/check_circle.png" alt />
+                        <a href="resolvidas.html" target="_self"
+                            class="menu_text">Denuncias Resolvidas</a>
+                    </li>
+                    <li class="nav-item">
+                        <img src="/midias/icones/tags.png" alt />
+                        <a href="categorias.html" target="_self"
+                            class="menu_text">Categorias</a>
+                    </li>
+                    <li class="nav-item">
+                        <img src="/midias/icones/account_circle.png" alt />
+                        <a href="usuarios.html" target="_self"
+                            class="menu_text">Usuários</a>
+                    </li>
+                    <li class="nav-item">
+                        <img src="/midias/icones/chart_data.png" alt />
+                        <a href="#" target="_self"
+                            class="menu_text">Relatórios</a>
+                    </li>
+                    <li class="nav-item">
+                        <img src="/midias/icones/settings.png" alt />
+                        <a href="#" target="_self"
+                            class="menu_text">Configurações</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sair">
+                <img src="/midias/icones/logout.png" alt />
+                <a href="#" id="goout" class="menu_text">Sair</a>
+            </div>
+        </aside>
+        <!------------ fim aside ----------->
+
+        <div id="conteudo-principal">
+
+            <!--Cabeçalho-->
+            <header>
+                <div id="categorias_denuncias">
+                    <h2>
+                        <img src="/midias/icones/categoria.png" alt>
+                        Gestão de usuários
+                    </h2>
+                    <p id="aviso">4 usuários activos no sistema</p>
+                </div>
+                <div id="user_admin">
+                    <div class="perfil-adm">
+                        <img src="/midias/user_perfil.jpeg" alt>
+                    </div>
+                    <div class="nome-adm">Admin</div>
+                </div>
+            </header>
+            <!--Fim-->
+
+            <main id="principal_content">
+
+                <!-- -------- FILTRO DENUNCIAS -------- -->
+                <div id="filtro_container">
+                    <div class="input_filtro">
+                        <label for="tipo">Tipo</label>
+                        <select name="tipo" id="tipo">
+                            <option value="todas" selected>Todas</option>
+                            <option value="administrador">Administrador</option>
+                            <option value="professor">Professor</option>
+                            <option value="moderador">Moderador</option>
+                        </select>
+                    </div>
+                    <div class="input_filtro">
+                        <label for="status">Status</label>
+                        <select name="status" id="status">
+                            <option value="todas">Activos</option>
+                            <option value="Nova" selected>Inactivos</option>
+                            <option value="análise">Todos</option>
+                        </select>
+                    </div>
+                    <div class="input_filtro">
+                        <label for="ordenar">Ordenar por</label>
+                        <select name="ordenar" id="ordenar">
+                            <option value="az">Nome (A-Z)</option>
+                            <option value="za" selected>Nome (Z-A)</option>
+                            <option value="cadastro">Data de cadastro</option>
+                        </select>
+                    </div>
+                    <div class="add_filtro">
+                        <button type="button">Aplicar Filtro</button>
+                    </div>
+                </div>
+
+                <!-- TABELA DE USUARIOS -->
+
+                <div id="tabela_denuncia">
+
+                    <div id="tabela_container">
+                        <table id="usuarios">
+                            <thead>
+                                <tr>
+                                    <th>NOME</th>
+                                    <th>EMAIL</th>
+                                    <th>TIPO</th>
+                                    <th>CADASTRO</th>
+                                    <th>STATUS</th>
+                                    <th>AÇÕES</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- -------- Linha 4 -------- -->
+                                <tr>
+                                    <td>
+                                        <p class>Admin "Boss"</p>
+                                    </td>
+                                    <td class="descricao_dn">
+                                        <p>admin@safevoice.com</p>
+                                    </td>
+                                    <td>
+                                        <p class="tipo admin">Administrador</p>
+                                    </td>
+                                    <td>
+                                        <p>28/08/2025</p>
+                                    </td>
+                                    <td>
+                                        <p class="status">Activo</p>
+                                    </td>
+                                    <td class="botoes">
+                                        <button type="button" class="editar">EDITAR</button>
+                                        <button type="button" class="desativar">Desativar</button>
+                                    </td>
+                                </tr>
+                                <!-- -------- Linha 5 -------- -->
+                                <tr>
+                                    <td>
+                                        <p class>Zecadiabo</p>
+                                    </td>
+                                    <td class="descricao_dn">
+                                        <p>zeca@safevoice.com</p>
+                                    </td>
+                                    <td>
+                                        <p class="tipo">Professor</p>
+                                    </td>
+                                    <td>
+                                        <p>28/08/2025</p>
+                                    </td>
+                                    <td>
+                                        <p class="status">Activo</p>
+                                    </td>
+                                    <td class="botoes">
+                                        <button type="button" class="editar">EDITAR</button>
+                                        <button type="button" class="desativar">Desativar</button>
+                                    </td>
+                                </tr>
+                                <!-- -------- Linha 6 -------- -->
+                                <tr>
+                                    <td>
+                                        <p class>Zemaria ze</p>
+                                    </td>
+                                    <td class="descricao_dn">
+                                        zema@safevoice.com
+                                    </td>
+                                    <td>
+                                        <p class="tipo ">Moderador</p>
+                                    </td>
+                                    <td>
+                                        <p>28/08/2025</p>
+                                    </td>
+                                    <td>
+                                        <p class="status">Activo</p>
+                                    </td>
+                                    <td class="botoes">
+                                        <button type="button" class="editar">EDITAR</button>
+                                        <button type="button" class="desativar">Desativar</button>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                </main>
+            </div>
+            <footer>
+
+                <p>
+                    &copy; 2025 Sistema de Denúncia Anônima Escolar. Todos os
+                    direitos
+                    reservados.
+                </p>
+            </footer>
+
+            <script>
+      const btn_aside = document.getElementById("aside-btn");
+      const aside = document.getElementById("sidebar");
+
+      btn_aside.addEventListener("click", function () {
+        aside.classList.toggle("close_menu")
+      });
+    </script>
+        </body>
+    </html>

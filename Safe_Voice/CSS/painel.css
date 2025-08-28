@@ -25,6 +25,13 @@
   /*Fundo da pagina, caixas*/
   --cor8: #42388e;
   /*Titulo, bordar, textos secundário*/
+
+  --bullying: #EF4444;
+  --vandalismo: #F97316;
+  --assedio: #8B5CF6;
+  --drogas: #B91C1C;
+  --furto: #B91C1C;
+  --outros: #6B7280;
 }
 
 body {
@@ -33,7 +40,7 @@ body {
 }
 
 aside {
-  background-color: #0d36eb;
+  background-color: #05219b;
   position: fixed;
   left: 0;
   height: 100vh;
@@ -195,10 +202,11 @@ header h2 {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding: 10px;
+  padding: 2rem 10px;
 }
 
-#box-denuncias {
+#box-denuncias,
+#box-categorias {
   width: 100%;
   /* background-color: red; */
   display: flex;
@@ -473,14 +481,18 @@ table {
   min-width: 100%;
 }
 
-header #ativas, #resolvidas, #categorias_denuncias {
+header #ativas,
+#resolvidas,
+#categorias_denuncias {
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 0.5rem;
 }
 
-#ativas h2, #resolvidas h2, #categorias_denuncias h2{
+#ativas h2,
+#resolvidas h2,
+#categorias_denuncias h2 {
   color: #374151;
   font-weight: 500;
   display: flex;
@@ -494,13 +506,15 @@ header #ativas, #resolvidas, #categorias_denuncias {
   padding: 4px;
 }
 
-#resolvidas img{
+#resolvidas img {
   background: #16a34a;
   border-radius: 50%;
   padding: 4px;
 }
 
-#ativas p#aviso, #resolvidas p#aviso, #categorias_denuncias p#aviso {
+#ativas p#aviso,
+#resolvidas p#aviso,
+#categorias_denuncias p#aviso {
   color: gray;
   font-size: 11pt;
 }
@@ -577,11 +591,12 @@ header #ativas, #resolvidas, #categorias_denuncias {
   max-height: calc(100vh - 300px);
   overflow-y: auto;
   width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.205);
 }
 
 #tabela_container table {
   background: var(--cor3);
-  border-radius: 5px;
   width: 100%;
   overflow-x: hidden;
   border-collapse: collapse;
@@ -622,7 +637,7 @@ table tbody tr td p.id_dn {
   color: #0c0c0cde;
 }
 
-table tbody tr td p.id_dn::before{
+table tbody tr td p.id_dn::before {
   content: '#';
 }
 
@@ -709,8 +724,6 @@ table tbody tr td p.id_dn::before{
 
 /* --------- Den RESOLVIDAS --------- */
 
-
-
 .input_filtro .input_box {
   flex: 1;
   background: #ffffff;
@@ -751,6 +764,189 @@ input[type="search"] {
   transition: all 0.3s ease;
 }
 
-.reabrir:hover{
+.reabrir:hover {
   color: #000000;
+}
+
+
+/* --------- CATEGORIAS -------- */
+
+#bullying {
+  border-radius: 10px;
+  border-left: 4px solid var(--bullying);
+}
+
+#vandalismo {
+  border-radius: 10px;
+  border-left: 4px solid var(--vandalismo);
+}
+
+#assedio {
+  border-radius: 10px;
+  border-left: 4px solid var(--assedio);
+}
+
+#drogas {
+  border-radius: 10px;
+  border-left: 4px solid var(--drogas);
+}
+
+#furtos {
+  border-radius: 10px;
+  border-left: 4px solid var(--furto);
+}
+
+#outros {
+  border-radius: 10px;
+  border-left: 4px solid var(--outros);
+}
+
+#bullying div{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+#vandalismo div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+#assedio div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+#drogas div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+#furtos div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+#outros div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+
+.titulo_cat {
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(75, 74, 74);
+}
+
+.qunt_den {
+  font-size: 11pt;
+  color: rgb(150, 148, 148);
+}
+
+.desc_categoria {
+  font-size: 10pt;
+  color: rgb(136, 135, 135);
+}
+
+
+#bullying .titulo_cat {
+  color: var(--bullying);
+}
+
+#vandalismo .titulo_cat {
+  color: var(--vandalismo);
+}
+
+#assedio .titulo_cat {
+  color: var(--assedio);
+}
+
+#drogas .titulo_cat {
+  color: var(--drogas);
+}
+
+#furtos .titulo_cat {
+  color: var(--furto);
+}
+
+#outros .titulo_cat {
+  color: var(--outros);
+}
+
+tbody tr td p.titulo_table{
+  color: #131313;
+  font-weight: 600;
+}
+
+
+/* ---------- GESTÃO DE USUARIOS ----------*/
+
+
+#usuarios .tipo, .status{
+  width: fit-content;
+  padding: 5px;
+  border-radius: 50px;
+  
+}
+#usuarios .tipo.admin{
+  background-color: #f7a8a852;
+  color: #5a0404;
+}
+#usuarios .tipo{
+  background-color: #dac0f952;
+  color: #1f033f;
+}
+
+#usuarios .status{
+  background: #b2f3ca70;
+  color: #023816;
+}
+
+#usuarios .botoes button{
+  background: transparent;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  cursor: pointer;
+
+  transition: all .3s ease;
+}
+
+#usuarios .botoes > .editar{
+  color: #0230fd;
+}
+
+#usuarios .botoes > .desativar{
+  color: #f00707;
+}
+
+#usuarios .botoes button:hover{
+  color: #201f1f;
+}
+
+footer{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 220px;
+  background-color: var(--cor0);
+  padding: .4rem;
+}
+
+footer p{
+  text-align: center;
+  color: rgb(136, 135, 135);
+  font-size: 10pt;
 }
