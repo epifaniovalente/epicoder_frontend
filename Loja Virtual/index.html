@@ -1,117 +1,169 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>ByteShop - Inicio</title>
-    <link rel="shortcut icon" href="../image/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="src/CSS/estilo0.css">
-    <link rel="stylesheet" href="src/CSS/index.css">
-    <link rel="stylesheet" href="src/CSS/mideas.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>ByteShop - Inicio</title>
+        <link rel="shortcut icon" href="../image/favicon.ico"
+            type="image/x-icon">
+        <link rel="stylesheet" href="src/CSS/golbal.css">
+    </head>
 
-<body>
+    <body>
 
-    <header>
-        <a href="#" id="logo">ByteShop</a>
-        <nav id="nav_links">
-            <ul class="itens-links">
-                <li>
-                    <a href="src/Pages/login.html" id="login">Log In</a>
-                </li>
-                <li>
-                    <a href="src/Pages/conta.html" id="singin">Sing In</a>
-                </li>
-            </ul>
-        </nav>
-        <a href="#" id="contact">WhatsApp</a>
-        <div id="btn-menu">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-    </header>
+        <header>
+            <a href="#" id="logo">ByteShop</a>
 
-    <div class="container">
-        <aside class="menu-lateral">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#" class="link ativo"><i class="fas fa-home"></i>Home</a>
-                    </li>
-                    <li>
-                        <a href="#" class="link"><i class="fas fa-boxes"></i>Produtos</a>
-                    </li>
-                    <li>
-                        <a href="#" class="link"><i class="fas fa-shopping-cart"></i>Carrinho</a>
-                    </li>
-                    <li>
-
-                        <a href="#" class="link"><i class="fas fa-receipt"></i>Pedidos</a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="link"><i class="fas fa-user"></i>Minha conta</a>
-                    </li>
-
-                </ul>
-                <div id="conta">
-                    <div class="perfil">
-                        <img src="src/image/avatarUser.png" class="perfil-avatar" alt="perfil">
-                    </div>
-                    <div class="user-infor">
-                        <span id="user-name">Fulano de Tall</span>
-                        <a href="#">Configurações</a>
-                    </div>
-                    <a href="#"><i class="fas fa-sign-out-alt"></i></a>
-                </div>
+            <nav id="nav_links">
+                <a href="index.html" class="link">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="src/Pages/produtos.html" class="link">
+                    <i class="fas fa-boxes"></i>
+                    <span>Produtos</span>
+                </a>
+                <a href="#" class="link">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Carrinho</span>
+                </a>
+                <a href="#" class="link">
+                    <i class="fas fa-receipt"></i>
+                    <span>Promocões</span>
+                </a>
+                <a href="#" class="link">
+                    <i class="fas fa-user"></i>
+                    <span>Conta</span>
+                </a>
             </nav>
-        </aside>
-        <main class="conteudo-principal">
-            <h1>Bem-vindo à ByteShop!<i class="fa-solid fa-toggle-on"></i></h1>
-            <p>
-                Na <strong>ByteShop</strong>, você encontra tudo o que precisa
-                para o mundo da tecnologia! Oferecemos uma ampla
-                variedade de produtos de informática, desde <strong>hardware de
-                    alta performance</strong> até <strong>acessórios
-                    essenciais</strong>
-                para o seu dia a dia. Trabalhamos com as melhores marcas do
-                mercado para garantir <strong>qualidade, segurança e
-                    inovação</strong>.
-            </p>
-            <p>
-                Seja você um profissional de TI, gamer ou apenas alguém em busca
-                das melhores soluções tecnológicas, a <strong>ByteShop</strong>
-                é o lugar certo para você. Explore nosso catálogo e leve para
-                casa o que há de mais moderno em informática!
-            </p>
-            <h3 id="byteshop"><strong>💻 ByteShop – Tecnologia ao seu alcance!</strong></h3>
-        </main>
-    </div>
 
-    <footer style="margin-left: 40px;">
-        <div id="footer_content">
-            <p><a href="">EpiCoder</a>. Transformando ideias em código</p>
-            <div id="footer_social_media">
-                <a href="#" id="insta"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#" id="facebook"><i class="fa-brands fa-facebook"></i> </a>
-                <a href="#" id="whats"><i class="fa-brands fa-whatsapp"></i></a>
+            <div>
+                <a href="#sobre">Sobre nós</a>
+                <button type="button" id="btn_menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
             </div>
-            <div class="categoria">
-                <h3>Categorias</h3>
-                <ul>
-                    <li>Hardware</li>
-                    <li>Software</li>
-                </ul>
+
+        </header>
+
+        <main class="conteudo-principal">
+            <!-- Hero Section - DESTAQUE DA PAGE -->
+            <section id="hero_section">
+                <h2>Tecnologia acessível para todos!</h2>
+                <p>Fone, Armazenamentos, Teclados e muito mais com preços que
+                    cabem no seu bolso.</p>
+                <a href="#">Ver Promoções</a>
+
+            </section>
+
+            <!-- Section Destaques Da Semana -->
+            <section id="destaques">
+                <h3>Destaques da semana</h3>
+
+                <!-- Cards destaques -->
+                <div id="cards_destaques">
+                    <div class="cards">
+                        <img src="src/image/back_!.jpg" alt="fones bluetooth">
+                        <h4 class="n_prod">Fones Bluetooth</h4>
+                        <p class="preco">00.000,00 kz</p>
+                    </div>
+                    <div class="cards">
+                        <img src="src/image/back_!.jpg" alt="kit estudante">
+                        <h4 class="n_prod">Kit Estudante</h4>
+                        <p class="preco">00.000,00 kz</p>
+                    </div>
+                    <div class="cards">
+                        <img src="src/image/back_!.jpg" alt="Powerbanks">
+                        <h4 class="n_prod">Powerbank 10.00mAh</h4>
+                        <p class="preco">00.000,00 kz</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section Categorias -->
+            <section id="categoria">
+                <div>
+                    <h3>Categorias</h3>
+                    <div id="cards_categorias">
+                        <div class="cards">
+                            <span>&#x1F3A7;</span>
+                            <p>Fones & Powerbanks</p>
+                        </div>
+                        <div class="cards">
+                            <span>&#x1F4BE;</span>
+                            <p>Armazenamentos</p>
+                        </div>
+                        <div class="cards">
+                            <span>&#x2328;</span>
+                            <p>Teclados & Mouses</p>
+                        </div>
+                        <div class="cards">
+                            <span>&#x1F4F1</span>
+                            <p>Capas & Películas</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section Compra em Grupo -->
+
+            <section id="compra_grupo">
+                <h3>Compra em Grupo</h3>
+                <p>Chama dois amigos, comprem juntos e ganhem descontos!
+                    exemplo: 3 fones por apenas <span class="preco">00.000,00
+                        kz</span>
+                </p>
+                <a href="#">Cria Grupo de Compra</a>
+            </section>
+
+            <!-- Section Depoimentos -->
+
+            <section id="depoimentos">
+                <div>
+                    <h3>O que dizem nossos cliente</h3>
+                    <div id="cards_depoimentos">
+                        <div class="cards">
+                            <p>"Comprei um kit de estudante e chegou no mesmo dia, recomendo."</p>
+                            <span>- Muhongo, Estudante</span>
+                        </div>
+                        <div class="cards"> 
+                            <p>"O parcelamento ajudou muito, loja very nice!"</p>
+                            <span>- PGG, Universitário</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section Sobre Nós -->
+
+            <section id="sobre">
+                <h3>Sobre Nós</h3>
+                <p>Somos jovens como tu, criamos a <span>ByteShop</span> para trazer tecnologia acessível, original e feita para estudantes</p>
+                <a href="#">Saber mais</a>
+            </section>
+        </main>
+
+        <footer>
+            <div id="footer_content">
+                <div id="footer_social_media">
+                    <a href="#" id="insta"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="#" id="facebook"><i
+                            class="fa-brands fa-facebook"></i> </a>
+                    <a href="#" id="whats"><i
+                            class="fa-brands fa-whatsapp"></i></a>
+                </div>
             </div>
-        </div>
-        <div id="footer_copyright">
-            &#169 2025 todos os direitos resrvados | EpiCoder.
-        </div>
-    </footer>
-    <script src="src/JS/script.js"></script>
-</body>
+            <p id="footer_copyright">
+                &copy; 2025 ByteShop. | EpiCoder.
+            </p>
+        </footer>
+        <script src="src/JS/script.js" defer></script>
+    </body>
 
 </html>
