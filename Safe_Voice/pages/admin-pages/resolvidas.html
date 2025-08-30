@@ -11,7 +11,7 @@
     <aside id="sidebar">
       <div class="header-aside">
         <div>
-          <img src="/midias/icones/shield_person.png" alt />
+          <img src="/midias/icones/admin_panel.png" alt />
           <a href="painel_control.html" id="logo">SafeVoice</a>
         </div>
         <button type="button" id="aside-btn">
@@ -21,17 +21,17 @@
 
       <nav id="navbar">
         <ul>
-          <li class="nav-item activo">
+          <li class="nav-item ">
             <img src="/midias/icones/dashboard.png" alt />
             <a href="painel_control.html" target="_self"
               class="menu_text">Dashboard</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item ">
             <img src="/midias/icones/activo.png" alt />
             <a href="recebidas.html" target="_self" class="menu_text">Denuncias
               activas</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item activo">
             <img src="/midias/icones/check_circle.png" alt />
             <a href="resolvidas.html" target="_self" class="menu_text">Denuncias
               Resolvidas</a>
@@ -43,19 +43,15 @@
           </li>
           <li class="nav-item">
             <img src="/midias/icones/account_circle.png" alt />
-            <a href="#" target="_self"
+            <a href="usuarios.html" target="_self"
               class="menu_text">Usuários</a>
           </li>
           <li class="nav-item">
             <img src="/midias/icones/chart_data.png" alt />
-            <a href="#" target="_self"
+            <a href="relatorios.html" target="_self"
               class="menu_text">Relatórios</a>
           </li>
-          <li class="nav-item">
-            <img src="/midias/icones/settings.png" alt />
-            <a href="#" target="_self"
-              class="menu_text">Configurações</a>
-          </li>
+
         </ul>
       </nav>
       <div class="sair">
@@ -85,7 +81,8 @@
 
       <main id="principal_content">
         <!-- -------- FILTRO DENUNCIAS -------- -->
-        <div id="filtro_container">
+
+        <form action method="post" id="filtro_container">
           <div class="input_filtro">
             <label for="pesquisar">Pesquisar</label>
             <div class="input_box">
@@ -118,7 +115,7 @@
           <div class="add_filtro">
             <button type="button">Aplicar Filtro</button>
           </div>
-        </div>
+        </form>
 
         <!-- ---------- Tabela de Denuncias ----------- -->
 
@@ -240,16 +237,16 @@
                 </tr>
 
               </main>
-            <footer>
+              <footer>
 
                 <p>
-                    &copy; 2025 Sistema de Denúncia Anônima Escolar. Todos os
-                    direitos
-                    reservados.
+                  &copy; 2025 Sistema de Denúncia Anônima Escolar. Todos os
+                  direitos
+                  reservados.
                 </p>
-            </footer>
+              </footer>
 
-            <script>
+              <script>
       const btn_aside = document.getElementById("aside-btn");
       const aside = document.getElementById("sidebar");
 

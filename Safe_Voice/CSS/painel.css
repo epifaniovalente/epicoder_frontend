@@ -203,6 +203,7 @@ header h2 {
   flex-direction: column;
   gap: 2rem;
   padding: 2rem 10px;
+  margin-bottom: 1.5rem;
 }
 
 #box-denuncias,
@@ -492,7 +493,8 @@ header #ativas,
 
 #ativas h2,
 #resolvidas h2,
-#categorias_denuncias h2 {
+#categorias_denuncias h2,
+#relatorio h2 {
   color: #374151;
   font-weight: 500;
   display: flex;
@@ -604,7 +606,7 @@ header #ativas,
 }
 
 table thead tr {
-  background-color: #f9fafb;
+  background-color: var(--cor1);
 }
 
 table thead tr th {
@@ -612,7 +614,7 @@ table thead tr th {
   font-size: small;
   padding: 1rem;
   font-weight: bold;
-  color: gray;
+  color: #f5f5f5;
   white-space: nowrap;
 }
 
@@ -681,12 +683,21 @@ table tbody tr td p.id_dn::before {
   color: #1e40c1;
 }
 
-.analise {
+.analise,
+.pendente {
   width: fit-content;
   padding: 4px;
   border-radius: 50px;
   background-color: #fef9c3;
   color: #854d2b;
+}
+
+.resolvidas {
+  width: fit-content;
+  padding: 4px;
+  border-radius: 50px;
+  background-color: #05f85e6c;
+  color: green;
 }
 
 .botoes {
@@ -801,7 +812,7 @@ input[type="search"] {
   border-left: 4px solid var(--outros);
 }
 
-#bullying div{
+#bullying div {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -885,7 +896,7 @@ input[type="search"] {
   color: var(--outros);
 }
 
-tbody tr td p.titulo_table{
+tbody tr td p.titulo_table {
   color: #131313;
   font-weight: 600;
 }
@@ -894,27 +905,30 @@ tbody tr td p.titulo_table{
 /* ---------- GESTÃO DE USUARIOS ----------*/
 
 
-#usuarios .tipo, .status{
+#usuarios .tipo,
+.status {
   width: fit-content;
   padding: 5px;
   border-radius: 50px;
-  
+
 }
-#usuarios .tipo.admin{
+
+#usuarios .tipo.admin {
   background-color: #f7a8a852;
   color: #5a0404;
 }
-#usuarios .tipo{
+
+#usuarios .tipo {
   background-color: #dac0f952;
   color: #1f033f;
 }
 
-#usuarios .status{
+#usuarios .status {
   background: #b2f3ca70;
   color: #023816;
 }
 
-#usuarios .botoes button{
+#usuarios .botoes button {
   background: transparent;
   border: none;
   outline: none;
@@ -924,19 +938,19 @@ tbody tr td p.titulo_table{
   transition: all .3s ease;
 }
 
-#usuarios .botoes > .editar{
+#usuarios .botoes>.editar {
   color: #0230fd;
 }
 
-#usuarios .botoes > .desativar{
+#usuarios .botoes>.desativar {
   color: #f00707;
 }
 
-#usuarios .botoes button:hover{
+#usuarios .botoes button:hover {
   color: #201f1f;
 }
 
-footer{
+footer {
   position: fixed;
   bottom: 0;
   right: 0;
@@ -945,8 +959,73 @@ footer{
   padding: .4rem;
 }
 
-footer p{
+footer p {
   text-align: center;
   color: rgb(136, 135, 135);
   font-size: 10pt;
+}
+
+
+/*--------- REALORIOS SAFEVOICE ------------*/
+
+#filtro_relatorio {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+#cards_relatorios {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+#cards_relatorios .card {
+  flex: 0 1 220px;
+  background: var(--cor3);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.205);
+  text-align: center;
+}
+
+#cards_relatorios .card h3 {
+  margin: 0;
+  font-size: 18px;
+  color: var(--cor4);
+}
+
+#cards_relatorios .card p {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 10px 0 0;
+  color: rgb(33, 28, 83);
+}
+
+#exportar {
+  width: fit-content;
+  margin-top: 20px;
+  padding: 10px 15px;
+  background: #16a34a;
+  color: var(--cor3);
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#filtro_relatorio .cards_relatorio {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
 }

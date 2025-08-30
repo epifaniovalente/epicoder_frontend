@@ -11,7 +11,7 @@
         <aside id="sidebar">
             <div class="header-aside">
                 <div>
-                    <img src="/midias/icones/shield_person.png" alt />
+                    <img src="/midias/icones/admin_panel.png" alt />
                     <a href="#" id="logo">SafeVoice</a>
                 </div>
                 <button type="button" id="aside-btn">
@@ -21,18 +21,18 @@
 
             <nav id="navbar">
                 <ul>
-                    <li class="nav-item activo">
+                    <li class="nav-item">
                         <img src="/midias/icones/dashboard.png" alt />
                         <a href="painel_control.html" target="_self"
                             class="menu_text">Dashboard</a>
                     </li>
                     <li class="nav-item">
-                        <img src="/midias/icones/activo.png" alt />
+                        <img src="/midias/icones/den_activa.png" alt />
                         <a href="recebidas.html" target="_self"
                             class="menu_text">Denuncias activas</a>
                     </li>
                     <li class="nav-item">
-                        <img src="/midias/icones/check_circle.png" alt />
+                        <img src="/midias/icones/check_circle_r.png" alt />
                         <a href="resolvidas.html" target="_self"
                             class="menu_text">Denuncias Resolvidas</a>
                     </li>
@@ -41,21 +41,17 @@
                         <a href="categorias.html" target="_self"
                             class="menu_text">Categorias</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item activo">
                         <img src="/midias/icones/account_circle.png" alt />
                         <a href="usuarios.html" target="_self"
                             class="menu_text">Usuários</a>
                     </li>
                     <li class="nav-item">
                         <img src="/midias/icones/chart_data.png" alt />
-                        <a href="#" target="_self"
+                        <a href="relatorios.html" target="_self"
                             class="menu_text">Relatórios</a>
                     </li>
-                    <li class="nav-item">
-                        <img src="/midias/icones/settings.png" alt />
-                        <a href="#" target="_self"
-                            class="menu_text">Configurações</a>
-                    </li>
+
                 </ul>
             </nav>
             <div class="sair">
@@ -71,7 +67,7 @@
             <header>
                 <div id="categorias_denuncias">
                     <h2>
-                        <img src="/midias/icones/categoria.png" alt>
+                        <img src="/midias/icones/users.png" alt>
                         Gestão de usuários
                     </h2>
                     <p id="aviso">4 usuários activos no sistema</p>
@@ -88,7 +84,9 @@
             <main id="principal_content">
 
                 <!-- -------- FILTRO DENUNCIAS -------- -->
-                <div id="filtro_container">
+
+                <form action method="post" id="filtro_container">
+
                     <div class="input_filtro">
                         <label for="tipo">Tipo</label>
                         <select name="tipo" id="tipo">
@@ -98,6 +96,7 @@
                             <option value="moderador">Moderador</option>
                         </select>
                     </div>
+
                     <div class="input_filtro">
                         <label for="status">Status</label>
                         <select name="status" id="status">
@@ -117,7 +116,7 @@
                     <div class="add_filtro">
                         <button type="button">Aplicar Filtro</button>
                     </div>
-                </div>
+                </form>
 
                 <!-- TABELA DE USUARIOS -->
 
@@ -154,8 +153,10 @@
                                         <p class="status">Activo</p>
                                     </td>
                                     <td class="botoes">
-                                        <button type="button" class="editar">EDITAR</button>
-                                        <button type="button" class="desativar">Desativar</button>
+                                        <button type="button"
+                                            class="editar">EDITAR</button>
+                                        <button type="button"
+                                            class="desativar">Desativar</button>
                                     </td>
                                 </tr>
                                 <!-- -------- Linha 5 -------- -->
@@ -176,8 +177,10 @@
                                         <p class="status">Activo</p>
                                     </td>
                                     <td class="botoes">
-                                        <button type="button" class="editar">EDITAR</button>
-                                        <button type="button" class="desativar">Desativar</button>
+                                        <button type="button"
+                                            class="editar">EDITAR</button>
+                                        <button type="button"
+                                            class="desativar">Desativar</button>
                                     </td>
                                 </tr>
                                 <!-- -------- Linha 6 -------- -->
@@ -198,8 +201,10 @@
                                         <p class="status">Activo</p>
                                     </td>
                                     <td class="botoes">
-                                        <button type="button" class="editar">EDITAR</button>
-                                        <button type="button" class="desativar">Desativar</button>
+                                        <button type="button"
+                                            class="editar">EDITAR</button>
+                                        <button type="button"
+                                            class="desativar">Desativar</button>
                                     </td>
                                 </tr>
 
@@ -209,14 +214,6 @@
 
                 </main>
             </div>
-            <footer>
-
-                <p>
-                    &copy; 2025 Sistema de Denúncia Anônima Escolar. Todos os
-                    direitos
-                    reservados.
-                </p>
-            </footer>
 
             <script>
       const btn_aside = document.getElementById("aside-btn");

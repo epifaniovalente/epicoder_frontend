@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Relatório - SafeVoice</title>
+        <link rel="stylesheet" href="/CSS/painel.css">
+    </head>
+    <body>
+
+        <aside id="sidebar">
+            <div class="header-aside">
+                <div>
+                    <img src="/midias/icones/admin_panel.png" alt />
+                    <a href="#" id="logo">SafeVoice</a>
+                </div>
+                <button type="button" id="aside-btn">
+                    <img src="/midias/icones/menu.png" alt>
+                </button>
+            </div>
+
+            <nav id="navbar">
+                <ul>
+                    <li class="nav-item">
+                        <img src="/midias/icones/dashboard.png" alt />
+                        <a href="painel_control.html" target="_self"
+                            class="menu_text">Dashboard</a>
+                    </li>
+                    <li class="nav-item ">
+                        <img src="/midias/icones/den_activa.png" alt />
+                        <a href="recebidas.html" target="_self"
+                            class="menu_text">Denuncias
+                            activas</a>
+                    </li>
+                    <li class="nav-item">
+                        <img src="/midias/icones/check_circle_r.png" alt />
+                        <a href="resolvidas.html" target="_self"
+                            class="menu_text">Denuncias
+                            Resolvidas</a>
+                    </li>
+                    <li class="nav-item">
+                        <img src="/midias/icones/tags.png" alt />
+                        <a href="categorias.html" target="_self"
+                            class="menu_text">Categorias</a>
+                    </li>
+                    <li class="nav-item">
+                        <img src="/midias/icones/account_circle.png" alt />
+                        <a href="usuarios.html" target="_self"
+                            class="menu_text">Usuários</a>
+                    </li>
+                    <li class="nav-item activo">
+                        <img src="/midias/icones/chart_data.png" alt />
+                        <a href="relatorios.html" target="_self"
+                            class="menu_text">Relatórios</a>
+                    </li>
+
+                </ul>
+            </nav>
+            <div class="sair">
+                <img src="/midias/icones/logout.png" alt />
+                <a href="#" id="goout" class="menu_text">Sair</a>
+            </div>
+        </aside>
+
+        <!------------ fim aside ----------->
+
+        <div id="conteudo-principal">
+
+            <!--Cabeçalho-->
+            <header>
+                <div id="relatorio">
+                    <h2>
+                        <img src="/midias/icones/relatorio.png" alt>
+                        Relatórios - SafeVoice
+                    </h2>
+                    <!-- <p id="aviso">Total de 37 denuncias não resolvidas</p> -->
+                </div>
+                <div id="user_admin">
+                    <div class="perfil-adm">
+                        <img src="/midias/user_perfil.jpeg" alt>
+                    </div>
+                    <div class="nome-adm">Admin</div>
+                </div>
+            </header>
+            <!--Fim-->
+
+            <main id="principal_content">
+
+                <!-- CARDS RESUMOS -->
+
+                <div id="cards_relatorios">
+                    <div class="card">
+                        <h3>Total de Denuncias</h3>
+                        <p>29</p>
+                    </div>
+                    <div class="card">
+                        <h3>Resolvidas</h3>
+                        <p>29</p>
+                    </div>
+                    <div class="card">
+                        <h3>Pendentes</h3>
+                        <p>29</p>
+                    </div>
+                    <div class="card">
+                        <h3>Este Mês</h3>
+                        <p>29</p>
+                    </div>
+                </div>
+
+                <!-- -------- FILTRO DENUNCIAS -------- -->
+                <div id="filtro_relatorio">
+                    <h3>Filtros</h3>
+                    <form action method="post" class="cards_relatorio">
+
+                        <div class="input_filtro">
+                            <label for="categoria">Categoria</label>
+                            <select name id>
+                                <option value="todas"
+                                    selected>Todas</option>
+                                <option
+                                    value="bullying">Bullying</option>
+                                <option
+                                    value="vandalismo">Vandalismo</option>
+                                <option value="assedio">Assedio</option>
+                                <option value="drogas">Drogas</option>
+                                <option value="furto">Furto</option>
+                                <option value="outros">Outros</option>
+                            </select>
+                        </div>
+                        <div class="input_filtro">
+                            <label for="status">Status</label>
+                            <select name="status" id="status">
+                                <option value="todas">Todas</option>
+                                <option value="Nova"
+                                    selected>Nova</option>
+                                <option value="análise">Em analise</option>
+                                <option
+                                    value="urgente">Resolvida</option>
+                            </select>
+                        </div>
+                        <div class="input_filtro">
+                            <label for="periodo">Periodo</label>
+                            <select name="periodo" id="periodo">
+                                <option value="todos">Todos</option>
+                                <option value="7" selected>Ultimos 7
+                                    dias</option>
+                                <option value="30">Ultimos 30
+                                    dias</option>
+                                <option
+                                    value="semestre">Semestre</option>
+                            </select>
+                        </div>
+                        <div class="add_filtro">
+                            <button type="button">Aplicar
+                                Filtro</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- ---------- Tabela de Denuncias ----------- -->
+
+                <div id="tabela_denuncia">
+
+                    <div id="tabela_container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>CATEGORIA</th>
+                                    <th>STATUS</th>
+                                    <th>DATA</th>
+                                    <th>RESOLVIDO EM</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- -------- Linha 1  -------- -->
+                                <tr>
+                                    <td>
+                                        <p class="id_dn">11</p>
+                                    </td>
+
+                                    <td>
+                                        <p class="tipo bullying">Bullying</p>
+                                    </td>
+                                    <td>
+                                        <p class="nova">Nova</p>
+                                    </td>
+                                    <td>
+                                        <p>08/29/2025</p>
+                                    </td>
+                                    <td>
+                                        <p>29/08/2025</p>
+                                    </td>
+
+                                </tr>
+                                <!-- -------- Linha 2  -------- -->
+                                <tr>
+                                    <td>
+                                        <p class="id_dn">11</p>
+                                    </td>
+
+                                    <td>
+                                        <p
+                                            class="tipo vandalismo">Vandalismo</p>
+                                    </td>
+                                    <td>
+                                        <p class="nova">Nova</p>
+                                    </td>
+                                    <td>
+                                        <p>08/29/2025</p>
+                                    </td>
+                                    <td>
+                                        <p>29/08/2025</p>
+                                    </td>
+
+                                </tr>
+                                <!-- ------- Linha 3 -------- -->
+                                <tr>
+                                    <td>
+                                        <p class="id_dn">11</p>
+                                    </td>
+
+                                    <td>
+                                        <p class="tipo assedio">Assédio</p>
+                                    </td>
+                                    <td>
+                                        <p class="analise">Em Analise</p>
+                                    </td>
+                                    <td>
+                                        <p>08/29/2025</p>
+                                    </td>
+                                    <td>
+                                        <p>29/08/2025</p>
+                                    </td>
+
+                                </tr>
+
+                                <!-- --------- Linha 4 ------- -->
+
+                                <tr>
+                                    <td>
+                                        <p class="id_dn">11</p>
+                                    </td>
+
+                                    <td>
+                                        <p class="tipo droga">Drogas</p>
+                                    </td>
+                                    <td>
+                                        <p class="pendente">Pendente</p>
+                                    </td>
+                                    <td>
+                                        <p>08/29/2025</p>
+                                    </td>
+                                    <td>
+                                        <p>29/08/2025</p>
+                                    </td>
+
+                                </tr>
+
+                                <!-- --------Linha 4-------- -->
+
+                                <tr>
+                                    <td>
+                                        <p class="id_dn">11</p>
+                                    </td>
+
+                                    <td>
+                                        <p class="tipo furto">Furto</p>
+                                    </td>
+                                    <td>
+                                        <p class="resolvidas">Resolvida</p>
+                                    </td>
+                                    <td>
+                                        <p>08/29/2025</p>
+                                    </td>
+                                    <td>
+                                        <p>29/08/2025</p>
+                                    </td>
+
+                                </tr>
+
+                                <!-- -------- Linha 5 ------ -->
+                                <tr>
+                                    <td>
+                                        <p class="id_dn">11</p>
+                                    </td>
+
+                                    <td>
+                                        <p class="tipo outras">Outras</p>
+                                    </td>
+                                    <td>
+                                        <p class="resolvidas">Resolvida</p>
+                                    </td>
+                                    <td>
+                                        <p>08/29/2025</p>
+                                    </td>
+                                    <td>
+                                        <p>29/08/2025</p>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <button type="button" id="exportar"> &downarrow; Exportar
+                        Relatório</button>
+                </main>
+                <footer>
+
+                    <p>
+                        &copy; 2025 Sistema de Denúncia Anônima Escolar. Todos
+                        os
+                        direitos
+                        reservados.
+                    </p>
+                </footer>
+                <script>
+      const btn_aside = document.getElementById("aside-btn");
+      const aside = document.getElementById("sidebar");
+
+      btn_aside.addEventListener("click", function () {
+        aside.classList.toggle("close_menu")
+      });
+    </script>
+
+            </body>
+        </html>

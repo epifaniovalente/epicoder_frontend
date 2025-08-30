@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Den. Activas</title>
+        <title>Den. Recebidas</title>
         <link rel="stylesheet" href="/CSS/painel.css">
     </head>
     <body>
@@ -20,12 +20,12 @@
 
             <nav id="navbar">
                 <ul>
-                    <li class="nav-item activo">
-                        <img src="/midias/icones/dashboard.png" alt />
+                    <li class="nav-item ">
+                        <img src="/midias/icones/admin_panel.png" alt />
                         <a href="painel_control.html" target="_self"
                             class="menu_text">Dashboard</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item activo">
                         <img src="/midias/icones/activo.png" alt />
                         <a href="recebidas.html" target="_self"
                             class="menu_text">Denuncias activas</a>
@@ -42,19 +42,15 @@
                     </li>
                     <li class="nav-item">
                         <img src="/midias/icones/account_circle.png" alt />
-                        <a href="#" target="_self"
+                        <a href="usuarios.html" target="_self"
                             class="menu_text">Usuários</a>
                     </li>
                     <li class="nav-item">
                         <img src="/midias/icones/chart_data.png" alt />
-                        <a href="#" target="_self"
+                        <a href="relatorios.html" target="_self"
                             class="menu_text">Relatórios</a>
                     </li>
-                    <li class="nav-item">
-                        <img src="/midias/icones/settings.png" alt />
-                        <a href="#" target="_self"
-                            class="menu_text">Configurações</a>
-                    </li>
+
                 </ul>
             </nav>
             <div class="sair">
@@ -69,7 +65,7 @@
                 <div id="ativas">
                     <h2>
                         <img src="/midias/icones/warning.png" alt>
-                        Denúncias Activas
+                        Denúncias Recebidas
                     </h2>
                     <p id="aviso">Total de 37 denuncias não resolvidas</p>
                 </div>
@@ -84,7 +80,9 @@
 
             <main id="principal_content">
                 <!-- -------- FILTRO DENUNCIAS -------- -->
-                <div id="filtro_container">
+
+                <form action method="post" id="filtro_container">
+
                     <div class="input_filtro">
                         <label for="categoria">Categoria</label>
                         <select name id>
@@ -116,7 +114,7 @@
                     <div class="add_filtro">
                         <button type="button">Aplicar Filtro</button>
                     </div>
-                </div>
+                </form>
 
                 <!-- ---------- Tabela de Denuncias ----------- -->
 
