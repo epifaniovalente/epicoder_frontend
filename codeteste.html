@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - Epifânio Valente</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <header class="bg-blue-500 text-white shadow">
+    <nav class="container mx-auto flex justify-between items-center p-4">
+      <h1 class="text-xl font-bold">Epifânio Valente</h1>
+      <ul class="flex gap-6">
+        <li><a href="#home" class="hover:underline">Início</a></li>
+        <li><a href="#about" class="hover:underline">Sobre</a></li>
+        <li><a href="#projects" class="hover:underline">Projetos</a></li>
+        <li><a href="#skills" class="hover:underline">Habilidades</a></li>
+        <li><a href="#contact" class="hover:underline">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="flex flex-col items-center justify-center text-center py-20 bg-gray-100">
+    <img src="https://via.placeholder.com/150" alt="Foto perfil" class="rounded-full w-40 mb-6 shadow-lg">
+    <h2 class="text-3xl font-bold">Front-End Developer Júnior</h2>
+    <p class="text-gray-600 mt-2">Estudante de Informática | Apaixonado por Tecnologia</p>
+    <a href="#projects" class="mt-6 px-6 py-2 bg-blue-500 text-white rounded-lg shadow hover:bg-blue-600">Ver Projetos</a>
+  </section>
+
+  <!-- Sobre mim -->
+  <section id="about" class="container mx-auto py-16 px-4">
+    <h2 class="text-2xl font-bold mb-6 text-blue-500">Sobre mim</h2>
+    <p class="text-lg leading-relaxed">
+      Tenho 20 anos, sou estudante de Informática no nível médio e apaixonado por tecnologia.
+      Busco crescer na área de desenvolvimento web e redes de computadores, aplicando o que aprendo
+      em projetos práticos e pessoais.
+    </p>
+  </section>
+
+  <!-- Projetos -->
+  <section id="projects" class="bg-gray-100 py-16 px-4">
+    <div class="container mx-auto">
+      <h2 class="text-2xl font-bold mb-8 text-blue-500">Projetos</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Projeto 1 -->
+        <div class="bg-white rounded-xl shadow p-6">
+          <h3 class="text-xl font-semibold mb-2">Site Pessoal</h3>
+          <p class="text-gray-600">Portfólio criado com HTML, CSS e JavaScript para apresentação profissional.</p>
+        </div>
+        <!-- Projeto 2 -->
+        <div class="bg-white rounded-xl shadow p-6">
+          <h3 class="text-xl font-semibold mb-2">Plataforma de Denúncia Anônima</h3>
+          <p class="text-gray-600">Projeto de TCC com foco em segurança, anonimato e acessibilidade.</p>
+        </div>
+        <!-- Projeto 3 -->
+        <div class="bg-white rounded-xl shadow p-6">
+          <h3 class="text-xl font-semibold mb-2">Simulações de Redes</h3>
+          <p class="text-gray-600">Configuração de sub-redes e VLANs usando Cisco Packet Tracer.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Habilidades -->
+  <section id="skills" class="container mx-auto py-16 px-4">
+    <h2 class="text-2xl font-bold mb-8 text-blue-500">Habilidades</h2>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+      <span class="bg-blue-100 text-blue-700 px-4 py-2 rounded-lg text-center shadow">HTML</span>
+      <span class="bg-blue-100 text-blue-700 px-4 py-2 rounded-lg text-center shadow">CSS</span>
+      <span class="bg-blue-100 text-blue-700 px-4 py-2 rounded-lg text-center shadow">JavaScript</span>
+      <span class="bg-blue-100 text-blue-700 px-4 py-2 rounded-lg text-center shadow">PHP</span>
+      <span class="bg-blue-100 text-blue-700 px-4 py-2 rounded-lg text-center shadow">MySQL</span>
+      <span class="bg-blue-100 text-blue-700 px-4 py-2 rounded-lg text-center shadow">Tailwind CSS</span>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contact" class="bg-gray-100 py-16 px-4">
+    <div class="container mx-auto">
+      <h2 class="text-2xl font-bold mb-6 text-blue-500">Contato</h2>
+      <form class="grid gap-4 max-w-lg">
+        <input type="text" placeholder="Seu Nome" class="p-3 rounded-lg border shadow-sm focus:outline-blue-400">
+        <input type="email" placeholder="Seu Email" class="p-3 rounded-lg border shadow-sm focus:outline-blue-400">
+        <textarea placeholder="Sua Mensagem" rows="4" class="p-3 rounded-lg border shadow-sm focus:outline-blue-400"></textarea>
+        <button class="bg-blue-500 text-white py-2 rounded-lg shadow hover:bg-blue-600">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-500 text-white text-center py-4 mt-10">
+    <p>&copy; 2025 Epifânio Valente - Todos os direitos reservados</p>
+  </footer>
+
+</body>
+</html>
