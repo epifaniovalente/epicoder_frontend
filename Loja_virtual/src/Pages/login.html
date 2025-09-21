@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>ByteShop - Login</title>
+    <link rel="shortcut icon" href="../image/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/golbal.css">
+    <link rel="stylesheet" href="../CSS/forms.css">
+</head>
+
+<body>
+
+    <section id="container">
+
+        <div class="header">
+            <h1>ByteShop</h1>
+            <p>Bem Vindo(a) de Volta!</p>
+        </div>
+
+        <form action="" method="post" id="login">
+            <div class="input-form">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email"  placeholder="muhongo@exemplo.com">
+                <span id="error_email"></span>
+            </div>
+            <div class="input-form">
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" id="senha">
+                <span id="error_senha"></span>
+            </div>
+            <div class="input-form">
+                <a href="#">esqueceu a senha?</a>
+            </div>
+            <button type="submit" id="btn_log">Entrar</button>
+        </form>
+
+        <div class="divisor">
+            <hr>
+            <span>ou</span>
+            <hr>
+        </div>
+        <button type="button" class="google">Entrar com Google</button>
+
+        <p>Não tem conta? <a href="registrar.html">Criar Conta</a></p>
+
+    </section>
+
+    <script src="../JS/script.js"></script>
+</body>
+
+</html>

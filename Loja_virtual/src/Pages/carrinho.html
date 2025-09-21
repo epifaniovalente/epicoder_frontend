@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Carrinho - ByteShop</title>
+        <link rel="stylesheet" href="../CSS/golbal.css">
+        <link rel="stylesheet" href="../CSS/carrinho.css">
+        <link rel="stylesheet" href="../CSS/mideas.css">
+    </head>
+    <body>
+        <header>
+            <a href="#" id="logo">ByteShop</a>
+
+            <nav id="nav_links">
+                <a href="/index.html" class="link">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="produtos.html" class="link">
+                    <i class="fas fa-boxes"></i>
+                    <span>Produtos</span>
+                </a>
+                <a href="carrinho.html" class="link">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Carrinho</span>
+                </a>
+                <a href="#" class="link">
+                    <i class="fas fa-user"></i>
+                    <span>Conta</span>
+                </a>
+                <a href="sobre.html" class="link">
+                    <i class="fas fa-receipt"></i>
+                    <span>Sobre Nós</span>
+                </a>
+            </nav>
+
+            <div>
+                
+                <button type="button" id="btn_menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+
+        </header>
+
+        <main class="conteudo-principal">
+            <h2>Meu Carrinho</h2>
+
+            <div class="lista-itens">
+                <!-- Produto -->
+                <div class="item">
+                    <div>
+                        <img src="../image/back_!.jpg" alt="iamgem-produto">
+                        <div class="detalhes">
+                            <h3>Nome Produto</h3>
+                            <p class="descricao">descrição basic</p>
+                            <p class="preco">00.000,00kz</p>
+                        </div>
+                    </div>
+                    <!-- btn para remover -->
+                    <button type="button" class="remover">Remover</button>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="../image/back_!.jpg" alt="iamgem-produto">
+                        <div class="detalhes">
+                            <h3>Nome Produto</h3>
+                            <p class="descricao">descrição basic</p>
+                            <p class="preco">00.000,00kz</p>
+                        </div>
+                    </div>
+                    <!-- btn para remover -->
+                    <button type="button" class="remover">Remover</button>
+                </div>
+
+            </div>
+
+            <!-- Resumo dos produtos (Total) -->
+            <section id="resumo">
+                <h3>Resumo</h3>
+
+                <div class="subvalores">
+                    <div>
+                        <span>Subtotal</span>
+                        <span>Taxa de Entrega</span>
+                    </div>
+                    <div>
+                        <span>00.000,00kz</span>
+                        <span>00.000,00kz</span>
+                    </div>
+                </div>
+
+                <div class="total">
+                    <span>Total</span>
+                    <span>00.000,00kz</span>
+                </div>
+
+                <button type="button">Finalizar Compra</button>
+
+            </section>
+        </main>
+
+        <footer>
+            <div id="footer_content">
+                <div id="footer_social_media">
+                    <a href="#" id="insta"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="#" id="facebook"><i
+                            class="fa-brands fa-facebook"></i> </a>
+                    <a href="#" id="whats"><i
+                            class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <p id="footer_copyright">
+                &copy; 2025 ByteShop. | EpiCoder.
+            </p>
+        </footer>
+    </body>
+</html>

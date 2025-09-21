@@ -1,0 +1,130 @@
+:root {
+    --cor1: #2563eb;
+    --cor2: #020F59;
+    --cor3: #021373;
+    --cor4: #719ED9;
+    --hero: #dbeafe;
+    --cor5: #D0DCF2;
+    --cor6: #012340;
+    --cor7: #8A9BA6;
+    --cor8: #3d4953;
+
+    --color-neutro-0: #0E0C0C;
+    --color-neutro-10: #111827;
+    --color-neutro-20: #A8A29E;
+    --color-neutro-30: #ffffff;
+}
+
+.conteudo-principal{
+    max-width: 1080px;
+    margin: 50px auto;
+    padding: 2rem;
+}
+
+.conteudo-principal h2{
+    margin-bottom: 2rem;
+}
+
+.container{
+    display: flex;
+    gap: 2rem;
+    height: fit-content;
+}
+
+
+aside{
+    padding: 1rem 2.5rem;
+    border-radius: 10px;
+    background-color: var(--color-neutro-30);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.103);
+}
+
+aside nav{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+aside nav a{
+    color: var(--cor8);
+    transition: .3s ease-in-out;
+}
+
+aside nav a:hover{
+    color: var(--cor1);
+}
+
+section{
+    max-width: 756px;
+    flex: 1;
+    padding: 1rem;
+    background-color: var(--color-neutro-30);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.103);
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    margin: auto;
+}
+
+section h3{
+    color: var(--cor6);
+}
+
+/*   -------- PEDIDOS --------- */
+
+section #pedidos, #pessoais, #endereco, #senha, #sair{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border: 1px solid var(--cor5);
+    padding: .5rem;
+    border-radius: 10px;
+}
+
+.itens-pedidos{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.itens-pedidos .item{
+    border: 1px solid var(--color-neutro-20);
+    border-radius: 10px;
+    padding: 1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.itens-pedidos .item div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: .5rem;
+    font-size: small;
+    color: var(--cor8);
+}
+
+.itens-pedidos .item p{
+    color: var(--cor8);
+}
+
+.itens-pedidos .item .nao_entregue{
+    padding: .3rem;
+    border-radius: 10px;
+    color: rgb(163, 49, 7);
+    background-color: rgba(250, 144, 5, 0.404);
+}
+
+.itens-pedidos .item .entrege{
+    padding: .3rem;
+    border-radius: 10px;
+    color: rgb(2, 61, 34);
+    background-color: rgba(6, 202, 111, 0.281);
+}
+
+
+/*   -------- Informaçoes Pessoais --------- */
