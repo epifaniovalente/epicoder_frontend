@@ -10,44 +10,44 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>ByteShop - Login</title>
     <link rel="shortcut icon" href="../image/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../CSS/golbal.css">
+    <link rel="stylesheet" href="../CSS/tailwind.css">
     <link rel="stylesheet" href="../CSS/forms.css">
 </head>
 
-<body>
+<body class="flex items-center justify-center min-h-screen text-gray-800 bg-gray-50">
 
-    <section id="container">
+    <section class="bg-white w-full rounded-lg p-6 max-w-md shadow-xl">
 
-        <div class="header">
-            <h1>ByteShop</h1>
-            <p>Bem Vindo(a) de Volta!</p>
+        <div class="text-center mb-6">
+            <h1 class="text-2xl font-bold text-blue-600">ByteShop</h1>
+            <p class="text-gray-600 text-sm ">Bem Vindo(a) de Volta!</p>
         </div>
 
-        <form action="" method="post" id="login">
-            <div class="input-form">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email"  placeholder="muhongo@exemplo.com">
-                <span id="error_email"></span>
+        <form action="" method="post" id="login" class="space-y-4">
+            <div>
+                <label for="email" class="block text-sm font-medium mb-1">Email</label>
+                <input type="email" name="email" id="email" placeholder="muhongo@exemplo.com" class="px-4 py-2 border border-gray-300 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-blue-400 transition delay-150 duration-300 ease-in-out">
+                <span id="error_email" class="text-sm text-red-500 block">error!</span>
             </div>
-            <div class="input-form">
-                <label for="senha">Senha</label>
-                <input type="password" name="senha" id="senha">
-                <span id="error_senha"></span>
+            <div>
+                <label for="senha" class="block text-sm font-medium mb-1">Senha</label>
+                <input type="password" name="senha" id="senha" placeholder="********" class="px-4 py-2 border border-gray-300 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-blue-400 transition delay-150 duration-300 ease-in-out">
+                <span id="error_senha" class="text-sm text-red-500 block"></span>
             </div>
-            <div class="input-form">
-                <a href="#">esqueceu a senha?</a>
+            <div class="w-full text-right">
+                <a href="#" class=" text-blue-400 text-sm hover:underline">esqueceu a senha?</a>
             </div>
-            <button type="submit" id="btn_log">Entrar</button>
+            <button type="submit" id="btn_log" class="w-full cursor-pointer bg-blue-600 text-white p-2 hover:bg-blue-700 rounded-lg active:scale-95 transition delay-150 duration-300 ease-in-out">Entrar</button>
         </form>
 
-        <div class="divisor">
-            <hr>
-            <span>ou</span>
-            <hr>
+        <div class="flex items-center my-4">
+            <hr class="flex-1 text-gray-300">
+            <span class="px-2 text-sm text-gray-600">ou</span>
+            <hr class="flex-1 text-gray-300">
         </div>
-        <button type="button" class="google">Entrar com Google</button>
+        <button type="button" class="bg-gray-200 py-2 rounded-lg w-full hover:bg-gray-300 cursor-pointer active:scale-95 transition delay-150 duration-300 ease-in-out">Entrar com Google</button>
 
-        <p>Não tem conta? <a href="registrar.html">Criar Conta</a></p>
+        <p class="mt-4 text-center text-gray-600 text-sm">Não tem conta? <a href="registrar.html" class="font-semibold text-blue-700 hover:underline">Criar Conta</a></p>
 
     </section>
 

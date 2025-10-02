@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar - ByteShop</title>
+    <link rel="stylesheet" href="../CSS/tailwind.css">
+    <link rel="stylesheet" href="../CSS/forms.css">
+</head>
+<body class="min-h-screen bg-gray-100 flex items-center justify-center text-gray-600">
+    
+    <!-- Container -->
+    <div class="w-full max-w-md shadow-lg rounded- p-8 xl">
+
+        <div class="mb-4 text-center">
+            <h2 class="font-bold text-2xl mb-3">Recuperar Senha</h2>
+            <p>Insire seu e-mail para receber um link de recuperação.</p>
+        </div>
+
+        <form action="" method="post" class="space-y-4">
+
+            <div>
+                <label for="email" class="text-sm font-medium block mb-1">Email</label>
+                <input type="email" name="email" id="email" placeholder="seuemail@exemplo.com" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 transition delay-150 duration-300 ease-in-out">
+                <span id="error_email" class="text-sm text-red-500 block">error!</span>
+            </div>
+            <button type="button" class="w-full bg-blue-500 hover:bg-blue-600 rounded-lg text-white p-2 cursor-pointer transition delay-150 duration-300 ease-in-out active:scale-95">
+                Enviar e-mail
+            </button>
+        </form>
+
+        <div class="mt-6 text-center">
+            <a href="login.html" class="font-semibold text-blue-500 hover:underline">Voltar ao login.</a>
+            <br>
+            <p class="text-sm text-gray-500">Não tens conta? <a href="#" class="font-semibold text-blue-500 hover:underline">Criar conta.</a></p>
+        </div>
+    </div>
+</body>
+</html>
