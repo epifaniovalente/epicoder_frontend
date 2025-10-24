@@ -17,11 +17,7 @@
 }
 
 /* Estilos gerais */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f9fafb;
-    color: var(--cor6);
-}
+
 
 header #sms {
     display: none;
@@ -38,17 +34,17 @@ header #sms {
     z-index: 1000;
 }
 
-#container_filtro {
+/* #container_filtro {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
+} */
 
-#filtros {
+/* #filtros {
     display: flex;
     align-items: center;
     gap: 1rem;
-}
+} */
 
 #filtros>input,
 select {
@@ -60,14 +56,8 @@ select {
 }
 
 .conteudo-principal {
-    max-width: 1280px;
     margin: 90px auto;
-    padding: 20px;
 
-
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
 }
 
 
@@ -91,12 +81,7 @@ select {
 }
 
 /* Seção de Produtos */
-#produtos h2 {
-    color: var(--cor6);
-    font-size: 1.5rem;
-    text-align: center;
-    margin: 10px 0;
-}
+
 
 #produtos p {
     margin: 0 10px;
