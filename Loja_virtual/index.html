@@ -11,98 +11,144 @@
         <title>ByteShop - Inicio</title>
         <link rel="shortcut icon" href="../image/favicon.ico"
             type="image/x-icon">
-        <link rel="stylesheet" href="src/CSS/golbal.css">
+        <link rel="stylesheet" href="src/CSS/tailwind.css">
         <link rel="stylesheet" href="src/CSS/mideas.css">
     </head>
 
-    <body>
+    <body class="text-gray-700">
 
-        <header>
-            <a href="#" id="logo">ByteShop</a>
+        <header
+            class="bg-white fixed w-full top-0 px-4 py-2 shadow-md z-1">
+            <div
+                class="w-full max-w-5xl m-auto flex items-center justify-between">
 
-            <nav id="nav_links">
-                <a href="index.html" target="_self" class="link">
-                    <i class="fas fa-home"></i>
-                    <span>Home</span>
+                <a href="#" id="logo" class="text-2xl text-blue-700 font-bold">
+                    ByteShop
                 </a>
-                <a href="src/Pages/produtos.html" target="_self" class="link">
-                    <i class="fas fa-boxes"></i>
-                    <span>Produtos</span>
-                </a>
-                <a href="src/Pages/carrinho.html" target="_self" class="link">
-                    <i class="fas fa-shopping-cart"></i>
-                    <span>Carrinho</span>
-                </a>
-                <a href="src/Pages/user_account.html" target="_self" class="link">
-                    <i class="fas fa-user"></i>
-                    <span>Conta</span>
-                </a>
-                <a href="#" target="_self" class="link">
-                    <i class="fas fa-receipt"></i>
-                    <span>Sobre nós</span>
-                </a>
-            </nav>
-
-            <div>
-                <button type="button" id="btn_menu">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
+                <nav id="nav_links" class="flex items-center gap-7">
+                    <a href="index.html" target="_self"
+                        class=" flex items-center flex-col font-normal text-sm hover:text-blue-500 transition-all duration-300 ease-in-out">
+                        <i class="fas fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                    <a href="src/Pages/produtos.html" target="_self"
+                        class=" flex items-center flex-col font-normal text-sm hover:text-blue-500 transition-all duration-300 ease-in-out">
+                        <i class="fas fa-boxes"></i>
+                        <span>Produtos</span>
+                    </a>
+                    <a href="src/Pages/carrinho.html" target="_self"
+                        class=" flex items-center flex-col font-normal text-sm hover:text-blue-500 transition-all duration-300 ease-in-out">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>Carrinho</span>
+                    </a>
+                    <a href="src/Pages/user_account.html" target="_self"
+                        class=" flex items-center flex-col font-normal text-sm hover:text-blue-500 transition-all duration-300 ease-in-out">
+                        <i class="fas fa-user"></i>
+                        <span>Conta</span>
+                    </a>
+                    <a href="#" target="_self"
+                        class=" flex items-center flex-col font-normal text-sm hover:text-blue-500 transition-all duration-300 ease-in-out">
+                        <i class="fa-solid fa-user-tie"></i>
+                        <span>Sobre nós</span>
+                    </a>
+                </nav>
+                <div class="flex gap-4">
+                    <a href="#"
+                        class="bg-green-500 text-white flex items-center justify-center font-medium rounded-4xl px-2.5 py-1 active:scale-90 transition-all duration-300 ease-in-out">
+                        Login
+                    </a>
+                    <button type="button" id="btn_menu"
+                        class="font-semibold text-xl text-black cursor-pointer">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
             </div>
 
         </header>
 
-        <main class="conteudo-principal">
+        <main class="mt-12">
             <!-- Hero Section - DESTAQUE DA PAGE -->
-            <section id="hero_section">
-                <h2>Tecnologia acessível para todos!</h2>
-                <p>Fone, Armazenamentos, Teclados e muito mais com preços que
+            <section id="hero_section"
+                class="w-full bg-blue-100 py-12 flex items-center flex-col gap-6">
+                <h2
+                    class="font-bold text-gray-800 text-2xl text-nowrap">Tecnologia
+                    acessível para todos!</h2>
+                <p class="text-center">Fone, Armazenamentos, Teclados e muito
+                    mais com preços que
                     cabem no seu bolso.</p>
-                <a href="#">Ver Promoções</a>
+                <a href="#"
+                    class="bg-blue-500 px-3 py-3 text-white rounded-2xl hover:bg-blue-600 transition-all duration-300 ease-in-out">
+                    Ver Promoções
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </a>
 
             </section>
 
             <!-- Section Destaques Da Semana -->
-            <section id="destaques">
-                <h3>Destaques da semana</h3>
+            <section id="destaques"
+                class="max-w-5xl m-auto flex flex-col gap-4 py-10 px-4">
+                <h3 class="text-xl font-medium text-gray-800">Destaques da
+                    semana</h3>
 
                 <!-- Cards destaques -->
-                <div id="cards_destaques">
-                    <div class="cards">
-                        <img src="src/image/back_!.jpg" alt="fones bluetooth">
-                        <h4 class="n_prod">Fones Bluetooth</h4>
-                        <p class="preco">00.000,00 kz</p>
+                <div id="cards_destaques"
+                    class="w-full flex items-center justify-between gap-8">
+                    <div
+                        class=" flex-1 p-4 rounded-md bg-white shadow-xl overflow-hidden flex items-center flex-col gap-1">
+                        <img src="src/image/back_!.jpg" alt="fones bluetooth"
+                            class="w-full rounded-md h-32">
+                        <h4
+                            class="w-full font-medium text-gray-800 text-left">Fones
+                            Bluetooth</h4>
+                        <p class="font-semibold text-sm text-blue-900">00.000,00
+                            kz</p>
                     </div>
-                    <div class="cards">
-                        <img src="src/image/back_!.jpg" alt="kit estudante">
-                        <h4 class="n_prod">Kit Estudante</h4>
-                        <p class="preco">00.000,00 kz</p>
+                    <div
+                        class=" flex-1 p-4 rounded-md bg-white shadow-xl overflow-hidden flex items-center flex-col gap-1">
+                        <img src="src/image/back_!.jpg" alt="kit estudante"
+                            class="w-full rounded-md h-32">
+                        <h4
+                            class="w-full font-medium text-gray-800 text-left">Kit
+                            Estudante</h4>
+                        <p class="font-semibold text-sm text-blue-900">00.000,00
+                            kz</p>
                     </div>
-                    <div class="cards">
-                        <img src="src/image/back_!.jpg" alt="Powerbanks">
-                        <h4 class="n_prod">Powerbank 10.00mAh</h4>
-                        <p class="preco">00.000,00 kz</p>
+                    <div
+                        class=" flex-1 p-4 rounded-md bg-white shadow-xl overflow-hidden flex items-center flex-col gap-1">
+                        <img src="src/image/back_!.jpg" alt="Powerbanks"
+                            class="w-full rounded-md h-32">
+                        <h4
+                            class="w-full font-medium text-gray-800 text-left">Powerbank
+                            10.00mAh</h4>
+                        <p class="font-semibold text-sm text-blue-900">00.000,00
+                            kz</p>
                     </div>
                 </div>
             </section>
 
             <!-- Section Categorias -->
-            <section id="categoria">
-                <div>
-                    <h3>Categorias</h3>
-                    <div id="cards_categorias">
-                        <div class="cards">
+            <section id="categoria" class="w-full bg-gray-100 py-10 px-4">
+                <div class="max-w-5xl m-auto space-y-4">
+                    <h3
+                        class="text-xl font-medium text-gray-800">Categorias</h3>
+                    <div id="cards_categorias" class="flex gap-4 items-center">
+                        <div
+                            class="bg-white flex items-center flex-col overflow-hidden shadow-md p-4 gap-2 rounded-xl flex-1">
                             <span>&#x1F3A7;</span>
                             <p>Fones & Powerbanks</p>
                         </div>
-                        <div class="cards">
+                        <div
+                            class="bg-white flex items-center flex-col overflow-hidden shadow-md p-4 gap-2 rounded-xl flex-1">
                             <span>&#x1F4BE;</span>
                             <p>Armazenamentos</p>
                         </div>
-                        <div class="cards">
+                        <div
+                            class="bg-white flex items-center flex-col overflow-hidden shadow-md p-4 gap-2 rounded-xl flex-1">
                             <span>&#x2328;</span>
                             <p>Teclados & Mouses</p>
                         </div>
-                        <div class="cards">
+                        <div
+                            class="bg-white flex items-center flex-col overflow-hidden shadow-md p-4 gap-2 rounded-xl flex-1">
                             <span>&#x1F4F1</span>
                             <p>Capas & Películas</p>
                         </div>
@@ -112,28 +158,39 @@
 
             <!-- Section Compra em Grupo -->
 
-            <section id="compra_grupo">
-                <h3>Compra em Grupo</h3>
+            <section id="compra_grupo"
+                class="w-full max-w-5xl m-auto py-10 px-4 flex flex-col gap-5">
+                <h3 class="text-xl font-medium text-gray-800">Compra em
+                    Grupo</h3>
                 <p>Chama dois amigos, comprem juntos e ganhem descontos!
-                    exemplo: 3 fones por apenas <span class="preco">00.000,00
+                    exemplo: 3 fones por apenas <span
+                        class="font-semibold text-blue-700">00.000,00
                         kz</span>
                 </p>
-                <a href="#">Cria Grupo de Compra</a>
+                <a href="#"
+                    class="px-4 py-3 bg-green-500 text-white text-center rounded-2xl w-fit">Cria
+                    Grupo de Compra</a>
             </section>
 
             <!-- Section Depoimentos -->
 
-            <section id="depoimentos">
-                <div>
-                    <h3>O que dizem nossos cliente</h3>
-                    <div id="cards_depoimentos">
-                        <div class="cards">
+            <section id="depoimentos" class="w-full py-10 px-4 bg-gray-100">
+                <div class="max-w-5xl m-auto space-y-4">
+                    <h3 class="text-xl font-medium text-gray-800">O que dizem
+                        nossos cliente</h3>
+                    <div id="cards_depoimentos"
+                        class="flex items-center justify-between gap-4">
+                        <div
+                            class="flex-1 p-4 rounded-md bg-white shadow-md flex gap-2 flex-col items-center justify-between overflow-hidden">
                             <p>"Comprei um kit de estudante e chegou no mesmo dia, recomendo."</p>
-                            <span>- Muhongo, Estudante</span>
+                            <span class="w-full text-left text-gray-400">-
+                                Muhongo, Estudante</span>
                         </div>
-                        <div class="cards">
+                        <div
+                            class="flex-1 p-4 rounded-md bg-white shadow-md flex gap-2 flex-col items-center justify-between overflow-hidden">
                             <p>"O parcelamento ajudou muito, loja very nice!"</p>
-                            <span>- PGG, Universitário</span>
+                            <span class="w-full text-left text-gray-400">-
+                                Mauro, Universitário</span>
                         </div>
                     </div>
                 </div>
@@ -141,29 +198,39 @@
 
             <!-- Section Sobre Nós -->
 
-            <section id="sobre">
-                <h3>Sobre Nós</h3>
-                <p>Somos jovens como tu, criamos a <span>ByteShop</span> para
-                    trazer tecnologia acessível, original e feita para
-                    estudantes</p>
-                <a href="#">Saber mais</a>
+            <section id="sobre"
+                class="w-full py-10 px-4 max-w-5xl m-auto  flex items-center justify-center flex-col space-y-4">
+                <h3 class="text-xl font-semibold text-gray-800">Quem Somos
+                    Nós?</h3>
+                <p class="text-center">Olá! Bem-vindos à <span
+                        class="font-semibold text-blue-500">ByteShop</span>, o point digital onde a tecnologia encontra a sua vibe.Somos jovens como tu, criamos a <span
+                        class="font-semibold text-blue-500">ByteShop</span> para
+                    trazer tecnologia acessível, original. Somos um time de jovens que cansou de preços absurdos e produtos sem graça. <br> Aqui, você encontra desde fones TWS que bombam no boda até acessórios pra turbinar seu ambiente de trabalho – tudo com aquele preço básico que não via deixar teu bolso gato. 🚀</p>
+                <a href="#"
+                    class="bg-blue-600 text-white text-center rounded-4xl mt-4 px-4 py-3">
+                    Saber mais...
+                </a>
             </section>
         </main>
 
-        <footer>
-            <div id="footer_content">
-                <div id="footer_social_media">
-                    <a href="#" id="insta"><i
+        <footer
+            class="bg-gray-900 w-full  shadow-md px-4 py-3">
+            <div class="max-w-5xl flex justify-between items-center m-auto">
+
+                <div class="flex gap-4 items-center">
+                    <a href="#" class="text-blue-200"><i
                             class="fa-brands fa-instagram"></i></a>
-                    <a href="#" id="facebook"><i
+                    <a href="#" class="text-blue-200"><i
                             class="fa-brands fa-facebook"></i> </a>
-                    <a href="#" id="whats"><i
+                    <a href="#" class="text-blue-200"><i
                             class="fa-brands fa-whatsapp"></i></a>
                 </div>
+
+                <p class="text-sm text-gray-400">
+                    &copy; 2025 ByteShop. | Epifânio.
+                </p>
+
             </div>
-            <p id="footer_copyright">
-                &copy; 2025 ByteShop. | EpiCoder.
-            </p>
         </footer>
         <script src="src/JS/script.js" defer></script>
     </body>

@@ -1,49 +1,45 @@
 /* APLICANDO RESPONSIVIDADE*/
 
-@media screen and (max-width: 1189px) {
 
-}
+/* Smartphone */
 
-@media screen and (max-width: 992px) {
-    
-}
-
-@media screen and (max-width: 768px) {
-    #nav_links{
+@media only screen and (max-width: 768px) {
+    #nav_links {
         display: none;
     }
 
-    #container_filtro{
-        flex-direction:column ;
+    #container_filtro {
+        flex-direction: column;
         gap: 1rem;
     }
 
-    #container_filtro h2{
+    #container_filtro h2 {
         align-self: flex-start;
     }
 
-    #filtros{
+    #filtros {
         width: 100%;
-        flex-direction:column ;
+        flex-direction: column;
     }
 
     #filtros>input,
-select {
-    width: 100%;
-}
-}
-
-@media screen and (max-width: 690px) {
-
-
+    select {
+        width: 100%;
+    }
 }
 
-@media screen and (max-width: 600px) {
 
-   
-
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    #btn_menu {
+        display: none;
+    }
 }
 
-@media screen and (max-width: 426px) {
 
+/* Desktop */
+@media only screen and(min-width: 1024px) {
+    #btn_menu {
+        display: none;
+    }
 }
