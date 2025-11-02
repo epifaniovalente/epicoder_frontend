@@ -9,122 +9,170 @@
             crossorigin="anonymous" referrerpolicy="no-referrer" />
         <title>Minha Conta - ByteShop</title>
         <link rel="stylesheet" href="../CSS/golbal.css">
-        <link rel="stylesheet" href="../CSS/user_account.css">
+        <!-- <link rel="stylesheet" href="../CSS/user_account.css"> -->
+        <link rel="stylesheet" href="../CSS/tailwind.css">
         <link rel="stylesheet" href="../CSS/mideas.css">
     </head>
-    <body>
+    <body class="min-h-screen bg-gray-50 text-gray-700">
 
-        <header>
-            <a href="#" id="logo">ByteShop</a>
+        <header
+            class="bg-white fixed w-full top-0 px-4 py-2 shadow-md z-1">
+            <div
+                class="w-full max-w-5xl m-auto flex items-center justify-between">
 
-            <nav id="nav_links">
-                <a href="/Loja_virtual/index.html" class="link">
-                    <i class="fas fa-home"></i>
-                    <span>Home</span>
+                <a href="index.html" id="logo"
+                    class="text-2xl text-blue-700 font-bold">
+                    ByteShop
                 </a>
-                <a href="produtos.html" class="link">
-                    <i class="fas fa-boxes"></i>
-                    <span>Produtos</span>
-                </a>
-                <a href="carrinho.html" class="link">
-                    <i class="fas fa-shopping-cart"></i>
-                    <span>Carrinho</span>
-                </a>
-                <a href="#" class="link">
-                    <i class="fas fa-user"></i>
-                    <span>Conta</span>
-                </a>
-                <a href="#" class="link">
-                    <i class="fas fa-receipt"></i>
-                    <span>Sobre Nós</span>
-                </a>
-            </nav>
-
-            <div>
-
-                <button type="button" id="btn_menu">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
+                <nav id="nav_links" class="flex items-center gap-7">
+                    <a href="/Loja_virtual/index.html" target="_self"
+                        class=" flex items-center flex-col font-normal text-sm hover:text-blue-500 transition-all duration-300 ease-in-out">
+                        <i class="fas fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                    <a href="produtos.html" target="_self"
+                        class=" flex items-center flex-col font-normal text-sm hover:text-blue-500 transition-all duration-300 ease-in-out">
+                        <i class="fas fa-boxes"></i>
+                        <span>Produtos</span>
+                    </a>
+                    <a href="carrinho.html" target="_self"
+                        class=" flex items-center flex-col font-normal text-sm hover:text-blue-500 transition-all duration-300 ease-in-out">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>Carrinho</span>
+                    </a>
+                    <a href="user_account.html" target="_self"
+                        class=" flex items-center flex-col font-normal text-sm hover:text-blue-500 transition-all duration-300 ease-in-out">
+                        <i class="fas fa-user"></i>
+                        <span>Conta</span>
+                    </a>
+                    <a href="#sobre" target="_self"
+                        class=" flex items-center flex-col font-normal text-sm hover:text-blue-500 transition-all duration-300 ease-in-out">
+                        <i class="fa-solid fa-user-tie"></i>
+                        <span>Sobre nós</span>
+                    </a>
+                </nav>
+                <div class="flex gap-4">
+                    <a href="login.html"
+                        class="bg-green-500 text-white flex items-center justify-center font-medium rounded-4xl px-2.5 py-1 active:scale-90 transition-all duration-300 ease-in-out">
+                        Login
+                    </a>
+                    <button type="button" id="btn_menu"
+                        class="font-semibold text-xl text-black cursor-pointer md:hidden">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
             </div>
 
         </header>
 
-        <main class="conteudo-principal">
+        <main class=" w-full max-w-5xl px-8 m-auto mt-24 mb-5">
 
-            <h2>Minha Conta</h2>
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">
+                Minha Conta
+            </h2>
 
-            <div class="container">
+            <div class="grid md:grid-cols-3 gap-6">
 
                 <!-- Menu Lateral -->
-                <!-- <aside>
-                    <nav>
-                        <a href="#pedidos" target="_self">Meus Pedidos</a>
-                        <a href="#" target="_self">Informações Pessoais</a>
-                        <a href="#" target="_self">Endereço de Entrega</a>
-                        <a href="#" target="_self">Alterar Senha</a>
-                        <a href="#" target="_self">Sair</a>
+                <aside class="bg-white shadow rounded-lg p-6">
+                    <nav class="space-y-4">
+                        <a href="#pedidos"
+                            class="block hover:text-blue-600 font-semibold"
+                            target="_self">Meus Pedidos
+                        </a>
+                        <a href="#pessoais" class="block hover:text-blue-600"
+                            target="_self">Informações Pessoais
+                        </a>
+                        <a href="#endereco" class="block hover:text-blue-600"
+                            target="_self">Endereço de Entrega
+                        </a>
+                        <a href="#senha" class="block hover:text-blue-600"
+                            target="_self">Alterar Senha
+                        </a>
+                        <a href="#sair" class="block hover:text-red-500"
+                            target="_self">Sair
+                        </a>
                     </nav>
-                </aside> -->
+                </aside>
 
-                <section>
+                <section class="md:col-span-2 bg-white shadow rounded-lg p-6">
                     <div id="pedidos">
-                        <h3>Meus pedidos</h3>
+                        <h3 class="text-lg font-bold mb-4">Meus Pedidos</h3>
 
-                        <div class="itens-pedidos">
-
-                            <div class="item">
+                        <div class="space-y-4">
+                            <div
+                                class="border rounded-lg p-4 flex justify-between items-center">
                                 <div>
-                                    <span>2 produtos</span>
-                                    <span>00.0000,00kz</span>
+                                    <p class="font-semibold">Pedido #1023</p>
+                                    <p class="text-sm text-gray-600">2 produtos
+                                        -- 16.000kz</p>
                                 </div>
-                                <p>14/09/2025</p>
-                                <p class="nao_entregue">Em andamento</p>
+                                <span
+                                    class="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-sm">Em
+                                    andamento</span>
                             </div>
-                            <div class="item">
+                            <div
+                                class="border rounded-lg p-4 flex justify-between items-center">
                                 <div>
-                                    <span>1 produtos</span>
-                                    <span>00.0000,00kz</span>
+                                    <p class="font-semibold">Pedido #1022</p>
+                                    <p class="text-sm text-gray-600">1 produto --
+                                        9.000kz</p>
                                 </div>
-                                <p>14/09/2025</p>
-                                <p class="entrege">Entregue</p>
+                                <span
+                                    class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm">Entregue</span>
                             </div>
                         </div>
-                    </div>
-                    <div id="pessoais">
-                        <h3>Informações Pessoais</h3>
-                        Loading............
-                    </div>
-                    <div id="endereco">
-                        <h3>Endereço de Entrega</h3>
-                        Loading............
-                    </div>
-                    <div id="senha">
-                        <h3>Alterar Senha</h3>
-                        Loading............
-                    </div>
-                    <div id="sair">
-                        <h3>Sair</h3>
-                        Loading............
-                    </div>
-                </section>
-            </div>
 
-        </main>
+                        <hr class="text-gray-300 my-4 w-2/4 mx-auto">
 
-        <footer>
-            <div id="footer_content">
-                <div id="footer_social_media">
-                    <a href="#" id="insta"><i
-                            class="fa-brands fa-instagram"></i></a>
-                    <a href="#" id="facebook"><i
-                            class="fa-brands fa-facebook"></i> </a>
-                    <a href="#" id="whats"><i
-                            class="fa-brands fa-whatsapp"></i></a>
+                        <div id="pessoais">
+                            <h3 class="text-lg font-bold mb-4">Informações Pessoais</h3>
+                            Loading............
+                        </div>
+
+                        <hr class="text-gray-300 my-4 w-2/4 mx-auto">
+
+                        <div id="endereco">
+                            <h3 class="text-lg font-bold mb-4">Endereço de Entrega</h3>
+                            Loading............
+                        </div>
+
+                        <hr class="text-gray-300 my-4 w-2/4 mx-auto">
+
+                        <div id="senha">
+                            <h3 class="text-lg font-bold mb-4">Alterar Senha</h3>
+                            Loading............
+                        </div>
+
+                        <hr class="text-gray-300 my-4 w-2/4 mx-auto">
+
+                        <div id="sair">
+                            <h3 class="text-lg font-bold mb-4">Sair</h3>
+                            Loading............
+                        </div>
+                    </section>
                 </div>
-            </div>
-            <p id="footer_copyright">
-                &copy; 2025 ByteShop. | EpiCoder.
-            </p>
-        </footer>
-    </body>
-</html>
+
+            </main>
+
+            <footer
+                class="bg-gray-900 w-full  shadow-md px-4 py-3">
+                <div class="max-w-5xl flex justify-between items-center m-auto">
+
+                    <div class="flex gap-4 items-center">
+                        <a href="#" class="text-blue-200"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="text-blue-200"><i
+                                class="fa-brands fa-facebook"></i> </a>
+                        <a href="#" class="text-blue-200"><i
+                                class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+
+                    <p class="text-sm text-gray-400">
+                        &copy; 2025 ByteShop. | Epifânio.
+                    </p>
+
+                </div>
+            </footer>
+        </body>
+    </html>

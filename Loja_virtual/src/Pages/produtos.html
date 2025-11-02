@@ -12,20 +12,20 @@
         <title>ByteShop - Produtos</title>
         <link rel="shortcut icon" href="../image/favicon.ico"
             type="image/x-icon">
-            <link rel="stylesheet" href="../CSS/produtos.css">
-            <link rel="stylesheet" href="../CSS/tailwind.css">
-        <!-- <link rel="stylesheet" href="../CSS/mideas.css"> -->
+        <link rel="stylesheet" href="../CSS/produtos.css">
+        <link rel="stylesheet" href="../CSS/tailwind.css">
+        <link rel="stylesheet" href="../CSS/mideas.css">
     </head>
 
-    <body class="text-gray-700">
+    <body class="min-h-screen bg-gray-50 text-gray-700">
 
-       
         <header
             class="bg-white fixed w-full top-0 px-4 py-2 shadow-md z-1">
             <div
                 class="w-full max-w-5xl m-auto flex items-center justify-between">
 
-                <a href="index.html" id="logo" class="text-2xl text-blue-700 font-bold">
+                <a href="index.html" id="logo"
+                    class="text-2xl text-blue-700 font-bold">
                     ByteShop
                 </a>
                 <nav id="nav_links" class="flex items-center gap-7">
@@ -61,7 +61,7 @@
                         Login
                     </a>
                     <button type="button" id="btn_menu"
-                        class="font-semibold text-xl text-black cursor-pointer">
+                        class="font-semibold text-xl text-black cursor-pointer md:hidden">
                         <i class="fa-solid fa-bars"></i>
                     </button>
                 </div>
@@ -69,114 +69,246 @@
 
         </header>
 
-        <main class="conteudo-principal" class="w-full px-4 space-y-4">
+        <main class="conteudo-principal" class="w-full space-y-4">
 
-            <section id="container_filtro" class="w-full max-w-5xl m-auto flex items-center justify-between gap-4">
-                    <h2 class="text-2xl font-medium text-gray-800">
-                        Produtos Disponíveis
-                    </h2>
-                    <section id="filtros" class="flex items-center gap-4">
-                        <input type="search" name="procupar" id="procurar" placeholder="🔍 procurar produto...">
-                        <select name="categoria" id="cat_filtro">
-                            <option value="" selected disabled> Categoria</option>
-                            <option value="fones">Fones</option>
-                            <option value="armazenamentos">Armazenamentos</option>
-                            <option value="teclados">Teclados</option>
-                            <option value="baterias">Baterias</option>
-                        </select>
+            <section id="container_filtro"
+                class="w-full max-w-5xl m-auto flex items-center justify-between gap-4 mb-4 px-4">
+                <h2 class="text-2xl font-medium text-gray-800">
+                    Produtos Disponíveis
+                </h2>
+                <section id="filtros" class="flex items-center gap-4">
+                    <input type="search" name="procupar" id="procurar"
+                        placeholder="🔍 procurar produto..."
+                        class="p-2 rounded-xl outline-none border border-gray-200">
+                    <select name="categoria" id="cat_filtro"
+                        class="p-2 rounded-xl outline-none border border-gray-200">
+                        <option value selected disabled> Categoria</option>
+                        <option value="fones">Fones</option>
+                        <option value="armazenamentos">Armazenamentos</option>
+                        <option value="teclados">Teclados</option>
+                        <option value="baterias">Baterias</option>
+                    </select>
 
-                        <select name="ordem" id="ord_filtro">
-                            <option value="" selected disabled>Ordenar</option>
-                            <option value="baratos">Mais barato</option>
-                            <option value="baratos">Mais recente</option>
-                            <option value="baratos">Mais vendido</option>
-                        </select>
-                    </section>
+                    <select name="ordem" id="ord_filtro"
+                        class="p-2 rounded-xl outline-none border border-gray-200">
+                        <option value selected disabled>Ordenar</option>
+                        <option value="baratos">Mais barato</option>
+                        <option value="baratos">Mais recente</option>
+                        <option value="baratos">Mais vendido</option>
+                    </select>
                 </section>
+            </section>
 
-            <section id="produtos" class="max-w-5xl m-auto">
-                
-                <div class="lista-produtos">
-                    <div class="item-produto">
-                        <img src="../image/back_!.jpg" alt="Produto 1">
-                        <h3 class="nome-item">Nome do Produto</h3>
-                        <p class="descricao">Lorem ipsum dolor sit amet
-                            consectetur adipisicing elit.</p>
-                        <p class="preco">00.000,00 Kz <sub
-                                class="preco-antigo">00.000,00</sub></p>
-                        <div class="avaliacao">★★★★★</div>
-                        <div class="botoes">
-                            <button type="button" class="adicionar">Adicionar</button>
-                            <button class="comprar" id=""
-                            onclick="notificar()">Comprar</button>
-                        </div>
-                    </div>
-                    <div class="item-produto">
-                        <img src="../image/produtos/ram.jpg"
-                            alt="Produto 2">
-                        <h3 class="nome-item">Nome do Produto</h3>
-                        <p class="descricao">Lorem ipsum dolor sit amet
-                            consectetur adipisicing elit.</p>
-                        <p class="preco">00.000,00 Kz <sub
-                                class="preco-antigo">00.000,00</sub></p>
-                        <div class="avaliacao">★★★★★</div>
-                        <div class="botoes">
-                            <button type="button" class="adicionar">Adicionar</button>
-                            <button class="comprar" id=""
-                            onclick="notificar()">Comprar</button>
-                        </div>
-                    </div>
-                    <div class="item-produto">
-                        <img src="../image/back_!.jpg" alt="Produto 3">
-                        <h3 class="nome-item">Nome do Produto</h3>
-                        <p class="descricao">Lorem ipsum dolor sit amet
-                            consectetur adipisicing elit.</p>
-                        <p class="preco">00.000,00 Kz <sub
-                                class="preco-antigo">00.000,00</sub></p>
-                        <div class="avaliacao">★★★★★</div>
-                        <div class="botoes">
-                            <button type="button" class="adicionar">Adicionar</button>
-                            <button class="comprar" id=""
-                            onclick="notificar()">Comprar</button>
-                        </div>
-                    </div>
-                    <div class="item-produto">
-                        <img src="../image/back_!.jpg" alt="Produto 1">
-                        <h3 class="nome-item">Nome do Produto</h3>
-                        <p class="descricao">Lorem ipsum dolor sit amet
-                            consectetur adipisicing elit.</p>
-                        <p class="preco">00.000,00 Kz <sub
-                                class="preco-antigo">00.000,00</sub></p>
-                        <div class="avaliacao">★★★★★</div>
-                        <div class="botoes">
-                            <button type="button" class="adicionar">Adicionar</button>
-                            <button class="comprar" id=""
-                            onclick="notificar()">Comprar</button>
-                        </div>
-                    </div>
-                    <div class="item-produto">
-                        <img src="../image/back_!.jpg" alt="Produto 1">
-                        <h3 class="nome-item">Nome do Produto</h3>
-                        <p class="descricao">Lorem ipsum dolor sit amet
-                            consectetur adipisicing elit.</p>
-                        <p class="preco">00.000,00 Kz <sub
-                                class="preco-antigo">00.000,00</sub></p>
-                        <div class="avaliacao">★★★★★</div>
-                        <div class="botoes">
-                            <button type="button" class="adicionar">Adicionar</button>
-                            <button class="comprar" id=""
-                            onclick="notificar()">Comprar</button>
-                        </div>
-                    </div>
-                </section>
+            <section id="produtos" class="max-w-5xl m-auto px-4">
 
-                <!-- Carregar mais -->
-                 <div id="carregar">
-                    <button type="button">Carregar mais</button>
-                 </div>
-            </main>
+                <div id="produtos_box" class=" grid grid-cols-3 gap-4">
+                    <!-- <div
+                        class=" max-w-2xs bg-white rounded-xl border border-gray-200 p-3 text-center shadow">
+                        <img src="../image/back_!.jpg" alt="Produto "
+                            class="w-full h-36 rounded-xl mb-2">
+                        <h3 class=" text-blue-700 mb-1.5">Nome do
+                            Produto</h3>
+                        <p class=" text-sm text-gray-600">
+                            Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit.
+                        </p>
 
-                  <footer
+                        <p class=" font-semibold text-blue-800 mb-1.5">
+                            00.000,00 Kz
+                            <sub
+                                class=" text-sm font-light text-red-500 line-through">00.000,00</sub>
+                        </p>
+                        <div class=" text-amber-400">★★★★★</div>
+
+                        <div
+                            class=" flex items-center justify-between gap-4 text-white">
+                            <button type="button"
+                                class=" flex-1 bg-blue-500 outline-none rounded-xl text-sm p-1.5 cursor-pointer active:scale-95 duration-300 transition-all ease-in-out">
+                                Adicionar
+                            </button>
+                            <button
+                                class=" flex-1 bg-green-500 outline-none rounded-xl text-sm p-1.5 cursor-pointer active:scale-95 duration-300 transition-all ease-in-out"
+                                id
+                                onclick="notificar()">
+                                Comprar
+                            </button>
+                        </div>
+                    </div> -->
+                    <div
+                        class=" max-w-2xs bg-white rounded-xl border border-gray-200 p-3 text-center shadow">
+                        <img src="../image/back_!.jpg" alt="Produto"
+                            class="w-full h-36 rounded-xl mb-2">
+                        <h3 class=" text-blue-700 mb-1.5">Nome do
+                            Produto</h3>
+                        <p class=" text-sm text-gray-600">
+                            Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit.
+                        </p>
+
+                        <p class=" font-semibold text-blue-800 mb-1.5">
+                            00.000,00 Kz
+                            <sub
+                                class=" text-sm font-light text-red-500 line-through">00.000,00</sub>
+                        </p>
+                        <div class=" text-amber-400">★★★★★</div>
+
+                        <div
+                            class=" flex items-center justify-between gap-4 text-white">
+                            <button type="button"
+                                class=" flex-1 bg-blue-500 outline-none rounded-xl text-sm p-1.5 cursor-pointer active:scale-95 duration-300 transition-all ease-in-out">
+                                Adicionar
+                            </button>
+                            <button
+                                class=" flex-1 bg-green-500 outline-none rounded-xl text-sm p-1.5 cursor-pointer active:scale-95 duration-300 transition-all ease-in-out"
+                                id
+                                onclick="notificar()">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                    <div
+                        class=" max-w-2xs bg-white rounded-xl border border-gray-200 p-3 text-center shadow">
+                        <img src="../image/back_!.jpg" alt="Produto"
+                            class="w-full h-36 rounded-xl mb-2">
+                        <h3 class=" text-blue-700 mb-1.5">Nome do
+                            Produto</h3>
+                        <p class=" text-sm text-gray-600">
+                            Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit.
+                        </p>
+
+                        <p class=" font-semibold text-blue-800 mb-1.5">
+                            00.000,00 Kz
+                            <sub
+                                class=" text-sm font-light text-red-500 line-through">00.000,00</sub>
+                        </p>
+                        <div class=" text-amber-400">★★★★★</div>
+
+                        <div
+                            class=" flex items-center justify-between gap-4 text-white">
+                            <button type="button"
+                                class=" flex-1 bg-blue-500 outline-none rounded-xl text-sm p-1.5 cursor-pointer active:scale-95 duration-300 transition-all ease-in-out">
+                                Adicionar
+                            </button>
+                            <button
+                                class=" flex-1 bg-green-500 outline-none rounded-xl text-sm p-1.5 cursor-pointer active:scale-95 duration-300 transition-all ease-in-out"
+                                id
+                                onclick="notificar()">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                    <div
+                        class=" max-w-2xs bg-white rounded-xl border border-gray-200 p-3 text-center shadow">
+                        <img src="../image/back_!.jpg" alt="Produto "
+                            class="w-full h-36 rounded-xl mb-2">
+                        <h3 class=" text-blue-700 mb-1.5">Nome do
+                            Produto</h3>
+                        <p class=" text-sm text-gray-600">
+                            Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit.
+                        </p>
+
+                        <p class=" font-semibold text-blue-800 mb-1.5">
+                            00.000,00 Kz
+                            <sub
+                                class=" text-sm font-light text-red-500 line-through">00.000,00</sub>
+                        </p>
+                        <div class=" text-amber-400">★★★★★</div>
+
+                        <div
+                            class=" flex items-center justify-between gap-4 text-white">
+                            <button type="button"
+                                class="adicionar flex-1 bg-blue-500 outline-none rounded-xl text-sm p-1.5 cursor-pointer active:scale-95 duration-300 transition-all ease-in-out">
+                                Adicionar
+                            </button>
+                            <button
+                                class=" flex-1 bg-green-500 outline-none rounded-xl text-sm p-1.5 cursor-pointer active:scale-95 duration-300 transition-all ease-in-out"
+                                id
+                                onclick="notificar()">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                    <div
+                        class=" max-w-2xs bg-white rounded-xl border border-gray-200 p-3 text-center shadow">
+                        <img src="../image/back_!.jpg" alt="Produto"
+                            class="w-full h-36 rounded-xl mb-2">
+                        <h3 class=" text-blue-700 mb-1.5">Nome do
+                            Produto</h3>
+                        <p class=" text-sm text-gray-600">
+                            Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit.
+                        </p>
+
+                        <p class=" font-semibold text-blue-800 mb-1.5">
+                            00.000,00 Kz
+                            <sub
+                                class=" text-sm font-light text-red-500 line-through">00.000,00</sub>
+                        </p>
+                        <div class=" text-amber-400">★★★★★</div>
+
+                        <div
+                            class=" flex items-center justify-between gap-4 text-white">
+                            <button type="button"
+                                class=" flex-1 bg-blue-500 outline-none rounded-xl text-sm p-1.5 cursor-pointer active:scale-95 duration-300 transition-all ease-in-out">
+                                Adicionar
+                            </button>
+                            <button
+                                class=" flex-1 bg-green-500 outline-none rounded-xl text-sm p-1.5 cursor-pointer active:scale-95 duration-300 transition-all ease-in-out"
+                                id
+                                onclick="notificar()">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                    <!-- ------- Outro Produto -------- -->
+                    <div
+                        class=" max-w-2xs bg-white rounded-xl border border-gray-200 p-3 text-center shadow">
+                        <img src="../image/back_!.jpg" alt="Produto"
+                            class="w-full h-36 rounded-xl mb-2">
+                        <h3 class=" text-blue-700 mb-1.5">Nome do
+                            Produto</h3>
+                        <p class=" text-sm text-gray-600">
+                            Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit.
+                        </p>
+
+                        <p class=" font-semibold text-blue-800 mb-1.5">
+                            00.000,00 Kz
+                            <sub
+                                class="text-sm font-light text-red-500 line-through">00.000,00</sub>
+                        </p>
+                        <div class=" text-amber-400">★★★★★</div>
+
+                        <!-- ------- BOTÕES ------ -->
+                        <div
+                            class=" flex items-center justify-between gap-4 text-white">
+                            <button type="button"
+                                class=" flex-1 bg-blue-500 outline-none rounded-xl text-sm p-1.5 cursor-pointer active:scale-95 duration-300 transition-all ease-in-out">
+                                Adicionar
+                            </button>
+                            <button
+                                class=" flex-1 bg-green-500 outline-none rounded-xl text-sm p-1.5 cursor-pointer active:scale-95 duration-300 transition-all ease-in-out"
+                                id
+                                onclick="notificar()">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Carregar mais -->
+            <div id="carregar" class="w-fit m-auto mt-5">
+                <button type="button" class="bg-gray-200 outline-none py-1.5 px-4 rounded-2xl text-sm cursor-pointer active:scale-95 duration-300 transition-all ease-in-out">
+                    Carregar mais
+                </button>
+            </div>
+        </main>
+
+        <footer
             class="bg-gray-900 w-full  shadow-md px-4 py-3">
             <div class="max-w-5xl flex justify-between items-center m-auto">
 
@@ -195,7 +327,7 @@
 
             </div>
         </footer>
-            <script src="../JS/script.js" defer></script>
-        </body>
+        <script src="../JS/script.js" defer></script>
+    </body>
 
-    </html>
+</html>

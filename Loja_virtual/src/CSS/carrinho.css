@@ -14,7 +14,7 @@
     --color-neutro-20: #A8A29E;
     --color-neutro-30: #ffffff;
 }
-
+/* 
 .conteudo-principal {
     max-width: 1080px;
     margin-top: 50px;
@@ -84,10 +84,11 @@
     border: none;
     outline: none;
     color: rgba(255, 0, 0, 0.726);
-    cursor: pointer;
+    cursor: pointer; 
 }
+*/
 
-#resumo {
+/* #resumo {
     margin: 2rem 0 2rem auto;
 
     width: fit-content;
@@ -141,4 +142,4 @@
 
 #resumo button:active{
     transform: scale(.9);
-}
+} */

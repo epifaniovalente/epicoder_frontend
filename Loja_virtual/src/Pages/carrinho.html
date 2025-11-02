@@ -8,117 +8,156 @@
             integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
         <title>Carrinho - ByteShop</title>
-        <link rel="stylesheet" href="../CSS/golbal.css">
-        <link rel="stylesheet" href="../CSS/carrinho.css">
+        <!-- <link rel="stylesheet" href="../CSS/golbal.css"> -->
+        <!-- <link rel="stylesheet" href="../CSS/carrinho.css"> -->
+        <link rel="stylesheet" href="../CSS/tailwind.css">
         <link rel="stylesheet" href="../CSS/mideas.css">
     </head>
-    <body>
-        <header>
-            <a href="#" id="logo">ByteShop</a>
+    <body class="h-screen bg-gray-50 text-gray-700">
+       
+        <header
+            class="bg-white fixed w-full top-0 px-4 py-2 shadow-md z-1">
+            <div
+                class="w-full max-w-5xl m-auto flex items-center justify-between">
 
-            <nav id="nav_links">
-                <a href="/Loja_virtual/index.html" class="link">
-                    <i class="fas fa-home"></i>
-                    <span>Home</span>
+                <a href="index.html" id="logo"
+                    class="text-2xl text-blue-700 font-bold">
+                    ByteShop
                 </a>
-                <a href="produtos.html" class="link">
-                    <i class="fas fa-boxes"></i>
-                    <span>Produtos</span>
-                </a>
-                <a href="carrinho.html" class="link">
-                    <i class="fas fa-shopping-cart"></i>
-                    <span>Carrinho</span>
-                </a>
-                <a href="user_account.html" class="link">
-                    <i class="fas fa-user"></i>
-                    <span>Conta</span>
-                </a>
-                <a href="#" class="link">
-                    <i class="fas fa-receipt"></i>
-                    <span>Sobre Nós</span>
-                </a>
-            </nav>
-
-            <div>
-                
-                <button type="button" id="btn_menu">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
+                <nav id="nav_links" class="flex items-center gap-7">
+                    <a href="/Loja_virtual/index.html" target="_self"
+                        class=" flex items-center flex-col font-normal text-sm hover:text-blue-500 transition-all duration-300 ease-in-out">
+                        <i class="fas fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                    <a href="produtos.html" target="_self"
+                        class=" flex items-center flex-col font-normal text-sm hover:text-blue-500 transition-all duration-300 ease-in-out">
+                        <i class="fas fa-boxes"></i>
+                        <span>Produtos</span>
+                    </a>
+                    <a href="carrinho.html" target="_self"
+                        class=" flex items-center flex-col font-normal text-sm hover:text-blue-500 transition-all duration-300 ease-in-out">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>Carrinho</span>
+                    </a>
+                    <a href="user_account.html" target="_self"
+                        class=" flex items-center flex-col font-normal text-sm hover:text-blue-500 transition-all duration-300 ease-in-out">
+                        <i class="fas fa-user"></i>
+                        <span>Conta</span>
+                    </a>
+                    <a href="#sobre" target="_self"
+                        class=" flex items-center flex-col font-normal text-sm hover:text-blue-500 transition-all duration-300 ease-in-out">
+                        <i class="fa-solid fa-user-tie"></i>
+                        <span>Sobre nós</span>
+                    </a>
+                </nav>
+                <div class="flex gap-4">
+                    <a href="login.html"
+                        class="bg-green-500 text-white flex items-center justify-center font-medium rounded-4xl px-2.5 py-1 active:scale-90 transition-all duration-300 ease-in-out">
+                        Login
+                    </a>
+                    <button type="button" id="btn_menu"
+                        class="font-semibold text-xl text-black cursor-pointer md:hidden">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
             </div>
 
         </header>
 
-        <main class="conteudo-principal">
-            <h2>Meu Carrinho</h2>
+        <main class="conteudo-principal w-full max-w-4xl px-8 m-auto mt-24 ">
+            <h2 class="text-2xl font-medium text-gray-800 mb-4">
+                Meu Carrinho
+            </h2>
 
-            <div class="lista-itens">
+            <div class="lista-itens flex flex-col gap-4">
                 <!-- Produto -->
-                <div class="item">
-                    <div>
-                        <img src="../image/back_!.jpg" alt="iamgem-produto">
-                        <div class="detalhes">
-                            <h3>Nome Produto</h3>
-                            <p class="descricao">descrição basic</p>
-                            <p class="preco">00.000,00kz</p>
+                <div class="item flex-1 bg-white rounded-xl p-4 flex items-center justify-between shadow-md gap-8">
+                    <div class="flex items-center gap-3">
+                        <img src="../image/back_!.jpg" alt="iamgem-produto" class="w-28 object-cover rounded-xl">
+                        <div class=" flex flex-col gap-1">
+                            <h3 class="text-blue-500">Nome Produto</h3>
+                            <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore numquam et ipsam beatae similique veritatis.</p>
+                            <p class="preco text-blue-600 font-semibold">00.000,00kz</p>
                         </div>
                     </div>
                     <!-- btn para remover -->
-                    <button type="button" class="remover">Remover</button>
+                    <button type="button" class="remover text-red-500 font-medium outline-none cursor-pointer">Remover</button>
                 </div>
-                <div class="item">
-                    <div>
-                        <img src="../image/back_!.jpg" alt="iamgem-produto">
-                        <div class="detalhes">
-                            <h3>Nome Produto</h3>
-                            <p class="descricao">descrição basic</p>
-                            <p class="preco">00.000,00kz</p>
+                <div class="item flex-1 bg-white rounded-xl p-4 flex items-center justify-between shadow-md gap-8">
+                    <div class="flex items-center gap-3">
+                        <img src="../image/back_!.jpg" alt="iamgem-produto" class="w-28 object-cover rounded-xl">
+                        <div class=" flex flex-col gap-1">
+                            <h3 class="text-blue-500">Nome Produto</h3>
+                            <p class=" text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore numquam et ipsam beatae similique veritatis.</p>
+                            <p class="preco text-blue-600 font-semibold">00.000,00kz</p>
                         </div>
                     </div>
                     <!-- btn para remover -->
-                    <button type="button" class="remover">Remover</button>
+                    <button type="button" class="remover text-red-500 font-medium outline-none cursor-pointer">Remover</button>
+                </div>
+                <div class="item flex-1 bg-white rounded-xl p-4 flex items-center justify-between shadow-md gap-8">
+                    <div class="flex items-center gap-3">
+                        <img src="../image/back_!.jpg" alt="iamgem-produto" class="w-28 object-cover rounded-xl">
+                        <div class=" flex flex-col gap-1">
+                            <h3 class="text-blue-500">Nome Produto</h3>
+                            <p class=" text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore numquam et ipsam beatae similique veritatis.</p>
+                            <p class="preco text-blue-600 font-semibold">00.000,00kz</p>
+                        </div>
+                    </div>
+                    <!-- btn para remover -->
+                    <button type="button" class="remover text-red-500 font-medium outline-none cursor-pointer">Remover</button>
                 </div>
 
             </div>
 
+
             <!-- Resumo dos produtos (Total) -->
-            <section id="resumo">
+            <section id="resumo" class="bg-white shadow-xl rounded-xl py-8 px-4 w-fit ml-auto  my-5 flex flex-col ">
                 <h3>Resumo</h3>
 
-                <div class="subvalores">
-                    <div>
+                <div class="subvalores flex items-center justify-center gap-4 text-sm border-b border-gray-200 py-4">
+                    <div class="flex flex-col gap-3">
                         <span>Subtotal</span>
                         <span>Taxa de Entrega</span>
                     </div>
-                    <div>
+                    <div class="flex flex-col gap-3">
                         <span>00.000,00kz</span>
                         <span>00.000,00kz</span>
                     </div>
                 </div>
 
-                <div class="total">
+                <div class="flex items-center justify-between font-bold mb-4">
                     <span>Total</span>
                     <span>00.000,00kz</span>
                 </div>
 
-                <button type="button">Finalizar Compra</button>
+                <button type="button" class="bg-green-500 text-white font-medium rounded-2xl cursor-pointer outline-none py-2 active:scale-90 transition-all duration-300 ease-in-out">
+                    Finalizar Compra
+                </button>
 
             </section>
         </main>
 
-        <footer>
-            <div id="footer_content">
-                <div id="footer_social_media">
-                    <a href="#" id="insta"><i
+        
+        <footer
+            class="bg-gray-900 w-full  shadow-md px-4 py-3">
+            <div class="max-w-5xl flex justify-between items-center m-auto">
+
+                <div class="flex gap-4 items-center">
+                    <a href="#" class="text-blue-200"><i
                             class="fa-brands fa-instagram"></i></a>
-                    <a href="#" id="facebook"><i
+                    <a href="#" class="text-blue-200"><i
                             class="fa-brands fa-facebook"></i> </a>
-                    <a href="#" id="whats"><i
+                    <a href="#" class="text-blue-200"><i
                             class="fa-brands fa-whatsapp"></i></a>
                 </div>
+
+                <p class="text-sm text-gray-400">
+                    &copy; 2025 ByteShop. | Epifânio.
+                </p>
+
             </div>
-            <p id="footer_copyright">
-                &copy; 2025 ByteShop. | EpiCoder.
-            </p>
         </footer>
     </body>
 </html>
